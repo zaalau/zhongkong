@@ -1,0 +1,279 @@
+/* pages/traffic/index.wxss */
+.trafficContainer {
+	width: 750rpx;
+	box-sizing: border-box;
+	font-family: "熬夜";
+	color: #35180c;
+}
+.topBgContainer {
+	/* width: 100%; */
+	height: 100%;
+	position: relative;
+	/* background-size: 100% 100%; */
+	/* z-index: 1; */
+}
+.topBg {
+	width: 100%;
+	height: 100%;
+}
+.tabContainer {
+	position: absolute;
+	bottom: -1rpx;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0);
+	display: flex;
+	align-items: center;
+}
+.departureTab {
+	width: 50%;
+	background-color: #fbf498;
+	height: 105rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* line-height: 105rpx; */
+	border-radius: 0rpx 1000rpx 0rpx 0rpx;
+	background-size: 100% 100%;
+	box-shadow: 3rpx -4rpx 1rpx 0rpx #9e922370;
+	position: absolute;
+	bottom: 0rpx;
+	left: 0;
+
+	/* box-shadow: 5rpx -5rpx 1rpx #9e922370; */
+	/* z-index: 1; */
+
+}
+.tabLogo {
+	width: 160rpx;
+	height: 160rpx;
+	position: absolute;
+	top: -85rpx;
+	left: 70rpx;
+	/* z-index: 2; */
+}
+.tabLogo2 {
+	width: 150rpx;
+	height: 145rpx;
+	position: absolute;
+	bottom: 55rpx;
+	right: 70rpx;
+}
+.departureText {
+	position: relative;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.departureText2 {
+	position: relative;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.gohomeTab {
+	width: 50%;
+	background-color: #d1bcef;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 105rpx;
+	text-align: center;
+	border-radius: 1000rpx 0rpx 0rpx 0rpx;
+	font-size: 42rpx;
+	background-size: 100% 100%;
+	/* box-shadow: 0rpx -5rpx 3rpx 1rpx #9e922370 inset; */
+	box-shadow: 0rpx -5rpx 2rpx #9e922370 inset;
+	position: absolute;
+	bottom: 0rpx;
+	right: 0;
+
+
+}
+.departureContainer {
+	padding: 30rpx 0;
+	box-sizing: border-box;
+	height: 100%;
+	background-size: 100% 100%;
+
+}
+.contentContainer {
+	background-size: 100% 100%;
+	height: 100%;
+	margin: 0 auto;
+	width: 94%;
+	position: relative;
+	padding: 60rpx 20rpx 10rpx 20rpx; 
+	box-sizing: border-box;
+}
+.containerLogo {
+	width: 110rpx;
+	height: 160rpx;
+	position: absolute;
+	right: -20rpx;
+	top: -50rpx;
+	z-index: 1;
+}
+.carInfoContainer {
+	background-size: 100% 100%;
+	height: 100%;
+	padding: 20rpx 10rpx 60rpx 20rpx;
+	box-sizing: border-box;
+	position: relative;
+	margin: 0 0 70rpx 0;
+}
+.title {
+	margin: 0 auto;
+	/* background-size: 100% 100%; */
+	
+	/* width: 215rpx;
+	height: 50rpx; */
+	height: 50rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 33rpx;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+
+}
+.detailContainer {
+	display: flex;
+	/* align-items: center; */
+	justify-content: space-around;
+	margin: 15rpx 0 0 0;
+	box-sizing: border-box;
+}
+.timeAndPosition {
+	box-sizing: border-box;
+}
+
+.timeTitle {
+	font-size: 37rpx;
+	
+}
+.timeTitle2 {
+	text-align: center;
+}
+.timeContainer {
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+}
+.timeContainer2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.timeText {
+	font-size: 24rpx;
+	font-family: "粗";
+	margin: 0 20rpx 20rpx 0;
+}
+.timeText2 {
+	font-size: 24rpx;
+	font-family: "粗";
+	margin: 0 0rpx 20rpx 0;
+	box-sizing: border-box;
+
+}
+.picContainer {
+	float: right;
+}
+.pic {
+	width: 180rpx;
+	height: 180rpx;
+}
+.interview {
+	font-family: "细";
+	font-size: 14rpx;
+	text-align: center;
+}
+.contentLogo {
+	width: 135rpx;
+	height: 98rpx;
+	position: absolute;
+	bottom: -30rpx;
+}
+
+
+
+
+.gohomeContainer {
+	padding: 50rpx 0;
+	box-sizing: border-box;
+	height: 100%;
+	background-size: 100% 100%;
+	box-sizing: border-box;
+}
+.contentContainer2 {
+	background-size: 100% 100%;
+	height: 100%;
+	margin: 0 auto;
+	width: 94%;
+	position: relative;
+	padding: 30rpx; 
+	box-sizing: border-box;
+}
+.gohomeInfoContainer {
+	background-size: 100% 100%;
+	height: 100%;
+	padding: 25rpx 30rpx 20rpx 40rpx;
+	box-sizing: border-box;
+	position: relative;
+	margin: 0 0 50rpx 0;
+}
+/* .gohomeDetailContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} */
+.gohomeTextContainer {
+	display: flex;
+}
+.title2 {
+	margin: 0 auto 10rpx auto;
+	/* background-size: 100% 100%; */
+	background-size: contain;
+	/* width: 215rpx;
+	height: 50rpx; */
+	height: 50rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 33rpx;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.gohomeTitle {
+	font-size: 35rpx;
+	margin-bottom: 5rpx;
+	
+}
+.gohomeText {
+	font-size: 23rpx;
+	font-family: "粗";
+	margin: 0 20rpx 25rpx 0;
+}
+.contentLogo2 {
+	width: 180rpx;
+	height: 125rpx;
+	position: absolute;
+	top: 75rpx;
+	right: 30rpx;
+}
+.topBtn {
+	width: 130rpx;
+	height: 130rpx;
+	/* background-color: rgba(0, 0, 0, 0.432); */
+	border-radius: 1000rpx;
+	position: fixed;
+	right: 50rpx;
+	bottom: 60rpx;
+}

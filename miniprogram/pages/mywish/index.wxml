@@ -1,0 +1,12 @@
+<!--pages/mywish/index.wxml-->
+<!-- <view class="myWishContainer">
+	<image class="wishPic" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/79818a2fd20fbd07c423ef61f6bb1c1c_hd.jpeg?sign=422a3865f43325e181853a9d46f51e48&t=1696852485" />
+	<view>i am happy</view>
+</view> -->
+<view class="myWishContainer">
+	<view class="myWish" wx:for="{{myWish}}" wx:key="index">
+		<image class="wishPic" src="{{item.pic}}" />
+		<view>{{item.text}}</view>
+	</view>
+	<!-- <button class="login" open-type='share'> </button> -->
+</view>

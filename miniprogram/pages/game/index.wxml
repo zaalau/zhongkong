@@ -1,0 +1,10 @@
+<!--pages/game/index.wxml-->
+<view class="gameContainer" style="height: {{gameContainerHeight}}px; background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG225.jpg?sign=abb222843701c26a8002c4d3ae17fe0c&t=1697438692'); ">
+	<view class="wall" bindtap='toPageWish'>我的心愿</view>
+	<view class="draw" bindtap='toPageDraw'>抽奖</view>
+	
+	<view class="sing" bindtap='toSing'>
+	
+		<web-view wx:if="{{ifK}}" src="https://mp.weixin.qq.com/s?__biz=MzkwMzM4NTczMQ==&mid=2247483779&idx=1&sn=ff6e817244079d1bce04617b061a3e18&chksm=c096466ff7e1cf79353f62a2c44863768d228917c91d2749894ced20153a38766e8e76b0d7d8#rd"/>
+	</view>
+</view>

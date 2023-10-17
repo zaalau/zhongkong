@@ -1,0 +1,8 @@
+/* pages/game/index.wxss */
+.ka {
+	width: 300rpx;
+	height: 300rpx;
+}
+.gameContainer {
+	background-size: 100% 100%;
+}

@@ -1,0 +1,105 @@
+<!--pages/traffic/index.wxml-->
+<view class="trafficContainer" id="scroll-y" style="height: {{trafficContainerHeight}}px;">
+	<!-- <view class="topBgContainer" style="height: {{topBgHeight}}px;"> -->
+		<view class="topBgContainer">
+		<image class="topBg" style="height: {{topBgHeight}}px;" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG319.jpg?sign=e2847645db05df1cc4af5797222af860&t=1697101058" />
+		<view class="tabContainer">
+			<!-- 渲染tab -->
+			<!-- <view wx:for="{{tabNE}}" wx:for-item="item" wx:key="index"  style="font-size: {{departure? `${item.fontSize}` : `${item.fontSize2}`}}; color: {{departure? `${item.color}` : `${item.color2}`}}; box-shadow: {{departure? `${item.boxShadow}` : `${item.boxShadow2}`}}; width: {{departure? `${item.width}` : `${item.width2}`}}; height: {{departure? `${item.height}` : `${item.height2}` }};" bindtap='showDeparture'>
+				<image class="{{item.tabLogo}}" wx:if="{{departure}}" src="{{item.logp}}">
+				</image>
+				<view class="{{item.textClass}}">{{item.text}}</view>
+			</view> -->
+			<view class="departureTab" style="font-size: {{departure? '60rpx' : '42rpx'}}; color: {{departure? '#35180c' : 'rgba(53,24,12,0.6)'}}; box-shadow: {{departure? '8rpx -9rpx 10rpx #9e922360' : '0rpx -9rpx 10rpx #66028e50 inset'}}; width: {{departure? '60%' : '40%'}}; height: {{departure? '125rpx' : '80rpx' }};" bindtap='showDeparture'>
+				<image class="tabLogo" wx:if="{{departure}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG173.jpg?sign=21e10ac3764790f80575a8330d6856ae&t=1697099854">
+				</image>
+				<view class="departureText">发车</view>
+			</view>
+			<view class="gohomeTab" style="font-size: {{!departure? '60rpx' : '42rpx'}}; color: {{!departure? '#2b467c' : 'rgba(43,70,124,0.6)'}}; box-shadow: {{!departure? '-8rpx -9rpx 10rpx #66028e60' : '0rpx -9rpx 10rpx #9e922360 inset'}}; width: {{!departure? '60%' : '40%'}}; height: {{!departure? '125rpx' : '80rpx' }};" bindtap='showGohome'>
+				<image class="tabLogo2" wx:if="{{!departure}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG188.jpg?sign=d8b247db4712c8c344855fc087ab0f63&t=1697163112">
+				</image>
+				<text class="departureText2">回程</text>
+			</view>
+		</view>
+	</view>
+
+	<view class="departureContainer" wx:if="{{departure}}" style="background-image: url('{{departureBg}}');">
+		<view class="contentContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG209.jpg?sign=8068ff2f0c339232ddddb6691056a99f&t=1697183992');">
+
+			<!-- <image class="containerLogo" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG195.jpg?sign=cb8a0fbf4d744459706aac6033fe838b&t=1697173215" /> -->
+			<view wx:for="{{departuretContent}}" wx:for-item="item" wx:key="index" class="carInfoContainer" style="background-image: url('{{item.carinfoBg}}');">
+				<view wx:if="{{item.type === 'havePic'}}">
+					<view class="title" style="background-image: url('{{item.titleBg}}');">{{item.title}}</view>
+					<view class="detailContainer">
+						<view class="timeAndPosition">
+							<view class="timeTitle">{{item.timeTitle}}</view>
+							<view class="timeContainer">
+
+								<view class="timeText" wx:for="{{item.timeText}}" wx:for-item="textItem" wx:key="textIndex">{{textItem.text}}</view>
+
+							</view>
+
+							<view class="timeTitle">{{item.carPosition}}</view>
+							<view class="timeText">{{item.carText}}</view>
+						</view>
+						<view class="picContainer">
+							<image class="pic" bindtap='preview' data-pic-src="{{item.picSrc}}" src="{{item.picSrc}}" mode="" />
+							<view class="interview">「单击放大」</view>
+						</view>
+					</view>
+					<image class="contentLogo" src="{{item.contentLogo}}" mode="" />
+				</view>
+				<view wx:if="{{item.type === 'noPic'}}">
+					<view class="title" style="background-image: url('{{item.titleBg}}');">{{item.title}}</view>
+					<view class="detailContainer">
+						<view class="timeAndPosition">
+							<view class="timeTitle2">{{item.timeTitle}}</view>
+							<view class="timeContainer2">
+
+								<view class="timeText2" wx:for="{{item.timeText}}" wx:for-item="textItem" wx:key="textIndex">{{textItem.text}}</view>
+
+							</view>
+
+							<view class="timeTitle2">{{item.carPosition}}</view>
+							<view class="timeText2">{{item.carText}}</view>
+						</view>
+					</view>
+					<image class="contentLogo" src="{{item.contentLogo}}" mode="" />
+				</view>
+			</view>
+
+			
+ 
+		</view>
+
+	</view>
+
+
+	<view class="gohomeContainer" wx:if="{{gohome}}" style="background-image: url('{{gohomeBg}}');">
+		<view class="contentContainer2"  style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG209.jpg?sign=8068ff2f0c339232ddddb6691056a99f&t=1697183992');">
+			<view class="gohomeInfoContainer" wx:for="{{gohomeContent}}"  wx:for-index="gohomeIndex"wx:for-item="gohomeItem" wx:key="gohomeIndex" style="background-image: url('{{gohomeItem.bgUrl}}'); margin-bottom: {{gohomeIndex === gohomeContent.length - 1 ? '0' : '50rpx'}};">
+				<view class="title2" style="background-image: url('{{gohomeItem.titleBg}}');">{{gohomeItem.title}}</view>
+				<view class="gohomeDetailContainer" wx:for="{{gohomeItem.gohomeDetail}}" wx:for-item="gohomeDetailItem" wx:key="gohomeDetailIndex">
+					<view class="gohomeTitle">{{gohomeDetailItem.gohomeTitle}}</view>
+					<view class="gohomeTextContainer" >
+						<view class="gohomeText" wx:for="{{gohomeDetailItem.gohomeText}}" wx:for-item="goHomeTextItem" wx:key="goHomeTextIndex">{{goHomeTextItem.text}}</view>
+					</view>
+				</view>
+				<!-- <view class="gohomeDetailContainer">
+					<view class="gohomeTitle">返程地点</view>
+					<view class="gohomeText">小莲花1号门36-70号车、小莲花1号门36-70号车</view>
+				</view>
+				<view class="gohomeDetailContainer">
+					<view class="gohomeTitle">地铁线路指南</view>
+					<view class="gohomeText">小莲花1号门-6号线奥体中心地铁站C口桂花西路方向-中医药大学地铁站B口</view>
+				</view> -->
+				<image class="contentLogo2" src="{{gohomeItem.logo}}" mode=""/>
+
+			</view>
+		</view>
+
+
+
+	</view>
+	<image class="topBtn" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG250.jpg?sign=3d92c65d64f8e29dcd87985bcce90f35&t=1697276230" bindtap='toTheTop' wx:if="{{ifBottom}}"></image> 
+</view>

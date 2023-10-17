@@ -1,0 +1,11 @@
+<!--pages/wish/index.wxml-->
+<view wx:if="{{showPrivacy}}">
+  <view>隐私弹窗内容....</view>
+  <button bindtap="handleOpenPrivacyContract">查看隐私协议</button>
+  <button id="agree-btn" open-type="agreePrivacyAuthorization" bindagreeprivacyauthorization="handleAgreePrivacyAuthorization">同意</button>
+</view>
+<view class="addPic" bindtap='addPic'>选择图片
+</view>
+<input class="addText" bindinput="addText" type="text"/>
+<view class="addButton" bindtap="addWish">上传</view>
+<view class="myWishButton" bindtap='toMyWish'>我的心愿</view>

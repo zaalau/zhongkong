@@ -1,0 +1,56 @@
+/* pages/homee/index.wxss */
+.homeContainer {
+	width: 750rpx;
+	height: 1448rpx;
+	/* background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG99.jpg?sign=943593667e67e4a2e49f35f264554071&t=1696573816'); */
+	/* background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG112.jpg?sign=9301b7e0e501ecf7c4ad40022bbb96cd&t=1696585013'); */
+	background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG223.jpg?sign=e8b4a8e953976d57a014565990540386&t=1697438477');
+	background-size: 100% 100%;
+	background-position: center;
+	/* background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center; */
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+
+}
+
+
+
+
+
+.introContainer {
+	background-color: yellow;
+	width: 100rpx;
+	height: 100rpx;
+}
+
+.liveContainer {
+	background-color: red;
+	width: 100rpx;
+	height: 100rpx;
+}
+
+.liveNav {
+	width: 100%;
+	height: 100%;
+}
+
+.mapContainer {
+	background-color: rgb(255, 255, 255);
+	width: 100rpx;
+	height: 100rpx;
+}
+.trafficContainer {
+	background-color: rgb(37, 72, 224);
+	width: 100rpx;
+	height: 100rpx;
+}
+
+.gameContainer {
+	background-color: pink;
+	width: 100rpx;
+	height: 100rpx;
+	
+}

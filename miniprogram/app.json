@@ -1,0 +1,37 @@
+{
+    "cloud": true,
+    "pages": [
+        "pages/home/index",
+        "pages/check/index",
+        "pages/intro/index",
+        "pages/game/index",
+        "pages/map/index",
+        "pages/draw/index",
+        "pages/wish/index",
+        "pages/mywish/index",
+        "pages/live/index",
+        "pages/traffic/index"
+        
+
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "中控",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2",
+    "plugins": {
+        "subway": {
+            "version": "1.0.13",
+            "provider": "wx6aaf93c4435fa1c1"
+        }
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序定位"
+        }
+    }
+}

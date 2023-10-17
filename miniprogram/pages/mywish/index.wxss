@@ -1,0 +1,13 @@
+/* pages/mywish/index.wxss */
+/* .login {
+	width: 80%;
+	height: 100rpx;
+	text-align: center;
+	margin: 80rpx auto;
+	background-color: rgba(60, 110, 185, 0.658);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30rpx;
+	font-size: 37rpx;
+} */

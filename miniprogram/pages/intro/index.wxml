@@ -17,88 +17,92 @@
 	</view>
 	<!-- 开始循环，一个数组两个元素 -->
 	<view class="processContainer" style="background-image: url('{{processBg}}');" wx:if="{{process}}">
-		<!-- 渲染时间线类型 第一层白色地图url、类型、 -->
-		<view class="timeLineContainer" style="background-image: url('{{timeLineBg}}');">
-			<view class="firstTitle">
-				<image class="leftImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG104.jpg?sign=909f355bacc8a76532c87f88c5497c7b&t=1697078672" mode="" />
-				<image class="midImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG64.jpg?sign=9fd26526d0d38a4f0b0e095a01c80069&t=1697019752" mode="" />
-				<view class="firstTitleText">动态大事记</view>
-				<image class="rightImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG63.jpg?sign=4e80901bd30af15cd1ad8b206cf28d3a&t=1697019728" mode="" />
-			</view>
-			<view class="secTitle" style="background-image: url('{{secTitleBg}}');">中控历程：从跟跑到并跑领跑</view>
-			<view class="contentContainer" wx:for="{{content}}" wx:for-item="item" wx:key="index">
-				<view class="bigText" style="background-image: url('{{item.bigText}}');"></view>
-				<view class="midText" wx:for="{{item.midText}}" wx:for-item="midItem" wx:key="midIndex">{{midItem.text}}</view>
-				<view class="smallText" wx:for="{{item.smallText}}" wx:for-item="smallItem" wx:key="smallIndex">
-					<text class="dot" style="color: {{smallItem.dotColor}}">{{smallItem.dot}}</text>
-					<text class="dotText">{{smallItem.text}}</text>
+		<view wx:for="{{ourThirty}}" wx:for-item="item" wx:key="index">
+			<!-- 渲染时间线类型 第一层白色地图url、类型、 -->
+			<view class="timeLineContainer" wx:if="{{item.type==='timeline'}}" style="background-image: url('{{item.bgsrc}}');">
+				<view class="firstTitle">
+					<image class="leftImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG325.jpg?sign=26d40fca77788eaa86dc2a068531951d&t=1697509555" mode="" />
+					<image class="midImg" src="{{item.midSrc}}" mode="" />
+					<view class="firstTitleText">{{item.firstTitleText}}</view>
+					<image class="rightImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG325.jpg?sign=26d40fca77788eaa86dc2a068531951d&t=1697509555" mode="" />
+				</view>
+				<view class="secTitle" style="background-image: url('{{item.secTitleBg}}');">{{item.secText}}</view>
+				<view class="contentContainer" wx:for="{{item.content}}" wx:for-item="contentItem" wx:key="contentIndex">
+					<view class="bigText" style="background-image: url('{{contentItem.bigText}}');">{{contentItem.text}}</view>
+					<view class="separatePic" style="background-image: url('{{contentItem.separatePic}}');"></view>
+					<view class="midText" wx:for="{{contentItem.midText}}" wx:for-item="midItem" wx:key="midIndex">{{midItem.text}}</view>
+					<view class="smallText" wx:for="{{contentItem.smallText}}" wx:for-item="smallItem" wx:key="smallIndex">
+						<text class="dot" style="color: {{smallItem.dotColor}}">{{smallItem.dot}}</text>
+						<text class="dotText">{{smallItem.text}}</text>
+					</view>
 				</view>
 			</view>
-		</view>
-		<view class="middle">
+			<!-- <view class="middle"> 
 			<image class="middlePic" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG105.jpg?sign=d95950e5dcc47caad26174020e9a7535&t=1697078753" mode="" />
-		</view>
+		</view> -->
 
-		<!-- 渲染视频类型 第一层白色地图url、类型、 -->
-		<view class="mediaContainer" style="background-image: url('{{timeLineBg}}');">
-			<view class="firstTitle">
-				<image class="leftImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG104.jpg?sign=909f355bacc8a76532c87f88c5497c7b&t=1697078672" mode="" />
-				<image class="midImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG103.jpg?sign=9edd206c11835bac1bc245da33e3e58e&t=1697079383" mode="" />
-				<view class="firstTitleText">三十周年视频</view>
-				<image class="rightImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG63.jpg?sign=4e80901bd30af15cd1ad8b206cf28d3a&t=1697019728" mode="" />
-			</view>
-			<view class="mediaContent" wx:for="{{mediaContent}}" wx:for-item="mediaItem" wx:key="mediaIndex">
-				<view class="secBigText" style="background-image: url('{{mediaItem.textUrl}}');width: {{mediaItem.width}}px;"></view>
-				<view class="picContainer">
-					<image class="media" src="{{mediaItem.vedio}}" mode="" />
+			<!-- 渲染视频类型 第一层白色地图url、类型、 -->
+			<view class="mediaContainer" wx:if="{{item.type==='media'}}" style="background-image: url('{{item.bgSrc}}');">
+				<view class="firstTitle">
+					<image class="leftImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG325.jpg?sign=26d40fca77788eaa86dc2a068531951d&t=1697509555" mode="" />
+					<image class="midImg" src="{{item.midSrc}}" mode="" />
+					<view class="firstTitleText">{{item.firstTitleText}}</view>
+					<image class="rightImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG325.jpg?sign=26d40fca77788eaa86dc2a068531951d&t=1697509555" mode="" />
 				</view>
+				<view class="mediaContent" wx:for="{{item.mediaContent}}" wx:for-item="mediaItem" wx:key="mediaIndex">
+					<view class="secBigText" style="background-image: url('{{mediaItem.textUrl}}'); width: {{mediaItem.width}}px;">{{mediaItem.text}}</view>
+					<view class="separatePic" style="background-image: url('{{mediaItem.separatePic}}');"></view>
+					<view class="picContainer">
+						<image class="media" src="{{mediaItem.vedio}}" mode="" />
+					</view>
 
+				</view>
 			</view>
 		</view>
 	</view>
 
 
 	<view class="thirtyContainer" style="background-image: url('{{thirtyBg}}');" wx:if="{{thirty}}">
-	<view wx:for="{{processContent}}"  wx:for-item="processItem" wx:key="processIndex" >
-		<view wx:if="{{processItem.type==='background'}}" class="conferenceBackgroundContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG266.jpg?sign=8070002277ed6e600664c76bf01e0561&t=1697444737');">
-			<view class="topTitle">
-				<image class="leftImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG267.jpg?sign=b999be1edec1a66e56f9e39768e77d7b&t=1697444840" mode="" />
-				<image class="midImg" src="{{processItem.midSrc}}" mode="" />
-				<view class="topTitleText">{{processItem.topTitleText}}</view>
-				<image class="rightImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG269.jpg?sign=51349678a51227d17c9a330f3298357e&t=1697444867" mode="" />
-			</view>
-			<view class="conferenceBackgroundContent" wx:for="{{processItem.conferenceBackgroundContent}}" wx:for-item="bgContentItem" wx:key="bgContentIndex">{{bgContentItem.text}}</view>
-			
+		<view wx:for="{{processContent}}" wx:for-item="processItem" wx:key="processIndex">
+			<view wx:if="{{processItem.type==='background'}}" class="conferenceBackgroundContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG266.jpg?sign=8070002277ed6e600664c76bf01e0561&t=1697444737');">
+				<view class="topTitle">
+					<image class="leftImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG267.jpg?sign=b999be1edec1a66e56f9e39768e77d7b&t=1697444840" mode="" />
+					<image class="midImg" src="{{processItem.midSrc}}" mode="" />
+					<view class="topTitleText">{{processItem.topTitleText}}</view>
+					<image class="rightImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG269.jpg?sign=51349678a51227d17c9a330f3298357e&t=1697444867" mode="" />
+				</view>
+				<view class="conferenceBackgroundContent" wx:for="{{processItem.conferenceBackgroundContent}}" wx:for-item="bgContentItem" wx:key="bgContentIndex">{{bgContentItem.text}}</view>
 
-			<view class="timeInfoRemarksContainer">
-				<view class="cfTimeAndPosition" wx:for="{{processItem.timeInfoRemarksContainer}}" wx:for-item="infoRemarksItem" wx:key="infoRemarksIndex" style="background-image: url('{{infoRemarksItem.src}}');">{{infoRemarksItem.text}}</view>
-				
-			</view>
-		</view>
 
-		<view wx:if="{{processItem.type==='performanceList'}}" class="programListContainer" style="background-image: url('{{processItem.bgSrc}}');">
-			<view class="topTitle">
-				<image class="leftImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG267.jpg?sign=b999be1edec1a66e56f9e39768e77d7b&t=1697444840" mode="" />
-				<image class="midImg" src="{{processItem.midSrc}}" mode="" />
-				<view class="topTitleText">{{processItem.topTitleText}}</view>
-				<image class="rightImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG269.jpg?sign=51349678a51227d17c9a330f3298357e&t=1697444867" mode="" />
+				<view class="timeInfoRemarksContainer">
+					<view class="cfTimeAndPosition" wx:for="{{processItem.timeInfoRemarksContainer}}" wx:for-item="infoRemarksItem" wx:key="infoRemarksIndex" style="background-image: url('{{infoRemarksItem.src}}');">{{infoRemarksItem.text}}</view>
+
+				</view>
 			</view>
-			<view class="everyChapter" wx:for="{{processItem.data}}" wx:for-index='chapterIndex'   wx:for-item="chapterItem" wx:for-index='chapterIndex' wx:key="chapterIndex">
-			<view class='chapterTitle uu{{chapterIndex}}'  style="background-image: url('{{chapterItem.titleSrc}}');">{{chapterItem.titleText}}</view>
-			<view class="programListContentContainer" wx:for="{{chapterItem.idAndProgram}}"  wx:for-item="idAndProgramItem" wx:for-index='idAndProgramIndex' wx:key="idAndProgramIndex">
-				<view class="idContainerBg"  style="background-image: url('{{idAndProgramItem.src}}'); height: {{chapterIndex===1 && idAndProgramIndex===0? '50' : '39'}}px;">
-				<view class="textContainer" >
-						<view class="performanceName">{{idAndProgramItem.performanceName}}</view>
-						<view class="performerContainer" wx:for="{{idAndProgramItem.performer}}"  wx:for-item="performerItem" wx:key="performerIndex">
-							<view class="performer">{{performerItem.text}}</view>
+
+			<view wx:if="{{processItem.type==='performanceList'}}" class="programListContainer" style="background-image: url('{{processItem.bgSrc}}');">
+				<view class="topTitle">
+					<image class="leftImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG267.jpg?sign=b999be1edec1a66e56f9e39768e77d7b&t=1697444840" mode="" />
+					<image class="midImg" src="{{processItem.midSrc}}" mode="" />
+					<view class="topTitleText">{{processItem.topTitleText}}</view>
+					<image class="rightImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG269.jpg?sign=51349678a51227d17c9a330f3298357e&t=1697444867" mode="" />
+				</view>
+				<view class="everyChapter" wx:for="{{processItem.data}}" wx:for-index='chapterIndex' wx:for-item="chapterItem" wx:for-index='chapterIndex' wx:key="chapterIndex">
+					<view class='chapterTitle uu{{chapterIndex}}' style="background-image: url('{{chapterItem.titleSrc}}');">{{chapterItem.titleText}}</view>
+					<view class="programListContentContainer" wx:for="{{chapterItem.idAndProgram}}" wx:for-item="idAndProgramItem" wx:for-index='idAndProgramIndex' wx:key="idAndProgramIndex">
+						<view class="idContainerBg" style="background-image: url('{{idAndProgramItem.src}}'); height: {{chapterIndex===1 && idAndProgramIndex===0? '50' : '39'}}px;">
+							<view class="textContainer">
+								<view class="performanceName">{{idAndProgramItem.performanceName}}</view>
+								<view class="performerContainer" wx:for="{{idAndProgramItem.performer}}" wx:for-item="performerItem" wx:key="performerIndex">
+									<view class="performer">{{performerItem.text}}</view>
+								</view>
+							</view>
 						</view>
 					</view>
 				</view>
 			</view>
-		</view>
-		</view>
 
-	</view>
+		</view>
 	</view>
 
 	<image class="topBtn" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG250.jpg?sign=3d92c65d64f8e29dcd87985bcce90f35&t=1697276230" bindtap='toTheTop' wx:if="{{ifBottom}}"></image>

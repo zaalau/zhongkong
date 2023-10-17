@@ -11,3 +11,11 @@
 	border-radius: 30rpx;
 	font-size: 37rpx;
 } */
+.wishPic {
+	width: 400rpx;
+	height: 400rpx;
+}
+.text {
+	font-size: 35rpx;
+	color: #0f0;
+}

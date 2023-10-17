@@ -363,7 +363,6 @@ Page({
     wx.getSystemInfo({
       success: res => {
         this.setData({
-          introContainerHeight: res.windowHeight,
           topBgHeight: 694 * res.windowWidth / 750
         })
       }

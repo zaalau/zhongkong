@@ -5,14 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    flower: true,
+    seat: false,
+    mapBg:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG343.jpg?sign=9ffcb85793da546a10d756d2e56c062b&t=1697529280'
   },
-  
+  showFlower() {
+    this.setData({
+      flower: true,
+      seat: false
+    })
+  },
+  showSeat() {
+    this.setData({
+      flower: false,
+      seat: true
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    wx.getSystemInfo({
+      success: res => {
+        console.log(res.windowHeight,res.windowWidth)
+        this.setData({
+          mapContainerHeight: res.windowHeight,
+          topBgHeight: 694 * res.windowWidth / 750
+        })
+      }
+    })
+    wx.loadFontFace({
+      family: '熬夜',
+      source: 'url("https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/YEZIGONGCHANGAOYEHEI-2.TTF?sign=9ae2d7df8b1fb9c38e05debf464386a3&t=1697024267")',
+      scopes: ['webview', 'native'], //由于canvas是原生组件，所以需要加上native，否则无效
 
+      success: function () {}
+    })
   },
 
   /**

@@ -96,7 +96,7 @@
 	box-shadow: 0rpx -5rpx 2rpx #9e922370 inset;
 	position: absolute;
 	bottom: 0rpx;
-	right: 0;
+	right: 0; 
 }
 .processContainer {
 	padding: 30rpx 8rpx;

@@ -1,5 +1,5 @@
 <!--pages/traffic/index.wxml-->
-<view class="trafficContainer" id="scroll-y" style="height: {{trafficContainerHeight}}px;">
+<view class="trafficContainer" id="scroll-y">
 	<!-- <view class="topBgContainer" style="height: {{topBgHeight}}px;"> -->
 		<view class="topBgContainer">
 		<image class="topBg" style="height: {{topBgHeight}}px;" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG319.jpg?sign=e2847645db05df1cc4af5797222af860&t=1697101058" />

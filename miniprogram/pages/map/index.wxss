@@ -1,1 +1,148 @@
 /* pages/map/index.wxss */
+.mapContainer {
+	width: 750rpx;
+	box-sizing: border-box;
+	font-family: "熬夜";
+	color: #35180c;
+}
+.topBgContainer {
+	width: 100%;
+	position: relative;
+}
+.topBg {
+	width: 100%;
+	height: 100%;
+}
+.tabContainer {
+	position: absolute;
+	bottom: -1rpx;
+	width: 100%;
+	height: 105rpx;
+	background-color: rgba(255, 255, 255, 0);
+	display: flex;
+	align-items: center;
+}
+.flowerTab {
+	
+	width: 50%;
+	background-color: #d1bcef;
+	height: 105rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* line-height: 105rpx; */
+	border-radius: 0rpx 1000rpx 0rpx 0rpx;
+	background-size: 100% 100%;
+	box-shadow: 3rpx -4rpx 1rpx 0rpx #9e922370;
+	position: absolute;
+	bottom: 0rpx;
+	left: 0;
+}
+.tabLogo {
+	width: 155rpx;
+	height: 120rpx;
+	position: absolute;
+	bottom: 70rpx;
+	left: 35rpx;
+}
+.tabLogo2 {
+	width: 155rpx;
+	height: 120rpx;
+	position: absolute;
+	bottom: 70rpx;
+	right: 20rpx;
+}
+.flowerText {
+	position: relative;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.flowerText2 {
+	position: relative;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.seatTab {
+	
+	width: 50%;
+	background-color: #fea281;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 105rpx;
+	text-align: center;
+	border-radius: 1000rpx 0rpx 0rpx 0rpx;
+	font-size: 42rpx;
+	background-size: 100% 100%;
+	box-shadow: 0rpx -5rpx 2rpx #9e922370 inset;
+	position: absolute;
+	bottom: 0rpx;
+	right: 0;
+}
+.flowerContainer {
+	padding: 30rpx 8rpx;
+	box-sizing: border-box;
+	background-size: 100% 100%;
+	
+}
+
+
+
+.seatContainer {
+	padding: 15rpx 8rpx 0;
+	box-sizing: border-box;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.handPic {
+	width: 140rpx;
+	height: 135rpx;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.handTip {
+	height: 36rpx;
+	width: 110rpx;
+	position: absolute;
+	left: 110rpx;
+	top: 30rpx;
+}
+.seatAllContainer {
+	background-size: 100% 100%;
+	height: 650rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.seatAllPic {
+	background-size: 100% 100%;
+	height: 600rpx;
+	width: 600rpx;
+}
+.myTicket {
+	background-size: 100% 100%;
+	height: 80rpx;
+	width: 400rpx;
+	margin: 10rpx auto 0;
+}
+
+
+
+
+
+.thirtyContainer {
+	padding: 30rpx 8rpx;
+	box-sizing: border-box;
+	background-size: 100% 100%;
+	color: #2b467c;
+	background-size: 100% 100%;
+
+}

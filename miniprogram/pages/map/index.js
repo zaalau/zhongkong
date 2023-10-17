@@ -27,13 +27,13 @@ Page({
   onLoad(options) {
     wx.getSystemInfo({
       success: res => {
-        console.log(res.windowHeight,res.windowWidth)
         this.setData({
           mapContainerHeight: res.windowHeight,
-          topBgHeight: 694 * res.windowWidth / 750
+          topBgHeight: 565 * res.windowWidth / 750
         })
       }
     })
+    
     wx.loadFontFace({
       family: '熬夜',
       source: 'url("https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/YEZIGONGCHANGAOYEHEI-2.TTF?sign=9ae2d7df8b1fb9c38e05debf464386a3&t=1697024267")',
@@ -41,6 +41,14 @@ Page({
 
       success: function () {}
     })
+    wx.loadFontFace({
+      family: '锐',
+      source: 'url("https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/D2A8C6D467DA6(1).TTF?sign=f682922ab552f0f509624808e08a6924&t=1697535845")',
+      scopes: ['webview', 'native'], //由于canvas是原生组件，所以需要加上native，否则无效
+
+      success: function () {}
+    })
+
   },
 
   /**

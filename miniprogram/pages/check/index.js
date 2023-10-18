@@ -20,7 +20,8 @@ Page({
         ],
         showTicket: false,
     save: false,
-    myTicket:''
+    myTicket:'',
+    
     },
     closeCheck() {
         this.setData({
@@ -64,7 +65,6 @@ Page({
         })
     
         // 如果收到座位信息，跳转进入电子门票页面，并开始绘制门票
-        // var canvas = 
         wx.createSelectorQuery().select('#canvas').fields({
             node: true,
             size: true
@@ -116,7 +116,7 @@ Page({
               this.setData({
                 myTicket: res.tempFilePath
               })
-              // console.log(this.data.myTicket)
+              console.log(this.data.myTicket)
             }
           })
         },1000)
@@ -125,7 +125,7 @@ Page({
       },
     closeTicket() {
         this.setData({
-          showTicket: false
+          showTicket: false,
         })
         wx.reLaunch({
           url: `../home/index?ifShowCheck=${this.data.showTicket}`,

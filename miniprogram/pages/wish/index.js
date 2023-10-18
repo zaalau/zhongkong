@@ -27,6 +27,11 @@ Page({
       })
      
     },
+    toDraw() {
+      wx.navigateTo({
+        url: `../draw/index`
+      })
+    },
     addText(e) {
       this.setData({
         text: e.detail.value
@@ -44,25 +49,32 @@ Page({
     },
 
     onLoad(options) {
-      wx.getPrivacySetting({
+      wx.getSystemInfo({
         success: res => {
-          // console.log(res) // 返回结果为: res = { needAuthorization: true/false, privacyContractName: '《xxx隐私保护指引》' }
-          if (res.needAuthorization) {
-            // 需要弹出隐私协议
-            this.setData({
-              showPrivacy: true
-            })
-          } else {
-            // 用户已经同意过隐私协议，所以不需要再弹出隐私协议，也能调用已声明过的隐私接口
-            // wx.getUserProfile()
-            // wx.chooseMedia()
-            // wx.getClipboardData()
-            // wx.startRecord()
-          }
-        },
-        fail: () => {},
-        complete: () => {}
+          this.setData({
+            wishContainerHeight: res.windowHeight
+          })
+        }
       })
+      // wx.getPrivacySetting({
+      //   success: res => {
+      //     // console.log(res) // 返回结果为: res = { needAuthorization: true/false, privacyContractName: '《xxx隐私保护指引》' }
+      //     if (res.needAuthorization) {
+      //       // 需要弹出隐私协议
+      //       this.setData({
+      //         showPrivacy: true
+      //       })
+      //     } else {
+      //       // 用户已经同意过隐私协议，所以不需要再弹出隐私协议，也能调用已声明过的隐私接口
+      //       // wx.getUserProfile()
+      //       // wx.chooseMedia()
+      //       // wx.getClipboardData()
+      //       // wx.startRecord()
+      //     }
+      //   },
+      //   fail: () => {},
+      //   complete: () => {}
+      // })
     },
 
     /**

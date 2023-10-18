@@ -29,6 +29,6 @@
 			<view class="seatAllPic" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG338.jpg?sign=73b0214819d222a13eb62430ad831e69&t=1697532285');">
 			</view>
 		</view>
-		<view class="myTicket" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG349.jpg?sign=2d5bdd0a2e03687a4bd472b8f894db4f&t=1697534644');">电子门票</view>
+		<view class="myTicket" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG349.jpg?sign=2d5bdd0a2e03687a4bd472b8f894db4f&t=1697534644');">我的电子门票</view>
 	</view>
 </view>

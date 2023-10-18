@@ -1,11 +1,24 @@
 <!--pages/wish/index.wxml-->
-<view wx:if="{{showPrivacy}}">
+<!-- <view wx:if="{{showPrivacy}}">
   <view>隐私弹窗内容....</view>
   <button bindtap="handleOpenPrivacyContract">查看隐私协议</button>
   <button id="agree-btn" open-type="agreePrivacyAuthorization" bindagreeprivacyauthorization="handleAgreePrivacyAuthorization">同意</button>
+</view> -->
+
+<view class="wishContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG380.jpg?sign=ee80f67b31c1ab948243117bc84d330e&t=1697622895'); height: {{wishContainerHeight}};" >
+  <view class="wishTop" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG381.jpg?sign=9205bbef0087343d0e6239d7f62900f5&t=1697622908');"></view>
+  <view class="toDraw" bindtap='toDraw' style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG382.jpg?sign=dda0cb449307c57f45c44ca3b9602715&t=1697622926');"></view>
+  <view class="addPic" bindtap='addPic' style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG383.jpg?sign=b055a9609d5a21ac3035693824f05df5&t=1697622950');"></view>
+  <textarea class="addText" placeholder="请输入祝福语..." bindinput="addText" type="text">
+    <view class="textCount">0 / 30</view>
+  </textarea> 
+  <view class="addButtonContainer">
+    <image class="airplaneLogo" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG384.jpg?sign=7abd49b8d4dc1eb161a52e697fa2ac57&t=1697622977" mode=""/>
+    <view class="addButton" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG386.jpg?sign=9208ec9903076b5e1f82ab7555fb5cb2&t=1697623211');" bindtap="addWish"></view>
+  </view>
+  <view class="myWishButton" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG385.jpg?sign=85b3168d865a5557586580164a8de3b5&t=1697622995');" bindtap='toMyWish'></view>
 </view>
-<view class="addPic" bindtap='addPic'>选择图片
-</view>
-<input class="addText" bindinput="addText" type="text"/>
-<view class="addButton" bindtap="addWish">上传</view>
-<view class="myWishButton" bindtap='toMyWish'>我的心愿</view>
+
+
+
+

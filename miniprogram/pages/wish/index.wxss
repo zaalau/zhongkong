@@ -1,5 +1,6 @@
 /* pages/wish/index.wxss */
-.addPic {
+/* .addPic {
+
 	background-color: rgba(255, 255, 0, 0.582);
 	width: 250rpx;
 	height: 250rpx;
@@ -38,4 +39,68 @@
 	justify-content: center;
 	margin: 200rpx auto 0;
 	font-size: 40rpx;
+} */
+.wishContainer {
+	background-size: 100% 100%;
+	position: relative;
+}
+.wishTop {
+	background-size: 100% 100%;
+	width: 750rpx;
+	height: 460rpx;
+}
+.toDraw {
+	background-size: 100% 100%;
+	width: 230rpx;
+	height: 74rpx;
+	position: absolute;
+	top: 370rpx;
+	right: 35rpx;
+}
+.addPic {
+	background-size: 100% 100%;
+	width: 513rpx;
+	height: 308rpx;
+	margin: 55rpx auto 0;
+}
+.addText {
+	width: 485rpx;
+	height: 290rpx;
+	margin: 30rpx auto 0;
+	background-color: #ffffff81;
+	border-radius: 50rpx;
+	box-sizing: border-box;
+	padding: 40rpx 40rpx 60rpx;
+	font-size: 30rpx;
+	line-height: 190%;
+	position: relative;
+}
+.textCount {
+	position: absolute;
+	right: 30rpx;
+	bottom: 15rpx;
+	color: #8b8b8b;
+}
+.addButtonContainer {
+	margin: 33rpx auto 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.airplaneLogo {
+	background-size: 100% 100%;
+	width: 110rpx;
+	height: 90rpx;
+}
+.addButton {
+	background-size: 100% 100%;
+	width: 243rpx;
+	height: 90rpx;
+	margin-left: 35rpx;
+}
+.myWishButton {
+	background-size: 100% 100%;
+	width: 160rpx;
+	height: 58rpx;
+	margin: 70rpx auto 62rpx;
 }

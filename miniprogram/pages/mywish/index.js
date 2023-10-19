@@ -14,6 +14,7 @@ Page({
     onLoad(options) {
         const myWish = this.data.myWish
         myWish.push(options)
+        console.log(options,this.data.myWish)
         this.setData({
             myWish: myWish
         })

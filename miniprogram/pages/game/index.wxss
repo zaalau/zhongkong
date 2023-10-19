@@ -1,8 +1,32 @@
 /* pages/game/index.wxss */
-.ka {
-	width: 300rpx;
-	height: 300rpx;
-}
+
 .gameContainer {
 	background-size: 100% 100%;
+	position: relative;
+}
+.wall {
+	position: absolute;
+	width: 400rpx;
+	height: 540rpx;
+	background-color: rgba(255, 255, 255, 0);
+	top: 250rpx;
+
+}
+
+
+.draw {
+	position: absolute;
+	width: 255rpx;
+	height: 260rpx;
+	background-color: rgba(255, 255, 255, 0);
+	bottom: 510rpx;
+	right: 0;
+}
+.draw2 {
+	position: absolute;
+	width: 455rpx;
+	height: 260rpx;
+	background-color: rgba(255, 255, 255, 0);
+	bottom: 250rpx;
+	right: 0;
 }

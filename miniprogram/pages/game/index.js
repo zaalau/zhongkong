@@ -37,6 +37,9 @@ Page({
     /**
      * 生命周期函数--监听页面加载
      */
+    // handleXY(e) {
+    //   console.log(e.detail.x,e.detail.y)
+    // },
     onLoad(options) {
       wx.getSystemInfo({
         success: res => {
@@ -44,6 +47,7 @@ Page({
             gameContainerHeight: res.windowHeight,
 
           })
+          // console.log(res.windowWidth,res.windowHeight)
         }
       })
     },

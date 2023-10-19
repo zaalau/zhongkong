@@ -1,14 +1,14 @@
 <!--pages/homee/index.wxml-->
 <view class="homeContainer" style="height: {{homeContainerHeight}}px;">
  
- <view class="introContainer" bindtap='toPageIntro'>活动直通车</view>
- <view class="mapContainer" bindtap='toPageMap'>地图导览</view>
- <view class="trafficContainer" bindtap='toPageTraffic'>交通指南</view>
+ <view class="introContainer" bindtap='toPageIntro'></view> 
+ <view class="mapContainer" bindtap='toPageMap'></view>
+ <view class="trafficContainer" bindtap='toPageTraffic'></view>
 
- <view class="gameContainer" bindtap='toPageGame'>趣味互动</view>
+ <view class="gameContainer" bindtap='toPageGame'></view>
  <view class="liveContainer" bindtap='toPageLive'>
   <!-- <navigator class="liveNav" url="www.baidu.com" open-type="navigate"></navigator> -->
-  图片直播
+  
  </view>
  
 </view>

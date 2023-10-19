@@ -7,7 +7,7 @@ Page({
   data: {
     if_show_check: true
     
-  },
+  }, 
   toPageIntro() {
     wx.navigateTo({
       url: `../intro/index`

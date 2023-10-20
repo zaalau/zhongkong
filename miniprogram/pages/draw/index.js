@@ -32,10 +32,11 @@ Page({
         // 用定时器模拟请求接口
         setTimeout(() => {
           // 3s 后得到中奖索引 (假设抽到第0个奖品)
-          const index = 0
+          const index = 3
           // 调用stop方法然后缓慢停止
           child.lucky.stop(index)
         }, 3000)
+ 
       },
       end (event) {
         // 中奖奖品详情

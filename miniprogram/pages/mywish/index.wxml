@@ -6,7 +6,7 @@
 <view class="myWishContainer">
 	<view class="myWish" wx:for="{{myWish}}" wx:key="index">
 		<image class="wishPic" src="{{item.pic}}" />
-		<view class="text">{{item.text}}</view>
+		<view class="text">{{item.content}}</view>
 	</view>
 	<button class="login" open-type='share'> </button>
 </view>

@@ -5,7 +5,7 @@
 	<view class="draw" bindtap='toPageDraw'></view>
 	<view class="draw2" bindtap='toPageDraw'></view>
 	
-	<view class="sing" bindtap='toSing'>
+	<!-- <view class="sing" bindtap='toSing'>
 		<web-view wx:if="{{ifK}}" src="https://mp.weixin.qq.com/s?__biz=MzkwMzM4NTczMQ==&mid=2247483779&idx=1&sn=ff6e817244079d1bce04617b061a3e18&chksm=c096466ff7e1cf79353f62a2c44863768d228917c91d2749894ced20153a38766e8e76b0d7d8#rd"/>
-	</view>
+	</view> -->
 </view>

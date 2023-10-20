@@ -19,17 +19,15 @@ Page({
     //         }
     //       })
     // },
-    toSing() {
-      this.setData({
-        ifK: !this.data.ifK
-      })
-    },
+    
     toPageWish() {
+      wx.vibrateShort()
       wx.navigateTo({
         url: `../wish/index`
       })
     },
     toPageDraw() {
+      wx.vibrateShort()
       wx.navigateTo({
         url: `../draw/index`
       })

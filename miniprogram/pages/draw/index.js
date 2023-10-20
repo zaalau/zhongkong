@@ -25,6 +25,7 @@ Page({
         ],
     },
     start () {
+      wx.vibrateShort()
         // 获取抽奖组件实例
         const child = this.selectComponent('#myLucky')
         // 调用play方法开始旋转

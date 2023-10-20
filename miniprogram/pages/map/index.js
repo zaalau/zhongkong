@@ -10,12 +10,14 @@ Page({
     mapBg:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG343.jpg?sign=9ffcb85793da546a10d756d2e56c062b&t=1697529280'
   },
   showFlower() {
+    wx.vibrateShort()
     this.setData({
       flower: true,
       seat: false
     })
   },
   showSeat() {
+    wx.vibrateShort()
     this.setData({
       flower: false,
       seat: true

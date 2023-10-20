@@ -29,6 +29,7 @@ Page({
      
     },
     toDraw() {
+      wx.vibrateShort()
       wx.navigateTo({
         url: `../draw/index`
       })
@@ -42,14 +43,17 @@ Page({
       })
     },
     addWish() {
+      wx.vibrateShort()
       //上传心愿到我的心愿数组
       //跳转当前心愿页
       //恭喜获得抽奖资格
+
       wx.navigateTo({
         url: `../mywish/index?pic=${this.data.pic}&content=${this.data.content}`
       })
     },
     toMyWish() {
+      wx.vibrateShort()
         wx.navigateTo({
           url: '../mywish/index',
         })

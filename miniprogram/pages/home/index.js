@@ -9,31 +9,37 @@ Page({
     
   }, 
   toPageIntro() {
+    wx.vibrateShort()
     wx.navigateTo({
       url: `../intro/index`
     })
   },
   toPageLive() {
+    wx.vibrateShort()
     wx.navigateTo({
       url: '/pages/web/web?url=' + 'www.baidu.com'
     })
   },
   toPageGame() {
+    wx.vibrateShort()
     wx.navigateTo({
       url: `../game/index`
     })
   },
   toPageTraffic() {
+    wx.vibrateShort()
     wx.navigateTo({
       url: `../traffic/index`
     })
   },
   toPageMap() {
+    wx.vibrateShort()
     wx.navigateTo({
       url: `../map/index`
     })
   },
   toPageLive() {
+    wx.vibrateShort()
     wx.navigateTo({
       url: `../live/index`
     })

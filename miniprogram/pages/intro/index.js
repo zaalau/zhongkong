@@ -376,18 +376,21 @@ Page({
   },
 
   showProcess() {
+    wx.vibrateShort()
     this.setData({
       process: true,
       thirty: false
     })
   },
   showThirty() {
+    wx.vibrateShort()
     this.setData({
       process: false,
       thirty: true
     })
   },
   toTheTop() {
+    wx.vibrateShort()
     wx.pageScrollTo({
       scrollTop: 0,
       duration: 300

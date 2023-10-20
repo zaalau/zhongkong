@@ -320,12 +320,14 @@ Page({
   },
 
   showDeparture() {
+    wx.vibrateShort()
     this.setData({
       departure: true,
       gohome: false
     })
   },
   showGohome() {
+    wx.vibrateShort()
     this.setData({
       departure: false,
       gohome: true,
@@ -340,6 +342,7 @@ Page({
     })
   },
   toTheTop() {
+    wx.vibrateShort()
     wx.pageScrollTo({
       scrollTop:0,
       duration:300

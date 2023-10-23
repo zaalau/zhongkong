@@ -11,7 +11,7 @@
   <view class="addPic" bindtap='addPic' style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG383.jpg?sign=b055a9609d5a21ac3035693824f05df5&t=1697622950');"></view>
   <textarea class="addText" value="{{content}}" placeholder="请输入祝福语..." maxlength="{{wordLimit}}" bindinput="addText" type="text">
     <view class="textCount">{{wordCount || 0}} / {{wordLimit}}</view>
-  </textarea> 
+  </textarea>  
   <view class="addButtonContainer">
     <image class="airplaneLogo" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG384.jpg?sign=7abd49b8d4dc1eb161a52e697fa2ac57&t=1697622977" mode=""/>
     <view class="addButton" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG386.jpg?sign=9208ec9903076b5e1f82ab7555fb5cb2&t=1697623211');" bindtap="addWish"></view>

@@ -6,8 +6,8 @@
  <view class="trafficContainer" bindtap='toPageTraffic'></view>
 
  <view class="gameContainer" bindtap='toPageGame'></view>
- <view class="liveContainer" bindtap='toPageLive'>
+ <!-- <view class="liveContainer" bindtap='toPageLive'>
   
- </view>
+ </view> -->
  
 </view>

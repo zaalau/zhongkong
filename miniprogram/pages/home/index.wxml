@@ -7,7 +7,6 @@
 
  <view class="gameContainer" bindtap='toPageGame'></view>
  <view class="liveContainer" bindtap='toPageLive'>
-  <!-- <navigator class="liveNav" url="www.baidu.com" open-type="navigate"></navigator> -->
   
  </view>
  

@@ -9,11 +9,11 @@ Page({
   },
   save() {
     wx.showLoading({
-      title: '生成海报中',
+      title: '保存中',
     })
     if (this.data.myTicket != '') {
       wx.saveImageToPhotosAlbum({
-        filePath: this.data.myTicket,
+        filePath: this.data.mywish,
         success(res) {
           wx.hideLoading()
           wx.showToast({
@@ -54,9 +54,7 @@ Page({
       }
 
 
-      // this.data.ctx.fillText(`${this.data.content[0]}${this.data.content[1]}${this.data.content[2]}${this.data.content[3]}${this.data.content[4]}${this.data.content[5]}${this.data.content[6]}${this.data.content[7]}${this.data.content[8]}${this.data.content[9]}`, 16, 360);
-      // this.data.ctx.fillText(`${this.data.content[10]}${this.data.content[11]}${this.data.content[12]}${this.data.content[13]}${this.data.content[14]}${this.data.content[15]}${this.data.content[16]}${this.data.content[17]}${this.data.content[18]}${this.data.content[19]}`, 16, 380);
-      // this.data.ctx.fillText(`${this.data.content[20]}${this.data.content[21]}${this.data.content[22]}${this.data.content[23]}${this.data.content[24]}${this.data.content[25]}${this.data.content[26]}${this.data.content[27]}${this.data.content[28]}${this.data.content[29]}`, 16, 400);
+      
       let img2 = this.data.canvas.createImage(); //创建img对象
       img2.onload = () => {
         this.data.ctx.drawImage(img2, 57, 64, 223, 258);

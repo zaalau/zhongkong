@@ -17,7 +17,7 @@ Page({
         success(res) {
           wx.hideLoading()
           wx.showToast({
-            title: '保存成功',
+            title: '保存成功!',
             icon: 'success',
             duration: 1000
           })

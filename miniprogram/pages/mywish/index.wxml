@@ -3,9 +3,10 @@
 
 	<canvas type="2d" id="canvas" />
 	<view class="controlArea">
-		<view class="login" bindtap='save'>保存</view>
+		<view class="savewish" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG33.jpg?sign=7829e51c57762df97d63b3ec56834a95&t=1698337157');" bindtap='save'></view>
 		
-		<button class="login" open-type='share'>分享</button>
+    <view class="sharewish" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG32.jpg?sign=aeb3b94e080f9dff6bec95fae5e58170&t=1698337142');" ></view>
+		<!-- <button class="sharewish" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG32.jpg?sign=aeb3b94e080f9dff6bec95fae5e58170&t=1698337142');" open-type='share'>分享</button> -->
 	</view>
 
 </view>

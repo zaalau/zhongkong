@@ -6,7 +6,10 @@ Page({
      */
     data: {
       showPrivacy: false,
-      wordLimit:30
+      wordLimit:30,
+      ifPic:false,
+      ifText:false,
+      picSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG131.jpg?sign=c7c405ca6028221b80a32b5120806332&t=1698331075'
     },
 
     /**
@@ -14,14 +17,16 @@ Page({
      */ 
     addPic() {
       wx.chooseMedia({
-        count: 9,
+        count: 1,
         mediaType: ['image'],
         sourceType: ['album', 'camera'],
-        maxDuration: 30,
+        sizeType:['compressed'],
         camera: 'back',
         success: res=> {
           this.setData({
-            pic: res.tempFiles[0].tempFilePath
+            pic: res.tempFiles[0].tempFilePath,
+            picSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG133.jpg?sign=279b08ceb464354d2c7bea7e08af5fa8&t=1698332087',
+            ifPic:true
           })
         }
         
@@ -37,13 +42,43 @@ Page({
     addText(e) {
       const content = e.detail.value.trim()
       const wordCount = e.detail.cursor
+      if(content.length&&content.length>0) {
+        this.setData({
+          ifText:true
+        })
+      }else {
+        this.setData({
+          ifText:false
+        })
+      }
+      
       this.setData({
         content,
-        wordCount
+        wordCount,
       })
+     
     },
     addWish() {
-      wx.vibrateShort()
+      const ifPic = this.data.ifPic
+      const ifText = this.data.ifText
+      if( !ifPic||!ifText ) {
+        wx.vibrateLong()
+        wx.showToast({
+          icon:"error",
+          title: '心愿不完整',
+          duration: 1000
+        })
+      }
+      // if( !ifText ) {
+      //   wx.vibrateLong()
+      //   wx.showToast({
+      //     icon:"error",
+      //     title: '请填写祝福语',
+      //     duration: 1000
+      //   })
+      // }
+      if( ifPic&&ifText ){
+        wx.vibrateShort()
       //上传心愿到我的心愿数组
       //跳转当前心愿页
       //恭喜获得抽奖资格
@@ -51,6 +86,7 @@ Page({
       wx.navigateTo({
         url: `../mywish/index?pic=${this.data.pic}&content=${this.data.content}`
       })
+      }
     },
     toMyWish() {
       wx.vibrateShort()
@@ -99,7 +135,7 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow() {
-
+      
     },
 
     /**

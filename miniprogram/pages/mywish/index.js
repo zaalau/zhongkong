@@ -17,7 +17,7 @@ Page({
         success(res) {
           wx.hideLoading()
           wx.showToast({
-            title: '保存成功!',
+            title: '保存成功',
             icon: 'success',
             duration: 1000
           })
@@ -64,18 +64,13 @@ Page({
         this.data.ctx.strokeText('BIRTHDAY', 130, 321);
         this.data.ctx.fillStyle = "white";
         this.data.ctx.fillRect(90, 64, 12, 258)
-        let img3 = this.data.canvas.createImage(); //创建img对象
-        img3.onload = () => {
-          this.data.ctx.drawImage(img3, 223, 354, 55, 55);
-
-        };
-        img3.src = 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/gh_b801b050bfba_258.jpg?sign=f27e45cd5156e20b71f9ddb4a128581d&t=1698068235'
+        
       };
       img2.src = this.data.pic
 
 
     };
-    img.src = "https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG427.jpg?sign=b1989a39f6a2216dbcf32bd936087093&t=1698064478";
+    img.src = "https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG130.jpg?sign=7c8279983562e01b8e747ea63a0361df&t=1698333872";
 
 
 

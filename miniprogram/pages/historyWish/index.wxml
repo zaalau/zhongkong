@@ -1,0 +1,26 @@
+<!--pages/historyWish/index.wxml-->
+<view class="historyWishContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG271.jpg?sign=4386879cf6ed8fad2d771c9ae1a57bd7&t=1698395762'); height: {{historyWishContainerHeight}}px;">
+  <view class="historyWishDataContainer">
+    <!-- <view class="content" style="background-image: url('http://tmp/y0nEGRc52k9x039c97b86a2ffe4c281206178132f406.png');"></view> -->
+    <view class="content" bindtap='preview'>
+      <view class="wish" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/5IfntoH28Ggh0b441766775fca3300be8dd0cf21f578.png?sign=4c798b4e1dd040016f4397200f74efe5&t=1698398594');"></view>
+      <view class="wishCount">1/4</view>
+    </view>
+    <view class="content" bindtap='preview'>
+      <view class="wish" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/5IfntoH28Ggh0b441766775fca3300be8dd0cf21f578.png?sign=4c798b4e1dd040016f4397200f74efe5&t=1698398594');"></view>
+      <view class="wishCount">2/4</view>
+    </view>
+    <view class="content" bindtap='preview'>
+      <view class="wish" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/5IfntoH28Ggh0b441766775fca3300be8dd0cf21f578.png?sign=4c798b4e1dd040016f4397200f74efe5&t=1698398594');"></view>
+      <view class="wishCount">3/4</view>
+    </view>
+    <view class="content" bindtap='preview'>
+      <view class="wish" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/5IfntoH28Ggh0b441766775fca3300be8dd0cf21f578.png?sign=4c798b4e1dd040016f4397200f74efe5&t=1698398594');"></view>
+      <view class="wishCount">4/4</view>
+    </view>
+  </view>
+
+
+
+
+</view>

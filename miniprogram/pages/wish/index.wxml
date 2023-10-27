@@ -16,7 +16,7 @@
     <image class="airplaneLogo" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG384.jpg?sign=7abd49b8d4dc1eb161a52e697fa2ac57&t=1697622977" mode=""/>
     <view class="addButton" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG132.jpg?sign=7370e80c61df2307e60e6db8ed9d32dc&t=1698331154');" bindtap="addWish"></view>
   </view>
-  <view class="myWishButton" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG385.jpg?sign=85b3168d865a5557586580164a8de3b5&t=1697622995');" bindtap='toMyWish'></view>
+  <view class="myWishButton" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG385.jpg?sign=85b3168d865a5557586580164a8de3b5&t=1697622995');" bindtap='toHistoryWish'></view>
 </view>
 
 

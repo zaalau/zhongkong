@@ -10,7 +10,8 @@
         "pages/wish/index",
         "pages/mywish/index",
         "pages/live/index",
-        "pages/traffic/index"
+        "pages/traffic/index",
+        "pages/historyWish/index"
         
 
     ],

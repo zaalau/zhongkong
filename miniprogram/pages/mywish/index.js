@@ -82,6 +82,7 @@ Page({
         y: 0,
         canvas: this.data.canvas,
         success: res => {
+          console.log(res.tempFilePath)
           this.setData({
             mywish: res.tempFilePath
           })

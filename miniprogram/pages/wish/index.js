@@ -23,11 +23,18 @@ Page({
         sizeType:['compressed'],
         camera: 'back',
         success: res=> {
-          this.setData({
-            pic: res.tempFiles[0].tempFilePath,
-            picSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG133.jpg?sign=279b08ceb464354d2c7bea7e08af5fa8&t=1698332087',
-            ifPic:true
+          wx.editImage({
+            src: res.tempFiles[0].tempFilePath, // 图片路径
+            success: res=> {
+              this.setData({
+                pic: res.tempFilePath,
+                // pic: res.tempFiles[0].tempFilePath,
+                picSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG133.jpg?sign=279b08ceb464354d2c7bea7e08af5fa8&t=1698332087',
+                ifPic:true
+              })
+            }
           })
+         
         }
         
       })
@@ -37,6 +44,12 @@ Page({
       wx.vibrateShort()
       wx.navigateTo({
         url: `../draw/index`
+      })
+    },
+    toHistoryWish() {
+      wx.vibrateShort()
+      wx.navigateTo({
+        url: `../historyWish/index`
       })
     },
     addText(e) {
@@ -88,12 +101,7 @@ Page({
       })
       }
     },
-    toMyWish() {
-      wx.vibrateShort()
-        wx.navigateTo({
-          url: '../mywish/index',
-        })
-    },
+    
 
     onLoad(options) {
       wx.getSystemInfo({

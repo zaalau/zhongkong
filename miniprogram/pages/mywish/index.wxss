@@ -3,20 +3,29 @@
 .mywishContainer {
   background-size: 100% 100%;
   box-sizing: border-box;
-  padding: 30% 0;
+  /* padding: 30% 0 0; */
 }
 
-
+/* .content {
+  position: fixed;
+  top : 230rpx;
+  left: 12%;
+} */
 #canvas {
   /* position: fixed;
   top: 15%; */
-  margin: 0 auto 140rpx;
-  height: 434px;
+  /* margin: 0 auto 140rpx; */
+  margin: 230rpx auto 140rpx;
+  
+  width: 577rpx;
+  height: 835rpx;
+  /* height: 434px; */
   border-radius: 25px;
   padding: 0;
   box-sizing: border-box;
 }
 .controlArea {
+  
   display: flex;
   align-items: center;
   justify-content: center;

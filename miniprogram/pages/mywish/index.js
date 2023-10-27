@@ -32,38 +32,40 @@ Page({
     img.onload = () => {
       //img.complete表示图片是否加载完成，结果返回true和false;
       this.data.ctx.drawImage(img, 0, 0, this.data.canvas._width, this.data.canvas._height);
-      this.data.ctx.font = "22px 细";
+      this.data.ctx.font = `${38/this.data.ratio}px 细`;
       const month = new Date().getMonth() + 1
       const day = new Date().getDate()
-      this.data.ctx.fillText(`${month} / ${day}`, 208, 31);
-      this.data.ctx.font = "15px Microsoft YaHei";
+      const ratio = this.data.ratio
+      this.data.ctx.fillText(`${month} / ${day}`, 400/ratio, 60/ratio);
+      this.data.ctx.font = `${29/this.data.ratio}px 细`;
 
       if (this.data.content.length <= 10) {
-        this.data.ctx.fillText(this.data.content, 16, 360);
+        this.data.ctx.fillText(this.data.content, 31/ratio, 692/ratio);
       }
       if (this.data.content.length > 10 && this.data.content.length <= 20) {
-        this.data.ctx.fillText(`${this.data.content[0]}${this.data.content[1]}${this.data.content[2]}${this.data.content[3]}${this.data.content[4]}${this.data.content[5]}${this.data.content[6]}${this.data.content[7]}${this.data.content[8]}${this.data.content[9]}`, 16, 360);
+        this.data.ctx.fillText(`${this.data.content[0]}${this.data.content[1]}${this.data.content[2]}${this.data.content[3]}${this.data.content[4]}${this.data.content[5]}${this.data.content[6]}${this.data.content[7]}${this.data.content[8]}${this.data.content[9]}`, 31/ratio, 692/ratio);
         const content2 = this.data.content.slice(10)
-        this.data.ctx.fillText(content2, 16, 385);
+        this.data.ctx.fillText(content2, 31/ratio, 740/ratio);
       }
       if (this.data.content.length > 20) {
-        this.data.ctx.fillText(`${this.data.content[0]}${this.data.content[1]}${this.data.content[2]}${this.data.content[3]}${this.data.content[4]}${this.data.content[5]}${this.data.content[6]}${this.data.content[7]}${this.data.content[8]}${this.data.content[9]}`, 16, 360);
-        this.data.ctx.fillText(`${this.data.content[10]}${this.data.content[11]}${this.data.content[12]}${this.data.content[13]}${this.data.content[14]}${this.data.content[15]}${this.data.content[16]}${this.data.content[17]}${this.data.content[18]}${this.data.content[19]}`, 16, 385);
+        this.data.ctx.fillText(`${this.data.content[0]}${this.data.content[1]}${this.data.content[2]}${this.data.content[3]}${this.data.content[4]}${this.data.content[5]}${this.data.content[6]}${this.data.content[7]}${this.data.content[8]}${this.data.content[9]}`, 31/ratio, 692/ratio);
+        this.data.ctx.fillText(`${this.data.content[10]}${this.data.content[11]}${this.data.content[12]}${this.data.content[13]}${this.data.content[14]}${this.data.content[15]}${this.data.content[16]}${this.data.content[17]}${this.data.content[18]}${this.data.content[19]}`, 31/ratio, 740/ratio);
         const content3 = this.data.content.slice(20)
-        this.data.ctx.fillText(content3, 16, 410);
+        this.data.ctx.fillText(content3, 31/ratio, 788/ratio);
       }
 
 
       
       let img2 = this.data.canvas.createImage(); //创建img对象
       img2.onload = () => {
-        this.data.ctx.drawImage(img2, 57, 64, 223, 258);
-        this.data.ctx.font = "21px 哈";
+        this.data.ctx.drawImage(img2, 110/ratio, 123/ratio, 429/ratio, 496/ratio);
+        // this.data.ctx.font = '21px 哈';
+        this.data.ctx.font = `${40/this.data.ratio}px 哈`;
         this.data.ctx.strokeStyle = "#ffffff70";
-        this.data.ctx.strokeText('happy', 183, 300);
-        this.data.ctx.strokeText('BIRTHDAY', 130, 321);
+        this.data.ctx.strokeText('HAPPY', 352/ratio, 577/ratio);
+        this.data.ctx.strokeText('BIRTHDAY', 250/ratio, 617/ratio);
         this.data.ctx.fillStyle = "white";
-        this.data.ctx.fillRect(90, 64, 12, 258)
+        this.data.ctx.fillRect(173/ratio, 123/ratio, 23/ratio, 496/ratio)
         
       };
       img2.src = this.data.pic
@@ -110,7 +112,8 @@ Page({
     wx.getSystemInfo({
       success: res => {
         this.setData({
-          mywishContainerHeight: res.windowHeight
+          mywishContainerHeight: res.windowHeight,
+          ratio: 750/res.windowWidth
         })
       }
     })
@@ -132,8 +135,10 @@ Page({
       canvas.width = renderWidth * dpr
       canvas.height = renderHeight * dpr
 
+      
+
       ctx.scale(dpr, dpr)
-      // console.log(canvas)
+     
       this.setData({
         canvas,
         ctx,

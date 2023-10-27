@@ -1,5 +1,5 @@
 <!--pages/homee/index.wxml-->
-<view class="homeContainer" style="height: {{homeContainerHeight}}px;">
+<view class="homeContainer" style="min-height: {{homeContainerHeight}}px;">
  
  <view class="introContainer" bindtap='toPageIntro'></view> 
  <view class="mapContainer" bindtap='toPageMap'></view>

@@ -6,15 +6,44 @@ Page({
      */
     data: {
       historyWishContainerHeight:'',
-      historyWishData:['http://tmp/y0nEGRc52k9x039c97b86a2ffe4c281206178132f406.png','http://tmp/y0nEGRc52k9x039c97b86a2ffe4c281206178132f406.png']
+      historyWishData:['http://tmp/y0nEGRc52k9x039c97b86a2ffe4c281206178132f406.png','http://tmp/y0nEGRc52k9x039c97b86a2ffe4c281206178132f406.png'],
+      user:[
+        {
+          openid:'xxx',
+          workNumber:'xxx',//初始化没有这一字段或为空，绑定后添加进去，无法修改
+          draw:1,//初始化为0，首次上传心愿且绑定工号后为1
+          prize:'',//抽奖后生成
+          historyWish:[
+            {
+              //fileid或src
+              fileid:'xx',
+              src:'xx'
+            },
+            {
+              fileid:'xx',
+              src:'xx'
+            },
+            {
+              fileid:'xx',
+              src:'xx'
+            },
+            {
+              fileid:'xx',
+              src:'xx'
+            },
+          ],
+          
+
+        }
+      ]
     },
     preview() {
 
        
         wx.previewImage({
           showmenu: true,
-          current: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/5IfntoH28Ggh0b441766775fca3300be8dd0cf21f578.png?sign=4c798b4e1dd040016f4397200f74efe5&t=1698398594',// 当前显示图片的http链接
-          urls: ['https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/5IfntoH28Ggh0b441766775fca3300be8dd0cf21f578.png?sign=4c798b4e1dd040016f4397200f74efe5&t=1698398594','https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/5IfntoH28Ggh0b441766775fca3300be8dd0cf21f578.png?sign=4c798b4e1dd040016f4397200f74efe5&t=1698398594','https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/5IfntoH28Ggh0b441766775fca3300be8dd0cf21f578.png?sign=4c798b4e1dd040016f4397200f74efe5&t=1698398594','https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/5IfntoH28Ggh0b441766775fca3300be8dd0cf21f578.png?sign=4c798b4e1dd040016f4397200f74efe5&t=1698398594',] // 需要预览的图片http链接列表
+          current: 'cloud://zhongkong-0gr2bnjw8020e857.7a68-zhongkong-0gr2bnjw8020e857-1321404713/3aFN48Gbd9XQ602bf8f8649afabf9cd9e47d4a58c1c9.png',// 当前显示图片的http链接
+          urls: ['cloud://zhongkong-0gr2bnjw8020e857.7a68-zhongkong-0gr2bnjw8020e857-1321404713/3aFN48Gbd9XQ602bf8f8649afabf9cd9e47d4a58c1c9.png','cloud://zhongkong-0gr2bnjw8020e857.7a68-zhongkong-0gr2bnjw8020e857-1321404713/3aFN48Gbd9XQ602bf8f8649afabf9cd9e47d4a58c1c9.png','cloud://zhongkong-0gr2bnjw8020e857.7a68-zhongkong-0gr2bnjw8020e857-1321404713/3aFN48Gbd9XQ602bf8f8649afabf9cd9e47d4a58c1c9.png','cloud://zhongkong-0gr2bnjw8020e857.7a68-zhongkong-0gr2bnjw8020e857-1321404713/3aFN48Gbd9XQ602bf8f8649afabf9cd9e47d4a58c1c9.png'] // 需要预览的图片http链接列表
         })
       
     },

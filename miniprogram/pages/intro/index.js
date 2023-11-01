@@ -6,7 +6,7 @@ Page({
    */
   data: {
     process: true,
-    thirty: false,
+    thirty:  false,
     introContainerHeight: '',
     processBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG331.jpg?sign=994d3f84189851b3e4b3aabe961d52e7&t=1697509008',
     thirtyBg:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG265.jpg?sign=7afdccccbc2084de07993c7ca5da0499&t=1697518197',
@@ -192,11 +192,11 @@ Page({
           }
         ],
         timeInfoRemarksContainer: [{
-            src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG271.jpg?sign=eb12a89d99f610763155448c04304154&t=1697447643',
+            src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG271%E5%88%98.jpg?sign=493355a942d156121fe51a47a700a714&t=1698736884',
             text: '大会时间：2023/11/23（ 14: 00-17: 00 ）'
           },
           {
-            src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG271.jpg?sign=eb12a89d99f610763155448c04304154&t=1697447643',
+            src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG271%E5%88%98.jpg?sign=493355a942d156121fe51a47a700a714&t=1698736884',
             text: '大会地址：杭州奥体中心网球中心（ 小莲花 ）'
           }
         ]
@@ -213,8 +213,8 @@ Page({
         data: [{
 
             idAndProgram: [{
-              src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG277.jpg?sign=b1e6812b08130a420b031aa3468dbd0c&t=1697453319',
-              performanceName: '《中控三十周年纪录片》',
+              src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E8%8A%82%E7%9B%AE%E5%8D%95%E6%9A%96%E5%9C%BA.jpg?sign=c8ae5cedbf7c408f97a64e67cbf02699&t=1698812165',
+              performanceName: '我们的三十年系列视频',
 
             }]
           },
@@ -222,31 +222,44 @@ Page({
             titleSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG275.jpg?sign=eb8f7853fb549196eda3cef8c1bc431f&t=1697450099',
             titleText: '篇章一 跨越山海',
             idAndProgram: [{
-                src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG297.jpg?sign=84fb11ca7bf313d1b8f5ad45ec9dffeb&t=1697451188',
-                performanceName: '引子 ·《应运而生》',
+                src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E8%8A%82%E7%9B%AE%E5%8D%9501.jpg?sign=78f12c5d4a0674fc994d92d8d3fd004e&t=1698745905',
+                performanceName: '开场舞',
                 performer: [{
-                    text: '俞海斌 方芳 刘美辰 刘洋 张惠泽 罗璇'
+                    text: '浙江馨海艺术团 中控集团员工'
                   },
-                  {
-                    text: '上海青年交响乐团(待定)'
-                  }
+                  
                 ]
               },
               {
-                src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG279.jpg?sign=b7ce714e7a0708c7b4da3c47412107eb&t=1697453567',
-                performanceName: '领导致辞',
+                src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG278.jpg?sign=54125653a03920d5b8444d4516efa6ff&t=1698744822',
+                performanceName: '庆典致辞',
+
+              },
+              {
+                src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG279.jpg?sign=b7ce714e7a0708c7b4da3c47412107eb&t=16974535673',
+                performanceName: '音诗画《应运而生》',
+                performer: [{
+                  text: '俞海斌 袁剑蓉 张伟 方芳'
+                },
+                
+              ]
 
               },
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG280.jpg?sign=18028aadd168518839a39510623af5a6&t=1697453623',
-                performanceName: '《十大里程碑事件》',
+                performanceName: '舞蹈《梦想同行》',
+                performer: [{
+                    text: '杭舞艺术团 中控集团员工'
+                  },
+
+                ]
 
               },
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG281.jpg?sign=877fe37c1edbba54291c8c078899d021&t=1697453655',
-                performanceName: '《梦想同行》',
+                performanceName: '情景舞蹈《一代一代中控人》',
                 performer: [{
-                    text: 'xxx舞蹈团 中控集团员工'
+                    text: 'Xxx xxx xxx等中控集团员工'
                   },
 
                 ]
@@ -254,19 +267,9 @@ Page({
               },
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG283.jpg?sign=e12219493a391f4ae36c158829417527&t=1697453725',
-                performanceName: '《一代一代中控人》',
+                performanceName: '歌舞《夜空中最亮的星》',
                 performer: [{
-                    text: 'xxx xxx xxx等中控集团员工'
-                  },
-
-                ]
-
-              },
-              {
-                src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG282.jpg?sign=e0b13946a55c48455e73178fbb08498a&t=1697453762',
-                performanceName: '《夜空中最亮的星》',
-                performer: [{
-                    text: 'xxx xxx xxx等中控集团员工'
+                    text: 'Xxx xxx xxx等中控集团员工'
                   },
 
                 ]
@@ -278,36 +281,41 @@ Page({
             titleSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG284.jpg?sign=d2f18e34adab3c328005f871bfadc39a&t=1697453932',
             titleText: '篇章二 同揽云川',
             idAndProgram: [{
-                src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG285.jpg?sign=e70cc41cacdad60eb20be89b8c16d922&t=1697453992',
-                performanceName: '引子·《同揽云川》',
+                src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E8%8A%82%E7%9B%AE%E5%8D%9507.jpg?sign=292d1e59d15f184d28c0fc7b2939349c&t=1698745717',
+                performanceName: '音诗画《同揽云川》',
                 performer: [{
-                    text: 'xxx舞蹈团 中控集团员工'
+                    text: '刘美辰 刘洋 罗璇 徐翔 xxx xxx xxx 张惠泽'
                   },
 
 
                 ]
               },
               {
-                src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG286.jpg?sign=0ed0c330fa067f1fcd072930a6f2a86e&t=1697454045',
-                performanceName: '《Never Say No》',
+                src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG285.jpg?sign=e70cc41cacdad60eb20be89b8c16d922&t=1697453992',
+                performanceName: '小品《时间为证》',
                 performer: [{
-                    text: 'xxx xxx xxx等中控集团员工'
+                    text: 'Xxx xxx xxx等中控集团员工'
                   },
 
 
                 ]
+
+              },
+              {
+                src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG286.jpg?sign=0ed0c330fa067f1fcd072930a6f2a86e&t=1697454045',
+                performanceName: 'VCR《十大里程碑事件》',
 
               },
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG287.jpg?sign=a524bb704af2a7b4affbd4b95d037dd6&t=1697454090',
                 performanceName: '《同行三十载》',
-
+                
               },
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG288.jpg?sign=91703052355d65538702003cef1d1401&t=1697454129',
-                performanceName: '《烈火》',
+                performanceName: '歌舞《烈火》',
                 performer: [{
-                    text: '徐子睿 宋罡 陈耀清 孙中立 赵泽亮 杨豫鹏 戴希伦 陈阜'
+                    text: '陈阜 陈耀清 戴希伦 宋罡 孙中立 徐子睿 杨豫鹏 赵泽亮'
                   },
 
                 ]
@@ -321,9 +329,9 @@ Page({
             titleText: '篇章三 踏梦星河',
             idAndProgram: [{
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG293.jpg?sign=84ac71bd4da9dccdb3e6b066f23fdbc7&t=1697454478',
-                performanceName: '引子·《未来，你好》',
+                performanceName: '音诗画《未来，你好》',
                 performer: [{
-                    text: 'xxx舞蹈团 中控集团员工'
+                    text: 'Xxx xxx xxx等中控集团员工'
                   },
 
 
@@ -331,9 +339,9 @@ Page({
               },
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG294.jpg?sign=9ce30d8a4389f6a833cb03ace7fbc7af&t=1697454515',
-                performanceName: '《Dream》',
+                performanceName: '光影秀《Dream》',
                 performer: [{
-                    text: 'xxx xxx xxx等中控集团员工'
+                    text: 'Xxx xxx xxx等中控集团员工'
                   },
 
 
@@ -342,9 +350,9 @@ Page({
               },
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG290.jpg?sign=195d447a289f62fe10dbdeda0f5d11da&t=1697454545',
-                performanceName: '创始人发言',
+                performanceName: '《一路向前》',
                 performer: [{
-                    text: '中控创始人 褚健'
+                    text: '中控集团创始人 褚健'
                   },
 
                 ]
@@ -352,20 +360,16 @@ Page({
               },
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG291.jpg?sign=5475e4258c2847df1df2d44302719bbe&t=1697454598',
-                performanceName: '《致未来》',
-
-
-              },
-              {
-                src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG292.jpg?sign=4049c7e34a333df80d9af8d8b1c2a4e5&t=1697454632',
-                performanceName: '大合唱',
+                performanceName: '歌曲串烧《逐光而行》',
                 performer: [{
-                    text: '中控集团员工'
-                  },
+                  text: '中控集团员工'
+                },
 
-                ]
+              ]
+
 
               },
+              
             ]
           },
         ]

@@ -6,8 +6,8 @@ Page({
    */
   data: {
     if_show_check: true
-    
-  }, 
+
+  },
   toPageIntro() {
     wx.vibrateShort()
     wx.navigateTo({
@@ -44,27 +44,27 @@ Page({
       url: `../live/index`
     })
   },
-  
- 
-  
+
+
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    const ifShowCheck = options.ifShowCheck
-    // console.log(ifShowCheck)
-    if(ifShowCheck!=undefined) {
-      this.setData({
-        if_show_check: ifShowCheck
-      })
-    }
-    const if_show_check = this.data.if_show_check
-    // console.log(if_show_check)
-    if(if_show_check===true) {
-      wx.navigateTo({
-        url: '../check/index',
-      })
-    }
+    // const ifShowCheck = options.ifShowCheck
+    // // console.log(ifShowCheck)
+    // if (ifShowCheck != undefined) {
+    //   this.setData({
+    //     if_show_check: ifShowCheck
+    //   })
+    // }
+    // const if_show_check = this.data.if_show_check
+    // // console.log(if_show_check)
+    // if (if_show_check === true) {
+    //   wx.navigateTo({
+    //     url: '../check/index',
+    //   })
+    // }
 
     wx.getSystemInfo({
       success: res => {
@@ -83,12 +83,12 @@ Page({
     //     }
     //   })
 
-    
+
     wx.loadFontFace({
       family: '上首锐圆',
       source: 'url("https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/D2A8C6D467DA6.TTF?sign=b6fefba0b9b63f6159190a0837c91440&t=1697000814")',
-      scopes: ['webview', 'native'],//由于canvas是原生组件，所以需要加上native，否则无效
-    
+      scopes: ['webview', 'native'], //由于canvas是原生组件，所以需要加上native，否则无效
+
       success: function () {
 
       }
@@ -100,7 +100,21 @@ Page({
 
       success: function () {}
     })
+    const backgroundAudioManager = wx.getBackgroundAudioManager()
+
+    backgroundAudioManager.title = "friday i'm in love"
+    // backgroundAudioManager.epname = '此时此刻'
+    // backgroundAudioManager.singer = '许巍'
+
+    // 设置了 src 之后会自动播放
+    backgroundAudioManager.src = "https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/The-Cure-Friday-I_m-In-Love.m4a?sign=71b72364d62e3c4e9643b677e612176e&t=1698742420"
+    backgroundAudioManager.onEnded(function () {
+      // 2、必须重新设置src才能循环之后会自动播放
+      backgroundAudioManager.src = "https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/The-Cure-Friday-I_m-In-Love.m4a?sign=71b72364d62e3c4e9643b677e612176e&t=1698742420"
+    })
+
   },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

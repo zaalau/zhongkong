@@ -1,5 +1,5 @@
 <!--pages/intro/index.wxml-->
-<view class="introContainer" style="height: {{introContainerHeight}}px;">
+<view class="introContainer" style="min-height: {{introContainerHeight}}px;">
 	<view class="topBgContainer" style="height: {{topBgHeight}}px;">
 		<image class="topBg" style="height: {{topBgHeight}}px;" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG117.jpg?sign=1738c6d445a24c345c4d7b9e0000eb15&t=1697085209" />
 		<view class="tabContainer">
@@ -90,9 +90,9 @@
 				<view class="everyChapter" wx:for="{{processItem.data}}" wx:for-index='chapterIndex' wx:for-item="chapterItem" wx:for-index='chapterIndex' wx:key="chapterIndex">
 					<view class='chapterTitle uu{{chapterIndex}}' style="background-image: url('{{chapterItem.titleSrc}}');">{{chapterItem.titleText}}</view>
 					<view class="programListContentContainer" wx:for="{{chapterItem.idAndProgram}}" wx:for-item="idAndProgramItem" wx:for-index='idAndProgramIndex' wx:key="idAndProgramIndex">
-						<view class="idContainerBg" style="background-image: url('{{idAndProgramItem.src}}'); height: {{chapterIndex===1 && idAndProgramIndex===0? '50' : '39'}}px;">
+						<view class="idContainerBg" style="background-image: url('{{idAndProgramItem.src}}'); ">
 							<view class="textContainer">
-								<view class="performanceName">{{idAndProgramItem.performanceName}}</view>
+								<view class="performanceName performanceName{{chapterIndex}}{{idAndProgramIndex}}">{{idAndProgramItem.performanceName}}</view>
 								<view class="performerContainer" wx:for="{{idAndProgramItem.performer}}" wx:for-item="performerItem" wx:key="performerIndex">
 									<view class="performer">{{performerItem.text}}</view>
 								</view>

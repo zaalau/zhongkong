@@ -56,7 +56,7 @@
 	height: 180rpx;
 	position: absolute;
 	bottom: 55rpx;
-	right: -20rpx;
+	right: 0rpx;
 }
 .processText {
 	position: relative;
@@ -98,7 +98,7 @@
 	bottom: 0rpx;
 	right: 0; 
 }
-.processContainer {
+.processContainer { 
 	padding: 30rpx 8rpx;
 	box-sizing: border-box;
 	/* height: 100%; */
@@ -247,16 +247,17 @@
 
 }
 .topBtn {
-	width: 130rpx;
-	height: 130rpx;
+	width: 90rpx;
+	height: 90rpx;
 	/* background-color: rgba(0, 0, 0, 0.432); */
 	border-radius: 1000rpx;
 	position: fixed;
-	right: 50rpx;
-	bottom: 60rpx;
+	right: 30rpx;
+	bottom: 30rpx;
 }
 .conferenceBackgroundContainer {
-	background-size: 100% 100%;
+
+	background-size: 750rpx 100%;
 	padding: 35rpx 40rpx 25rpx;
 	box-sizing: border-box;
 	color: #2b467c;
@@ -299,7 +300,7 @@
 }
 .programListContainer {
 	background-size: 100% 100%;
-	/* height: 2079rpx; */
+  /* height: 2079rpx; */
 	margin-right: 0rpx;
 	margin-left: -8rpx;
 	padding: 130rpx 80rpx 50rpx;
@@ -339,6 +340,22 @@
 }
 .performanceName {
 	font-family: "粗";
+}
+.performanceName00{
+  font-family: "粗";
+  margin-bottom: 2rpx;
+}
+.performanceName11{
+  font-family: "粗";
+  margin-bottom: 10rpx;
+}
+.performanceName22{
+  font-family: "粗";
+  margin-bottom: 10rpx;
+}
+.performanceName23{
+  font-family: "粗";
+  margin-bottom: 10rpx;
 }
 .performerContainer {
 	font-family: "细";

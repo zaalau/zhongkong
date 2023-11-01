@@ -26,9 +26,9 @@
 		<image class="handPic" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG339.jpg?sign=758a3992ed2497385a496d06e21f0a2e&t=1697531604"></image>
 		<image class="handTip" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG340.jpg?sign=f5d0b2305c3a2b45f2cccecd66a3165d&t=1697531975" mode=""/>
 		<view class="seatAllContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG337.jpg?sign=1d93d12cf4c1a13419775f5fc2add27d&t=1697532151');">
-			<view class="seatAllPic" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG338.jpg?sign=73b0214819d222a13eb62430ad831e69&t=1697532285');">
+			<view class="seatAllPic" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B0%8F%E8%8E%B2%E8%8A%B1%E5%BA%A7%E4%BD%8D.jpg?sign=0a3b69923ed267ed462553721d60b975&t=1698813612');">
 			</view>
 		</view>
-		<view class="myTicket" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG349.jpg?sign=2d5bdd0a2e03687a4bd472b8f894db4f&t=1697534644');">我的电子门票</view>
+		<!-- <view class="myTicket" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG349.jpg?sign=2d5bdd0a2e03687a4bd472b8f894db4f&t=1697534644');">我的电子门票</view> -->
 	</view>
 </view>

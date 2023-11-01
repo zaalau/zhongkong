@@ -39,10 +39,10 @@
 	left: 0;
 }
 .tabLogo {
-	width: 125rpx;
-	height: 95rpx;
+	width: 145rpx;
+	height: 115rpx;
 	position: absolute;
-	bottom: 70rpx;
+	bottom: 60rpx;
 	left: 35rpx;
 }
 .tabLogo2 {
@@ -86,13 +86,23 @@
 	right: 0;
 }
 .flowerContainer {
-	padding: 30rpx 8rpx;
+	padding: 80rpx 0rpx;
 	box-sizing: border-box;
 	background-size: 100% 100%;
 	
 }
-
-
+.flowermap {
+  background-size: 100% 100%;
+  width: 750rpx;
+  height: 495rpx;
+  margin: 0 auto;
+}
+.bigbig {
+  background-size: 100% 100%;
+  width: 168rpx;
+  height: 58rpx;
+  margin: 0 auto;
+}
 
 .seatContainer {
 	padding: 20rpx 8rpx 0;
@@ -106,14 +116,16 @@
 	height: 165rpx;
 	position: absolute;
 	left: 0;
-	top: 0;
+  top: 0;
+  z-index: 2;
 }
 .handTip {
 	height: 43rpx;
 	width: 140rpx;
 	position: absolute;
 	left: 145rpx;
-	top: 45rpx;
+  top: 45rpx;
+  z-index: 2;
 }
 .seatAllContainer {
   background-size: 100% 100%;
@@ -122,14 +134,212 @@
 	height: 820rpx;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+  justify-content: center;
+  
 }
 .seatAllPic {
 	background-size: 100% 100%;
 	height: 690rpx;
-	width: 690rpx;
+  width: 690rpx;
+  position: relative;
 }
-.myTicket {
+.district1-0 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  height: 120rpx;
+  width: 117rpx;
+  z-index: 3;
+  top: 235rpx;
+  left: 20rpx;
+  /* border-radius: 0rpx 0 0rpx 90rpx; */
+  transform: rotate(22deg);
+}
+.district1-1 {
+  position: absolute;
+  background-color: rgba(137, 185, 46, 0);
+  height: 80rpx;
+  width: 20rpx;
+  z-index: 3;
+  top: 312rpx;
+  left: 118rpx;
+  /* border-radius: 90rpx 0rpx 0rpx 0rpx; */
+  /* transform: rotate(-16deg); */
+}
+.district1-2 {
+  position: absolute;
+  background-color: rgba(99, 14, 14, 0);
+  height: 120rpx;
+  width: 117rpx;
+  z-index: 3;
+  top: 312rpx;
+  left: 18rpx;
+  /* border-radius: 90rpx 0rpx 0rpx 0rpx; */
+  transform: rotate(-16deg);
+}
+.district2-0 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  height: 120rpx;
+  width: 117rpx;
+  z-index: 3;
+  top: 425rpx;
+  left: 50rpx;
+  transform: rotate(75deg);
+}
+.district2-1 {
+  position: absolute;
+  background-color: rgba(137, 185, 46, 0);
+  height: 80rpx;
+  width: 20rpx;
+  z-index: 3;
+  top: 442rpx;
+  left: 166rpx;
+  transform: rotate(-40deg);
+}
+.district2-2 {
+  position: absolute;
+  background-color: rgba(99, 14, 14, 0);
+  height: 120rpx;
+  width: 117rpx;
+  z-index: 3;
+  top: 488rpx;
+  left: 105rpx;
+  transform: rotate(30deg);
+}
+.district3-0 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  height: 180rpx;
+  width: 117rpx;
+  z-index: 3;
+  top: 530rpx;
+  left: 235rpx;
+  transform: rotate(118deg);
+  border-radius: 0rpx 80rpx 0rpx 0rpx;
+}
+.district3-1 {
+  position: absolute;
+  background-color: rgba(137, 185, 46, 0);
+  height: 150rpx;
+  width: 40rpx;
+  z-index: 3;
+  top: 495rpx;
+  left: 320rpx;
+  transform: rotate(90deg);
+}
+.district3-2 {
+  position: absolute;
+  background-color: rgba(99, 14, 14, 0);
+  height: 180rpx;
+  width: 117rpx;
+  z-index: 3;
+  top: 525rpx;
+  left: 340rpx;
+  transform: rotate(-120deg);
+  border-radius: 80rpx 0rpx 0rpx 0rpx;
+
+}
+.district4-0 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  height: 120rpx;
+  width: 117rpx;
+  z-index: 3;
+  top: 422rpx;
+  right: 60rpx;
+  transform: rotate(-75deg);
+}
+.district4-1 {
+  position: absolute;
+  background-color: rgba(137, 185, 46, 0);
+  height: 80rpx;
+  width: 20rpx;
+  z-index: 3;
+  top: 442rpx;
+  right: 175rpx;
+  transform: rotate(40deg);
+}
+.district4-2 {
+  position: absolute;
+  background-color: rgba(245, 126, 126, 0);
+  height: 120rpx;
+  width: 117rpx;
+  z-index: 3;
+  top: 480rpx;
+  right: 100rpx;
+  transform: rotate(-30deg);
+}
+.district5-0 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  height: 120rpx;
+  width: 117rpx;
+  z-index: 3;
+  top: 235rpx;
+  right: 30rpx;
+  /* border-radius: 0rpx 0 0rpx 90rpx; */
+  transform: rotate(-23deg);
+}
+.district5-1 {
+  position: absolute;
+  background-color: rgba(137, 185, 46, 0);
+  height: 80rpx;
+  width: 20rpx;
+  z-index: 3;
+  top: 310rpx;
+  right: 128rpx;
+  /* border-radius: 90rpx 0rpx 0rpx 0rpx; */
+  /* transform: rotate(-16deg); */
+}
+.district5-2 {
+  position: absolute;
+  background-color: rgba(99, 14, 14, 0);
+  height: 120rpx;
+  width: 117rpx;
+  z-index: 3;
+  top: 305rpx;
+  right: 28rpx;
+  /* border-radius: 90rpx 0rpx 0rpx 0rpx; */
+  transform: rotate(15deg);
+}
+.district6-0 {
+  position: absolute;
+  background-color: rgba(99, 14, 14, 0);
+  height: 200rpx;
+  width: 400rpx;
+  border-radius: 0rpx 0rpx 300rpx 300rpx;
+  top: 350rpx;
+  left: 138rpx;
+}
+.district6-1 {
+  width: 395rpx;
+  height: 60rpx;
+  background-color: rgba(99, 14, 14, 0);
+  position: absolute;
+  top: 290rpx;
+  left: 140rpx;
+  border-radius: 40rpx 40rpx 0 0rpx;
+}
+/* .district1 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.76);
+  height: 690rpx;
+  width: 680rpx;
+  z-index: 3;
+  border-radius: 500rpx;
+}
+.dd1 {
+  width: 400rpx;
+  height: 415rpx;
+  border-radius: 300rpx;
+  background-color: rgba(255, 255, 255, 0.76);
+  position: absolute;
+  left: 20%;
+  top: 20%;
+
+} */
+
+/* .myTicket {
 	background-size: 100% 100%;
 	height: 70rpx;
 	width: 400rpx;
@@ -140,7 +350,7 @@
 	color: #ffffff;
 	font-size: 43rpx;
 	font-family: "锐";
-}
+} */
 
 
 

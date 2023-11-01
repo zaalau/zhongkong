@@ -1,34 +1,52 @@
 <!--pages/map/index.wxml-->
 <view class="mapContainer" style="height: {{mapContainerHeight}}px;">
-	<view class="topBgContainer" style="height: {{topBgHeight}}px;">
-		<image class="topBg" style="height: {{topBgHeight}}px;" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG348.jpg?sign=b4acc562416701ac98cf4e87cc7d573b&t=1697533924" />
-		<view class="tabContainer">
-			<view class="flowerTab" style="color: {{flower? '#35180c' : 'rgba(53,24,12,0.6)'}}; font-size: {{flower? '60rpx' : '42rpx'}};box-shadow: {{flower? '8rpx -9rpx 10rpx #42a9f8a9' : '0rpx -9rpx 10rpx #ec6635ad inset'}}; width: {{flower? '60%' : '40%'}}; height: {{flower? '125rpx' : '80rpx' }}; " bindtap='showFlower'>
-				<image class="tabLogo" wx:if="{{flower}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG336.jpg?sign=e00a480b0d8a172a81ea073dcbb6ca02&t=1697526924">
-				</image>
-				<text class="flowerText">场馆地图</text>
-			</view>
-			<view class="seatTab" style="color: {{!flower? '#2b467c' : 'rgba(43,70,124,0.6)'}}; font-size: {{!flower? '60rpx' : '42rpx'}}; box-shadow: {{!flower? '-8rpx -9rpx 10rpx #ec6635ad' : '0rpx -9rpx 10rpx #59b5fc75 inset'}}; width: {{!flower? '60%' : '40%'}}; height: {{!flower? '125rpx' : '80rpx' }};" bindtap='showSeat'>
-				<image class="tabLogo2" wx:if="{{!flower}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG336.jpg?sign=e00a480b0d8a172a81ea073dcbb6ca02&t=1697526924">
-				</image>
-				<text class="flowerText2">座位分布</text>
-			</view>
-		</view>
-	</view>
+  <view class="topBgContainer" style="height: {{topBgHeight}}px;">
+    <image class="topBg" style="height: {{topBgHeight}}px;" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG348.jpg?sign=b4acc562416701ac98cf4e87cc7d573b&t=1697533924" />
+    <view class="tabContainer">
+      <view class="flowerTab" style="color: {{flower? '#35180c' : 'rgba(53,24,12,0.6)'}}; font-size: {{flower? '60rpx' : '42rpx'}};box-shadow: {{flower? '8rpx -9rpx 10rpx #42a9f8a9' : '0rpx -9rpx 10rpx #ec6635ad inset'}}; width: {{flower? '60%' : '40%'}}; height: {{flower? '125rpx' : '80rpx' }}; " bindtap='showFlower'>
+        <image class="tabLogo" wx:if="{{flower}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG435.jpg?sign=f5a11ab0ee0911b1e024641eb0fb9ad2&t=1698834111">
+        </image>
+        <text class="flowerText">场馆地图</text>
+      </view>
+      <view class="seatTab" style="color: {{!flower? '#2b467c' : 'rgba(43,70,124,0.6)'}}; font-size: {{!flower? '60rpx' : '42rpx'}}; box-shadow: {{!flower? '-8rpx -9rpx 10rpx #ec6635ad' : '0rpx -9rpx 10rpx #59b5fc75 inset'}}; width: {{!flower? '60%' : '40%'}}; height: {{!flower? '125rpx' : '80rpx' }};" bindtap='showSeat'>
+        <image class="tabLogo2" wx:if="{{!flower}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG336.jpg?sign=e00a480b0d8a172a81ea073dcbb6ca02&t=1697526924">
+        </image>
+        <text class="flowerText2">座位分布</text>
+      </view>
+    </view>
+  </view>
 
+  <view class="flowerContainer" style="background-image: url('{{flowerBg}}'); height: {{mapContainerHeight - topBgHeight}}px;" wx:if="{{flower}}">
+    <view class="flowermap" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG425.jpg?sign=39aa8af15df88bd1ed508707c661a216&t=1698835061" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG436.jpg?sign=60931b52f07cdd181551da3d32c0197e&t=1698834367');"></view>
+    <view class="bigbig" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG425.jpg?sign=39aa8af15df88bd1ed508707c661a216&t=1698835061" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG437.jpg?sign=2444f1bfeccee1d22ea43fc5128cc607&t=1698834714');"></view>
+  </view>
 
+  <view class="seatContainer" style="background-image: url('{{mapBg}}'); height: {{mapContainerHeight - topBgHeight}}px;" wx:if="{{!flower}}">
+    <image class="handPic" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG339.jpg?sign=758a3992ed2497385a496d06e21f0a2e&t=1697531604"></image>
+    <image class="handTip" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG340.jpg?sign=f5d0b2305c3a2b45f2cccecd66a3165d&t=1697531975" mode="" />
+    <view class="seatAllContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG337.jpg?sign=1d93d12cf4c1a13419775f5fc2add27d&t=1697532151');">
+      <view class="seatAllPic" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B0%8F%E8%8E%B2%E8%8A%B1%E5%BA%A7%E4%BD%8D.jpg?sign=0a3b69923ed267ed462553721d60b975&t=1698813612');">
 
-	<view class="flowerContainer" style="background-image: url('{{mapBg}}');" wx:if="{{flower}}">
-	许小波
-	</view>
+        <view class="district1-0" bindtap='preview' data-pic-src="{{xx[0]}}"></view>
+        <view class="district1-1" bindtap='preview' data-pic-src="{{xx[0]}}"></view>
+        <view class="district1-2" bindtap='preview' data-pic-src="{{xx[0]}}"></view>
+        <view class="district2-0" bindtap='preview' data-pic-src="{{xx[1]}}"></view>
+        <view class="district2-1" bindtap='preview' data-pic-src="{{xx[1]}}"></view>
+        <view class="district2-2" bindtap='preview' data-pic-src="{{xx[1]}}"></view>
+        <view class="district3-0" bindtap='preview' data-pic-src="{{xx[2]}}"></view>
+        <view class="district3-1" bindtap='preview' data-pic-src="{{xx[2]}}"></view>
+        <view class="district3-2" bindtap='preview' data-pic-src="{{xx[2]}}"></view>
+        <view class="district4-0" bindtap='preview' data-pic-src="{{xx[3]}}"></view>
+        <view class="district4-1" bindtap='preview' data-pic-src="{{xx[3]}}"></view>
+        <view class="district4-2" bindtap='preview' data-pic-src="{{xx[3]}}"></view>
+        <view class="district5-0" bindtap='preview' data-pic-src="{{xx[4]}}"></view>
+        <view class="district5-1" bindtap='preview' data-pic-src="{{xx[4]}}"></view>
+        <view class="district5-2" bindtap='preview' data-pic-src="{{xx[4]}}"></view>
+        <view class="district6-0" bindtap='preview' data-pic-src="{{xx[5]}}"></view>
+        <view class="district6-1" bindtap='preview' data-pic-src="{{xx[5]}}"></view>
 
-	<view class="seatContainer" style="background-image: url('{{mapBg}}'); height: {{mapContainerHeight - topBgHeight}}px;" wx:if="{{!flower}}">
-		<image class="handPic" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG339.jpg?sign=758a3992ed2497385a496d06e21f0a2e&t=1697531604"></image>
-		<image class="handTip" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG340.jpg?sign=f5d0b2305c3a2b45f2cccecd66a3165d&t=1697531975" mode=""/>
-		<view class="seatAllContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG337.jpg?sign=1d93d12cf4c1a13419775f5fc2add27d&t=1697532151');">
-			<view class="seatAllPic" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B0%8F%E8%8E%B2%E8%8A%B1%E5%BA%A7%E4%BD%8D.jpg?sign=0a3b69923ed267ed462553721d60b975&t=1698813612');">
-			</view>
-		</view>
-		<!-- <view class="myTicket" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG349.jpg?sign=2d5bdd0a2e03687a4bd472b8f894db4f&t=1697534644');">我的电子门票</view> -->
-	</view>
+      </view>
+    </view>
+    <!-- <view class="myTicket" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG349.jpg?sign=2d5bdd0a2e03687a4bd472b8f894db4f&t=1697534644');">我的电子门票</view> -->
+  </view>
 </view>

@@ -7,7 +7,16 @@ Page({
   data: {
     flower: true,
     seat: false,
-    mapBg:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG343.jpg?sign=9ffcb85793da546a10d756d2e56c062b&t=1697529280'
+    mapBg:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG343.jpg?sign=9ffcb85793da546a10d756d2e56c062b&t=1697529280',
+    flowerBg:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG438.jpg?sign=35fd592f0e3024f25eeabf92d78a9275&t=1698834049',
+    xx:[
+      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG340.jpg?sign=f5d0b2305c3a2b45f2cccecd66a3165d&t=1697531975',
+      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG18.jpg?sign=deaea5470f4877f3c3d67b079c6753f5&t=1698832629',
+      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG19.jpg?sign=bc2042fd2c79151e68652077c3102dd8&t=1698832679',
+      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG21.jpg?sign=20a6ac142d562feebc5186c0b4a86864&t=1698833056',
+      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG32.jpg?sign=0720ee72bf7e957b7d1dcffd9fd33d25&t=1698833317',
+      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG33.jpg?sign=a4d5b7fe656447ed47af1c8a2ad8a325&t=1698833893',
+    ]
   },
   showFlower() {
     wx.vibrateShort()
@@ -21,6 +30,14 @@ Page({
     this.setData({
       flower: false,
       seat: true
+    })
+  },
+  preview(e) {
+    wx.vibrateShort()
+    const picSrc = e.currentTarget.dataset.picSrc
+    wx.previewImage({
+      current: picSrc, // 当前显示图片的http链接
+      urls: [`${picSrc}`] // 需要预览的图片http链接列表
     })
   },
   /**

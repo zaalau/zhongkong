@@ -109,7 +109,7 @@
 .timeLineContainer {
 	height: 100%;
 	width: 100%;
-	margin: 0 auto 50rpx;
+	margin: 0 auto 20rpx;
 	background-size: 100% 100%;
 	padding: 40rpx 55rpx 60rpx;
 	box-sizing: border-box;

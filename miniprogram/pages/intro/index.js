@@ -15,7 +15,6 @@ Page({
         {
       type: 'timeline',
       bgsrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG332.jpg?sign=35c2440239bd4431b3a9ca5f677c5579&t=1697509466',
-      midSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG326.jpg?sign=7b407838833528729694fca19dc2477a&t=1697509540',
       firstTitleText: '动态大事记',
       secTitleBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG327.jpg?sign=dd9fce019223084a821f028905b895f8&t=1697509982',
       secText: '中控历程：从跟跑到并跑领跑',
@@ -149,34 +148,34 @@ Page({
       ],
 
     },
-    {
-        type:'media',
-        bgSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG237.jpg?sign=cb969372e04e7ea2f3469cab5bc09f5c&t=1697517673',
-        midSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG233.jpg?sign=3328df78830a3585e65dcc2c7657d0dc&t=1697517695',
-        firstTitleText:'三十周年视频',
-        mediaContent: [{
-            textUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG234.jpg?sign=17c8ad72af65c64ff26e111dbb6c8b50&t=1697517740',
-            text:'纪录片',
-            separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG329.jpg?sign=71048d9f13d0d4e5105f716c6cff218e&t=1697510440',
-            vedio: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG98.jpg?sign=963b195401660c96dca2a18f267333bf&t=1697028568',
-            width: 82
-          },
-          {
-            textUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG235.jpg?sign=f44204ca47a56fc341e8fe1eaf7b9f89&t=1697517754',
-            text:'祝福视频',
-            separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG329.jpg?sign=71048d9f13d0d4e5105f716c6cff218e&t=1697510440',
-            vedio: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG96.jpg?sign=279274d9c6a8abaac190d2032d423a93&t=1697028642',
-            width: 95
-          },
-          {
-            textUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG236.jpg?sign=14c265a44718c8206745416d6bacad00&t=1697517765',
-            text:'主题曲MV',
-            separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG329.jpg?sign=71048d9f13d0d4e5105f716c6cff218e&t=1697510440',
-            vedio: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG97.jpg?sign=4948669c370edcc042cee9fbaf88b82e&t=1697028626',
-            width: 110
-          },
-        ],
-    }
+    // {
+    //     type:'media',
+    //     bgSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG237.jpg?sign=cb969372e04e7ea2f3469cab5bc09f5c&t=1697517673',
+    //     midSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG233.jpg?sign=3328df78830a3585e65dcc2c7657d0dc&t=1697517695',
+    //     firstTitleText:'三十周年视频',
+    //     mediaContent: [{
+    //         textUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG234.jpg?sign=17c8ad72af65c64ff26e111dbb6c8b50&t=1697517740',
+    //         text:'纪录片',
+    //         separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG329.jpg?sign=71048d9f13d0d4e5105f716c6cff218e&t=1697510440',
+    //         vedio: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG98.jpg?sign=963b195401660c96dca2a18f267333bf&t=1697028568',
+    //         width: 82
+    //       },
+    //       {
+    //         textUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG235.jpg?sign=f44204ca47a56fc341e8fe1eaf7b9f89&t=1697517754',
+    //         text:'祝福视频',
+    //         separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG329.jpg?sign=71048d9f13d0d4e5105f716c6cff218e&t=1697510440',
+    //         vedio: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG96.jpg?sign=279274d9c6a8abaac190d2032d423a93&t=1697028642',
+    //         width: 95
+    //       },
+    //       {
+    //         textUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG236.jpg?sign=14c265a44718c8206745416d6bacad00&t=1697517765',
+    //         text:'主题曲MV',
+    //         separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG329.jpg?sign=71048d9f13d0d4e5105f716c6cff218e&t=1697510440',
+    //         vedio: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG97.jpg?sign=4948669c370edcc042cee9fbaf88b82e&t=1697028626',
+    //         width: 110
+    //       },
+    //     ],
+    // }
 ],
 
     

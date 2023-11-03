@@ -22,7 +22,7 @@
 			<view class="timeLineContainer" wx:if="{{item.type==='timeline'}}" style="background-image: url('{{item.bgsrc}}');">
 				<view class="firstTitle">
 					<image class="leftImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG325.jpg?sign=26d40fca77788eaa86dc2a068531951d&t=1697509555" mode="" />
-					<image class="midImg" src="{{item.midSrc}}" mode="" />
+					<!-- <image class="midImg" src="{{item.midSrc}}" mode="" /> -->
 					<view class="firstTitleText">{{item.firstTitleText}}</view>
 					<image class="rightImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG325.jpg?sign=26d40fca77788eaa86dc2a068531951d&t=1697509555" mode="" />
 				</view>
@@ -42,7 +42,7 @@
 		</view> -->
 
 			<!-- 渲染视频类型 第一层白色地图url、类型、 -->
-			<view class="mediaContainer" wx:if="{{item.type==='media'}}" style="background-image: url('{{item.bgSrc}}');">
+			<!-- <view class="mediaContainer" wx:if="{{item.type==='media'}}" style="background-image: url('{{item.bgSrc}}');">
 				<view class="firstTitle">
 					<image class="leftImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG325.jpg?sign=26d40fca77788eaa86dc2a068531951d&t=1697509555" mode="" />
 					<image class="midImg" src="{{item.midSrc}}" mode="" />
@@ -57,7 +57,7 @@
 					</view>
 
 				</view>
-			</view>
+			</view> -->
 		</view>
 	</view>
 

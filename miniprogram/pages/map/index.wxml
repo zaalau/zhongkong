@@ -27,23 +27,23 @@
     <view class="seatAllContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG337.jpg?sign=1d93d12cf4c1a13419775f5fc2add27d&t=1697532151');">
       <view class="seatAllPic" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/huahua.webp?sign=e928ef33b01a7de7b76e816cfca8938c&t=1698996512');">
 
-        <view class="district1-0" bindtap='preview' data-pic-src="{{xx[0]}}"></view>
-        <view class="district1-1" bindtap='preview' data-pic-src="{{xx[0]}}"></view>
-        <view class="district1-2" bindtap='preview' data-pic-src="{{xx[0]}}"></view>
-        <view class="district2-0" bindtap='preview' data-pic-src="{{xx[1]}}"></view>
-        <view class="district2-1" bindtap='preview' data-pic-src="{{xx[1]}}"></view>
-        <view class="district2-2" bindtap='preview' data-pic-src="{{xx[1]}}"></view>
-        <view class="district3-0" bindtap='preview' data-pic-src="{{xx[2]}}"></view>
-        <view class="district3-1" bindtap='preview' data-pic-src="{{xx[2]}}"></view>
-        <view class="district3-2" bindtap='preview' data-pic-src="{{xx[2]}}"></view>
-        <view class="district4-0" bindtap='preview' data-pic-src="{{xx[3]}}"></view>
-        <view class="district4-1" bindtap='preview' data-pic-src="{{xx[3]}}"></view>
-        <view class="district4-2" bindtap='preview' data-pic-src="{{xx[3]}}"></view>
-        <view class="district5-0" bindtap='preview' data-pic-src="{{xx[4]}}"></view>
-        <view class="district5-1" bindtap='preview' data-pic-src="{{xx[4]}}"></view>
-        <view class="district5-2" bindtap='preview' data-pic-src="{{xx[4]}}"></view>
-        <view class="district6-0" bindtap='preview' data-pic-src="{{xx[5]}}"></view>
-        <view class="district6-1" bindtap='preview' data-pic-src="{{xx[5]}}"></view>
+        <view class="district1-0" bindtap='preview2' data-pic-src="{{xx[0]}}"></view>
+        <view class="district1-1" bindtap='preview2' data-pic-src="{{xx[0]}}"></view>
+        <view class="district1-2" bindtap='preview2' data-pic-src="{{xx[0]}}"></view>
+        <view class="district2-0" bindtap='preview2' data-pic-src="{{xx[1]}}"></view>
+        <view class="district2-1" bindtap='preview2' data-pic-src="{{xx[1]}}"></view>
+        <view class="district2-2" bindtap='preview2' data-pic-src="{{xx[1]}}"></view>
+        <view class="district3-0" bindtap='preview2' data-pic-src="{{xx[2]}}"></view>
+        <view class="district3-1" bindtap='preview2' data-pic-src="{{xx[2]}}"></view>
+        <view class="district3-2" bindtap='preview2' data-pic-src="{{xx[2]}}"></view>
+        <view class="district4-0" bindtap='preview2' data-pic-src="{{xx[3]}}"></view>
+        <view class="district4-1" bindtap='preview2' data-pic-src="{{xx[3]}}"></view>
+        <view class="district4-2" bindtap='preview2' data-pic-src="{{xx[3]}}"></view>
+        <view class="district5-0" bindtap='preview2' data-pic-src="{{xx[4]}}"></view>
+        <view class="district5-1" bindtap='preview2' data-pic-src="{{xx[4]}}"></view>
+        <view class="district5-2" bindtap='preview2' data-pic-src="{{xx[4]}}"></view>
+        <!-- <view class="district6-0" bindtap='preview' data-pic-src="{{xx[5]}}"></view>
+        <view class="district6-1" bindtap='preview' data-pic-src="{{xx[5]}}"></view> -->
 
       </view>
     </view>

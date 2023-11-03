@@ -10,12 +10,12 @@ Page({
     mapBg:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG343.jpg?sign=9ffcb85793da546a10d756d2e56c062b&t=1697529280',
     flowerBg:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG438.jpg?sign=35fd592f0e3024f25eeabf92d78a9275&t=1698834049',
     xx:[
-      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG340.jpg?sign=f5d0b2305c3a2b45f2cccecd66a3165d&t=1697531975',
-      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG18.jpg?sign=deaea5470f4877f3c3d67b079c6753f5&t=1698832629',
-      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG19.jpg?sign=bc2042fd2c79151e68652077c3102dd8&t=1698832679',
-      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG21.jpg?sign=20a6ac142d562feebc5186c0b4a86864&t=1698833056',
-      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG32.jpg?sign=0720ee72bf7e957b7d1dcffd9fd33d25&t=1698833317',
-      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG33.jpg?sign=a4d5b7fe656447ed47af1c8a2ad8a325&t=1698833893',
+      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/1%20(1).webp?sign=661f5a402306ddcde2b4558a3e6898d2&t=1699002303',
+      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/2%20(1).webp?sign=cf99c0b5288aeabd073ddd3645f6d637&t=1699002313',
+      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/3%20(1).webp?sign=baf917db9406475d2f9875030c7e8fd8&t=1699002323',
+      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/4%20(1).webp?sign=b119f51340a06a7c61357c06ad099955&t=1699002334',
+      'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/5%20(1).webp?sign=a68e2622e2d7356fb542ced925f960e1&t=1699002346',
+      
     ]
   },
   showFlower() {
@@ -38,6 +38,14 @@ Page({
     wx.previewImage({
       current: picSrc, // 当前显示图片的http链接
       urls: [`${picSrc}`] // 需要预览的图片http链接列表
+    })
+  },
+  preview2(e) {
+    wx.vibrateShort()
+    const picSrc = e.currentTarget.dataset.picSrc
+    wx.previewImage({
+      current: picSrc, // 当前显示图片的http链接
+      urls: this.data.xx // 需要预览的图片http链接列表
     })
   },
   /**

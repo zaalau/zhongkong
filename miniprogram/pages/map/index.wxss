@@ -266,7 +266,7 @@
   width: 117rpx;
   z-index: 3;
   top: 480rpx;
-  right: 100rpx;
+  right: 105rpx;
   transform: rotate(-30deg);
 }
 .district5-0 {
@@ -275,8 +275,8 @@
   height: 120rpx;
   width: 117rpx;
   z-index: 3;
-  top: 235rpx;
-  right: 30rpx;
+  top: 230rpx;
+  right: 35rpx;
   /* border-radius: 0rpx 0 0rpx 90rpx; */
   transform: rotate(-23deg);
 }
@@ -286,7 +286,7 @@
   height: 80rpx;
   width: 20rpx;
   z-index: 3;
-  top: 310rpx;
+  top: 305rpx;
   right: 128rpx;
   /* border-radius: 90rpx 0rpx 0rpx 0rpx; */
   /* transform: rotate(-16deg); */
@@ -313,7 +313,7 @@
 }
 .district6-1 {
   width: 395rpx;
-  height: 60rpx;
+  height: 65rpx;
   background-color: rgba(99, 14, 14, 0);
   position: absolute;
   top: 290rpx;

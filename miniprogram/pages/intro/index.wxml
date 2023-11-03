@@ -1,15 +1,15 @@
 <!--pages/intro/index.wxml-->
 <view class="introContainer" style="min-height: {{introContainerHeight}}px;">
 	<view class="topBgContainer" style="height: {{topBgHeight}}px;">
-		<image class="topBg" style="height: {{topBgHeight}}px;" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG117.jpg?sign=1738c6d445a24c345c4d7b9e0000eb15&t=1697085209" />
+		<image class="topBg" style="height: {{topBgHeight}}px;" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG117.webp?sign=4bf85f8729dfc1726ec04ea0b8c5acb4&t=1698919467" />
 		<view class="tabContainer">
 			<view class="processTab" style="color: {{process? '#35180c' : 'rgba(53,24,12,0.6)'}}; font-size: {{process? '53rpx' : '35rpx'}};box-shadow: {{process? '8rpx -9rpx 10rpx #66028e60' : '0rpx -9rpx 10rpx #2b467c60 inset'}}; width: {{process? '60%' : '40%'}}; height: {{process? '125rpx' : '80rpx' }}; " bindtap='showProcess'>
-				<image class="tabLogo" wx:if="{{process}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG119.jpg?sign=33afa5935f118eafbcf497f6cdabff4a&t=1697085988">
+				<image class="tabLogo" wx:if="{{process}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG119.webp?sign=ef492fc05dfa1e948bd0372080811e2e&t=1698919775">
 				</image>
 				<text class="processText">我们的三十周年</text>
 			</view>
 			<view class="thirtyTab" style="color: {{!process? '#2b467c' : 'rgba(43,70,124,0.6)'}}; font-size: {{!process? '53rpx' : '35rpx'}}; box-shadow: {{!process? '-8rpx -9rpx 10rpx #2b467c60' : '0rpx -9rpx 10rpx #66028e60 inset'}}; width: {{!process? '60%' : '40%'}}; height: {{!process? '125rpx' : '80rpx' }};" bindtap='showThirty'>
-				<image class="tabLogo2" wx:if="{{!process}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG120.jpg?sign=bfd9a51f9afdaf1eef86b51b7cac5b44&t=1697092012">
+				<image class="tabLogo2" wx:if="{{!process}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG120%20.webp?sign=3a3a8776a9ae9c8e70c1f31192f203f7&t=1698920059">
 				</image>
 				<text class="processText2">活动流程</text>
 			</view>

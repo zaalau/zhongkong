@@ -9,7 +9,7 @@ Page({
       wordLimit:30,
       ifPic:false,
       ifText:false,
-      picSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG131.jpg?sign=c7c405ca6028221b80a32b5120806332&t=1698331075'
+      picSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG131.webp?sign=db56f06175f98b151fd0425658fbde9f&t=1698920450'
     },
 
     /**
@@ -29,7 +29,7 @@ Page({
               this.setData({
                 pic: res.tempFilePath,
                 // pic: res.tempFiles[0].tempFilePath,
-                picSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG133.jpg?sign=279b08ceb464354d2c7bea7e08af5fa8&t=1698332087',
+                picSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG133.webp?sign=926d360ddc5050af1433c39a879c8eb9&t=1698920818',
                 ifPic:true
               })
             }

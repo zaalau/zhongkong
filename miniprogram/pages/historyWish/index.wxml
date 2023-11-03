@@ -1,5 +1,5 @@
 <!--pages/historyWish/index.wxml-->
-<view class="historyWishContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG271.jpg?sign=4386879cf6ed8fad2d771c9ae1a57bd7&t=1698395762'); height: {{historyWishContainerHeight}}px;">
+<view class="historyWishContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/%E5%8E%86%E5%8F%B2%E5%BF%83%E6%84%BF.webp?sign=588fe0ebf0e5bfe60fad3a8adca69dac&t=1698908963'); height: {{historyWishContainerHeight}}px;">
   <view class="historyWishDataContainer">
     <!-- <view class="content" style="background-image: url('http://tmp/y0nEGRc52k9x039c97b86a2ffe4c281206178132f406.png');"></view> -->
     <view class="content" bindtap='preview'>

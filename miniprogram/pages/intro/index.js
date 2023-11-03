@@ -9,7 +9,7 @@ Page({
     thirty:  false,
     introContainerHeight: '',
     processBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG331.jpg?sign=994d3f84189851b3e4b3aabe961d52e7&t=1697509008',
-    thirtyBg:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG265.jpg?sign=7afdccccbc2084de07993c7ca5da0499&t=1697518197',
+    thirtyBg:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG265-_1_.webp?sign=645c7e81dc892bcf43a697ecea52ba0a&t=1698912959',
 
     ourThirty: [
         {

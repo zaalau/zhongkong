@@ -23,6 +23,7 @@ Page({
             fonts: [{ text: '开始\n抽奖', top: '-20px' }]
           },
         ],
+        
     },
     start () {
       wx.vibrateShort()
@@ -44,11 +45,18 @@ Page({
         console.log(event)
       },
   
+
+
+    
+  
+ 
+ 
+
+
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
     },
 
     /**

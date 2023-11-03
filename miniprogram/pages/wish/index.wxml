@@ -6,7 +6,7 @@
 </view> -->
 
 <view class="wishContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG380.jpg?sign=ee80f67b31c1ab948243117bc84d330e&t=1697622895');  min-height: {{wishContainerHeight}}px;">
-  <view class="wishTop" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG381.jpg?sign=9205bbef0087343d0e6239d7f62900f5&t=1697622908');"></view>
+  <view class="wishTop" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG381-_1_-_1_.webp?sign=4216f468ad459f9b6090a8f0ff35d8f6&t=1698914828');"></view>
   <view class="toDraw" bindtap='toDraw' style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG382.jpg?sign=dda0cb449307c57f45c44ca3b9602715&t=1697622926');"></view>
   <view class="addPic" bindtap='addPic' style="background-image: url({{picSrc}});"></view>
   <textarea class="addText" value="{{content}}" placeholder="请输入祝福语..." maxlength="{{wordLimit}}" bindinput="addText" type="text">

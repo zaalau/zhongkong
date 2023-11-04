@@ -16,7 +16,7 @@
     <view class="tips">(兑奖规则将于推文公布，记得关注哦～)</view>
   </view>
   <view class="giftContainer" wx:if="{{igotgift==='yes'}}"  style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/liwuheidi.webp?sign=fee2ad8e960b0c9297df3794962f04fe&t=1699088315'); ">
-    <view class="giftText" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/liwu.webp?sign=10a13449bbc2fd4377db10f56d813d41&t=1699088330');">{{gift}}</view>
+    <view class="giftText" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/liwu.webp?sign=10a13449bbc2fd4377db10f56d813d41&t=1699088330');">{{user.gift}}</view>
   </view>
 
   <view class="workNumberContainer" wx:if="{{ifShowInput}}" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/liwuheidi.webp?sign=fee2ad8e960b0c9297df3794962f04fe&t=1699088315');">

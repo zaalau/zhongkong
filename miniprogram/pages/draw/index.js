@@ -8,7 +8,7 @@ Page({
     chance: 1,
     igotgift: 'none',
     drawStatus: 'static',
-    gift: '网易云音乐会员',
+    gift: '',
     ifShowInput: false,
     workNumber: '',
     user: {
@@ -16,7 +16,68 @@ Page({
       openid: '',
       workNumber: '',
       gift: '',
-    }
+    },
+    prizes: [{
+        gift: '100元京东卡',
+        quantity: 50
+      },
+      {
+        gift: 'kfc心意卡',
+        quantity: 100
+      },
+      {
+        gift: '必胜客心意卡',
+        quantity: 100
+      },
+      {
+        gift: 'pop mart盲盒',
+        quantity: 100
+      },
+      {
+        gift: '喜茶券',
+        quantity: 100
+      },
+      {
+        gift: '咖啡券',
+        quantity: 50
+      },
+      {
+        gift: '腾讯视频会员',
+        quantity: 100
+      },
+      {
+        gift: '网易云音乐会员',
+        quantity: 100
+      },
+      {
+        gift: '按摩锤',
+        quantity: 100
+      },
+      {
+        gift: '厨房纸',
+        quantity: 150
+      },
+      {
+        gift: '卷纸',
+        quantity: 150
+      },
+      {
+        gift: '抽纸',
+        quantity: 100
+      },
+      {
+        gift: '洗脸巾一包',
+        quantity: 200
+      },
+      {
+        gift: '三十周年周边',
+        quantity: 100
+      },
+      {
+        gift: '谢谢惠顾',
+        quantity: 8500
+      },
+    ]
   },
 
 
@@ -24,6 +85,42 @@ Page({
 
 
 
+
+  drawPrize() {
+    // 计算总奖品数量
+    let totalQuantity = 0;
+    let prizes = this.data.prizes
+    prizes.forEach(prize => {
+      totalQuantity += prize.quantity;
+    });
+
+    // 生成一个随机数，范围在0到总奖品数量之间
+    const randomIndex = Math.floor(Math.random() * totalQuantity);
+
+    // 根据随机数确定抽中的奖品
+    let currentQuantity = 0;
+    
+    for (const prize of prizes) {
+      currentQuantity += prize.quantity;
+      if (randomIndex < currentQuantity) {
+        // 抽中了这个奖品
+        // console.log(`恭喜您抽中了 ${prize.name}`);
+        const user = this.data.user
+        user.gift = prize.gift
+        this.setData({
+          user
+        })
+
+        // 减少奖品数量
+        prize.quantity -= 1;
+        break;
+      }
+    }
+    this.setData({
+      prizes
+    })
+    console.log(prizes)
+  },
 
   draw() {
     //如果抽奖机处于静态(从未抽奖过)
@@ -46,6 +143,7 @@ Page({
             ifShowInput: true
           })
         } else {
+          this.drawPrize()
           //开始抽奖，动效播放、抽奖机状态改为抽奖中、减少抽奖次数
           var videoplay = wx.createVideoContext('video')
           this.setData({
@@ -102,7 +200,7 @@ Page({
     if (workNumber != '') {
       wx.vibrateShort()
       user.workNumber = workNumber
-      user.gift = gift
+      
       this.setData({
         user,
         ifShowInput: false
@@ -112,7 +210,7 @@ Page({
         title: '绑定成功',
         duration: 1000
       })
-    }else {
+    } else {
       wx.vibrateLong()
       wx.showToast({
         icon: "error",
@@ -135,6 +233,7 @@ Page({
         })
       }
     })
+    // console.log(Math.floor(Math.random() * (1 - 15)) + 15)
   },
 
   /**

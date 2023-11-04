@@ -75,7 +75,7 @@ Page({
       },
       {
         gift: '谢谢惠顾',
-        quantity: 8500
+        quantity: 85
       },
     ]
   },

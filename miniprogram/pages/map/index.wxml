@@ -21,7 +21,7 @@
     <view class="bigbig" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/%E5%9C%B0%E5%9B%BE.webp?sign=020d81d06ce169bf31459c155527d669&t=1698990179" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG437.jpg?sign=2444f1bfeccee1d22ea43fc5128cc607&t=1698834714');"></view>
   </view>
 
-  <view class="seatContainer" style="background-image: url('{{mapBg}}'); height: {{mapContainerHeight - topBgHeight}}px;" wx:if="{{!flower}}">
+  <view class="seatContainer" style="background-image: url('{{mapBg}}'); min-height: {{mapContainerHeight - topBgHeight}}px;" wx:if="{{!flower}}">
     <image class="handPic" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG339.jpg?sign=758a3992ed2497385a496d06e21f0a2e&t=1697531604"></image>
     <image class="handTip" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG340.jpg?sign=f5d0b2305c3a2b45f2cccecd66a3165d&t=1697531975" mode="" />
     <view class="seatAllContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG337.jpg?sign=1d93d12cf4c1a13419775f5fc2add27d&t=1697532151');">

@@ -1,13 +1,15 @@
 <!--pages/homee/index.wxml-->
-<view class="homeContainer" style="min-height: {{homeContainerHeight}}px;">
+<view class="homeContainer" style="min-height: {{homeContainerHeight}}px; background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/zhudaohang.webp?sign=445c9c75fa6b62883161604d6effb397&t=1699072145');">
  
- <view class="introContainer" bindtap='toPageIntro'></view> 
- <view class="mapContainer" bindtap='toPageMap'></view>
- <view class="trafficContainer" bindtap='toPageTraffic'></view>
+  <view class="introContainer" bindtap='toPageIntro' style="top:{{200/ratio}}px;left:{{270/ratio}}px"></view> 
 
- <view class="gameContainer" bindtap='toPageGame'></view>
- <view class="liveContainer" bindtap='toPageLive'>
-  
- </view>
+  <view class="mapContainer" bindtap='toPageMap' style="top:{{850/ratio}}px;left:{{20/ratio}}px"></view>
+
+  <view class="trafficContainer" bindtap='toPageTraffic' style="top:{{560/ratio}}px;left:0px"></view>
+
+  <view class="gameContainer" bindtap='toPageGame' style="right:{{170/ratio}}px;bottom:{{105/ratio}}px"></view>
+  <view class="liveContainer" bindtap='toPageLive' style="top:{{550/ratio}}px;right:0px">
+    
+  </view>
  
 </view>

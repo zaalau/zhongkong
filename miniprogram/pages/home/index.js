@@ -70,6 +70,7 @@ Page({
       success: res => {
         this.setData({
           homeContainerHeight: res.windowHeight,
+          ratio:750/res.windowWidth
         })
       }
     })

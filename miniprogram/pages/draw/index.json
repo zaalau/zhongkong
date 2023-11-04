@@ -1,7 +1,3 @@
 {
-    "usingComponents": {
-      "lucky-wheel": "/miniprogram_npm/@lucky-canvas/mini/lucky-wheel/index"
-    },
-      "navigationBarTitleText": "抽奖"
-  }
-  
+  "usingComponents": {}
+}

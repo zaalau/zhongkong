@@ -1,33 +1,19 @@
 /* pages/homee/index.wxss */
 .homeContainer {
-	width: 750rpx;
-	height: 1448rpx;
-	/* background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG99.jpg?sign=943593667e67e4a2e49f35f264554071&t=1696573816'); */
-	/* background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG112.jpg?sign=9301b7e0e501ecf7c4ad40022bbb96cd&t=1696585013'); */
-	background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG223-_1_-_1_.webp?sign=7aeb5c4b687494917efcd9df0edf0a33&t=1698911926');
+  width: 750rpx;
 	background-size: 100% 100%;
 	background-position: center;
-	/* background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center; */
-	/* display: flex;
-	align-items: center;
-	justify-content: center; */
 	position: relative;
 
 }
-
-
-
-
 
 .introContainer {
 	background-color: rgba(255, 255, 0, 0);
 	width: 380rpx;
 	height: 300rpx;
 	position: absolute;
-	left: 270rpx;
-	top: 200rpx;
+	/* left: 270rpx;
+	top: 200rpx; */
 }
 
 .liveContainer {
@@ -35,8 +21,8 @@
 	width: 400rpx;
 	height: 300rpx;
 	position: absolute;
-	right: 0;
-	top: 550rpx;
+	/* right: 0;
+	top: 550rpx; */
 }
 
 .liveNav {
@@ -49,16 +35,16 @@
 	width: 380rpx;
 	height: 200rpx;
 	position: absolute;
-	left: 20rpx;
-	top: 850rpx;
+	/* left: 20rpx;
+	top: 850rpx; */
 }
 .trafficContainer {
 	background-color: rgba(37, 71, 224, 0);
 	width: 350rpx;
 	height: 160rpx;
 	position: absolute;
-	left: 0;
-	top: 560rpx;
+	/* left: 0;
+	top: 560rpx; */
 }
 
 .gameContainer {
@@ -66,7 +52,7 @@
 	width: 320rpx;
 	height: 300rpx;
 	position: absolute;
-	right: 170rpx;
-	top: 1050rpx;
+	/* right: 170rpx;
+	bottom: 105rpx; */
 	
 }

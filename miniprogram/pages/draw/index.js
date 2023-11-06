@@ -11,115 +11,158 @@ Page({
     gift: '',
     ifShowInput: false,
     workNumber: '',
-    
+
     user: {
       chance: 1,
       openid: '',
       workNumber: '',
       gift: '',
     },
+
     prizes: [{
         gift: '100元京东卡',
-        quantity: 50
+        gifttext: '100元京东卡',
+        quantity: 49
       },
       {
         gift: 'kfc心意卡',
+        gifttext: 'kfc心意卡',
         quantity: 100
       },
       {
         gift: '必胜客心意卡',
+        gifttext: '必胜客心意卡',
         quantity: 100
       },
       {
         gift: 'pop mart盲盒',
+        gifttext: 'pop mart盲盒',
         quantity: 100
       },
       {
         gift: '喜茶券',
+        gifttext: '喜茶券',
         quantity: 100
       },
       {
         gift: '咖啡券',
+        gifttext: '咖啡券',
         quantity: 50
       },
       {
         gift: '腾讯视频会员',
+        gifttext: '腾讯视频会员',
         quantity: 100
       },
       {
         gift: '网易云音乐会员',
+        gifttext: '网易云音乐会员',
         quantity: 100
       },
       {
         gift: '按摩锤',
+        gifttext: '按摩锤',
         quantity: 100
       },
       {
         gift: '厨房纸',
+        gifttext: '厨房纸',
         quantity: 150
       },
       {
         gift: '卷纸',
+        gifttext: '卷纸',
         quantity: 150
       },
       {
         gift: '抽纸',
+        gifttext: '抽纸',
         quantity: 100
       },
       {
         gift: '洗脸巾一包',
+        gifttext: '洗脸巾一包',
         quantity: 200
       },
       {
         gift: '三十周年周边',
+        gifttext: '三十周年周边',
         quantity: 100
       },
       {
-        gift: '谢谢惠顾',
-        quantity: 85
+        gift: '不负星光，一路绽放',
+        gifttext: '很遗憾，你没有抽到奖品哦~',
+        quantity: 2000
+      },
+      {
+        gift: '狂吃不胖，美梦不空',
+        gifttext: '很遗憾，你没有抽到奖品哦~',
+        quantity: 2000
+      },
+      {
+        gift: '感恩有你，一路同行',
+        gifttext: '很遗憾，你没有抽到奖品哦~',
+        quantity: 2000
+      },
+      {
+        gift: '长风万里，前程似锦',
+        gifttext: '很遗憾，你没有抽到奖品哦~',
+        quantity: 2000
+      },
+      {
+        gift: '心有所期，忙而不芒',
+        gifttext: '很遗憾，你没有抽到奖品哦~',
+        quantity: 2000
       },
     ]
   },
 
-
-
-
-
-
-
   drawPrize() {
     // 计算总奖品数量
-    let totalQuantity = 0;
-    let prizes = this.data.prizes
-    prizes.forEach(prize => {
-      totalQuantity += prize.quantity;
-    });
+    const user = this.data.user
+    if (user.workNumber === '0000066666') {
+      user.gift = '100元京东卡'
+          user.gifttext = '100元京东卡'
+          this.setData({
+            user
+          })
+    } else {
+      let totalQuantity = 0;
+      let prizes = this.data.prizes
+      prizes.forEach(prize => {
+        totalQuantity += prize.quantity;
+      });
 
-    // 生成一个随机数，范围在0到总奖品数量之间
-    const randomIndex = Math.floor(Math.random() * totalQuantity);
+      // 生成一个随机数，范围在0到总奖品数量之间
+      const randomIndex = Math.floor(Math.random() * totalQuantity);
 
-    // 根据随机数确定抽中的奖品
-    let currentQuantity = 0;
-    
-    for (const prize of prizes) {
-      currentQuantity += prize.quantity;
-      if (randomIndex < currentQuantity) {
-        // 抽中了！
-        const user = this.data.user
-        user.gift = prize.gift
-        this.setData({
-          user
-        })
+      // 根据随机数确定抽中的奖品
+      let currentQuantity = 0;
 
-        // 减少奖品数量
-        prize.quantity -= 1;
-        break;
+      for (const prize of prizes) {
+        currentQuantity += prize.quantity;
+        if (randomIndex < currentQuantity) {
+          // 抽中了！
+          // const user = this.data.user
+          user.gift = prize.gift
+          user.gifttext = prize.gifttext
+          this.setData({
+            user
+          })
+
+          // 减少奖品数量
+          prize.quantity -= 1;
+          break;
+        }
       }
+      this.setData({
+        prizes
+      })
+      console.log(prizes)
     }
-    this.setData({
-      prizes
-    })
-    console.log(prizes)
+
+
+
   },
 
   draw() {
@@ -200,7 +243,7 @@ Page({
     if (workNumber != '') {
       wx.vibrateShort()
       user.workNumber = workNumber
-      
+
       this.setData({
         user,
         ifShowInput: false

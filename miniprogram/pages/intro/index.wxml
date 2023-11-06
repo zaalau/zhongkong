@@ -105,5 +105,5 @@
 		</view>
 	</view>
 
-	<image class="topBtn" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG250.jpg?sign=3d92c65d64f8e29dcd87985bcce90f35&t=1697276230" bindtap='toTheTop' wx:if="{{ifBottom}}"></image>
+	<image class="topBtn" src="{{process? 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/purpletop.webp?sign=5e2db61ecab9846ee3bbfc35197c0aa2&t=1699247041':'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/bluetop.webp?sign=e28df0c6488b972063b885c9d06b3b2f&t=1699247062'}}" bindtap='toTheTop' wx:if="{{ifBottom}}"></image>
 </view>

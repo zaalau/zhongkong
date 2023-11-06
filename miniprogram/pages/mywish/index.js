@@ -105,7 +105,7 @@ Page({
   // },
   onLoad(options) {
     // const content = options.content
-
+    console.log(options.pic)
     this.setData({
       pic: options.pic,
       content: options.content

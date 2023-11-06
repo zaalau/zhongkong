@@ -10,7 +10,7 @@
   <view class="prizeInfoContainer" wx:if="{{drawStatus==='end'}}">
     <view class="prizeInfo">
       <view class="workNumberInfo">工号：{{user.workNumber}}</view>
-      <view class="giftInfo">奖品：{{user.gift}}</view>
+      <view class="giftInfo">奖品：{{user.gifttext}}</view>
     
     </view>
     <view class="tips">(兑奖规则将于推文公布，记得关注哦～)</view>

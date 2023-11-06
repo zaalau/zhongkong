@@ -1,10 +1,10 @@
 <!--pages/draw/index.wxml-->
-<view class="drawContainer" style="height: {{drawContainerHeight}}px;">
-  <video class="video" id="video" object-fit='cover'  bindended='drawEnded' controls="{{false}}" show-center-play-btn="{{false}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E4%B8%80%E7%82%B9%E5%87%A0%E5%85%86ae%E5%AF%BC%E5%87%BA.mp4?sign=550b95d95c34c59e1d6918c46225ba18&t=1699071267"/>
+<view  class="drawContainer" style="height: {{drawContainerHeight}}px;">
+  <video class="video"  id="video" object-fit='cover'  bindended='drawEnded' controls="{{false}}" show-center-play-btn="{{false}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E6%8A%BD%E5%A5%96%E5%8A%A8%E7%94%BB.mp4?sign=9b9b6ea968ddce9d91175d1ecf2de7c3&t=1699233737"/>
   <view class="drawBtnContainer" wx:if="{{drawStatus!='end'}}" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/choujiangwaifaguang.webp?sign=2f9852d4fc6826a4237419772f599dd6&t=1699073893');">
-    <view class="drawBtn" bindtap="draw" wx:if="{{chance===0}}" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/choujiang0.webp?sign=701594fe6e138e763a40059a5a1afb00&t=1699075919');">
+    <view class="drawBtn0" bindtap="draw" wx:if="{{chance===0}}">
     </view>
-    <view class="drawBtn" bindtap="draw" wx:if="{{chance===1}}" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/choujiang1.webp?sign=fe36c18d5c5979c78a1f4a91ce464e35&t=1699075973');">
+    <view class="drawBtn1" bindtap="draw" wx:if="{{chance===1}}">
     </view>
   </view>
   <view class="prizeInfoContainer" wx:if="{{drawStatus==='end'}}">
@@ -15,15 +15,16 @@
     </view>
     <view class="tips">(兑奖规则将于推文公布，记得关注哦～)</view>
   </view>
-  <view class="giftContainer" wx:if="{{igotgift==='yes'}}"  style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/liwuheidi.webp?sign=fee2ad8e960b0c9297df3794962f04fe&t=1699088315'); ">
-    <view class="giftText" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/liwu.webp?sign=10a13449bbc2fd4377db10f56d813d41&t=1699088330');">{{user.gift}}</view>
+  <view class="giftContainer" wx:if="{{igotgift==='yes'}}" >
+    <view class="giftText" >{{user.gift}}</view>
   </view>
+  
 
-  <view class="workNumberContainer" wx:if="{{ifShowInput}}" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/liwuheidi.webp?sign=fee2ad8e960b0c9297df3794962f04fe&t=1699088315');">
-    <view class="workNumberInputContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/drawinput.webp?sign=33f000423c529abd9e222b43d24759cc&t=1699094810');">
-      <view class="closeInput" bindtap='closeInput' style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/x.webp?sign=837ddec102a7047a98b60696bd754921&t=1699095016');"></view>
+  <view class="workNumberContainer" wx:if="{{ifShowInput}}">
+    <view class="workNumberInputContainer">
+      <view class="closeInput" bindtap='closeInput'></view>
       <input class="workNumberInput" placeholder="请输入工号..." type="number" value="{{workNumber}}" bindinput='handleWorkNum' maxlength='10'/>
-      <view class="workNumberBtn" bindtap='sendWorkNum' style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/drawbtn.webp?sign=9f6ad2f0577f36bef72aa312822447c9&t=1699095330');"></view>
+      <view class="workNumberBtn" bindtap='sendWorkNum'></view>
     </view>
   </view>
 

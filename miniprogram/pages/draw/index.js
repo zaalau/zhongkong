@@ -11,6 +11,7 @@ Page({
     gift: '',
     ifShowInput: false,
     workNumber: '',
+    
     user: {
       chance: 1,
       openid: '',
@@ -103,8 +104,7 @@ Page({
     for (const prize of prizes) {
       currentQuantity += prize.quantity;
       if (randomIndex < currentQuantity) {
-        // 抽中了这个奖品
-        // console.log(`恭喜您抽中了 ${prize.name}`);
+        // 抽中了！
         const user = this.data.user
         user.gift = prize.gift
         this.setData({
@@ -208,7 +208,7 @@ Page({
       wx.showToast({
         icon: "success",
         title: '绑定成功',
-        duration: 1000
+        duration: 500
       })
     } else {
       wx.vibrateLong()

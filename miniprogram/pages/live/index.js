@@ -7,12 +7,23 @@ Page({
     data: {
 
     },
-
+    save() {
+      wx.previewImage({
+        current: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/Live%20Card.webp?sign=23b9e297f108a6ca79ec91c135c5548b&t=1699345947', // 当前显示图片的http链接
+        urls: ['https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/Live%20Card.webp?sign=23b9e297f108a6ca79ec91c135c5548b&t=1699345947'] // 需要预览的图片http链接列表
+      })
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+      wx.getSystemInfo({
+        success: res => {
+          this.setData({
+            liveContainerHeight: res.windowHeight,
+          })
+        }
+      })
     },
 
     /**
@@ -40,7 +51,7 @@ Page({
      * 生命周期函数--监听页面卸载
      */
     onUnload() {
-
+      
     },
 
     /**

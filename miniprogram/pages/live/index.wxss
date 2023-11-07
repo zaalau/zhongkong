@@ -1,1 +1,23 @@
 /* pages/live/index.wxss */
+.liveContainer {
+  background-size: 100% 100%;
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.liveCard {
+  width: 750rpx;
+  height: 740rpx;
+  margin: 565rpx auto 0;
+  box-sizing: border-box;
+
+}
+.balloon {
+  background-size: 100% 100%;
+  position: absolute;
+  top: 375rpx;
+  right: 30rpx;
+  width: 140rpx;
+  height: 190rpx;
+}

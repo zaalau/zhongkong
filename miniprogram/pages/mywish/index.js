@@ -75,14 +75,35 @@ Page({
     img.src = "https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/wishbg.webp?sign=e1c86dec3faf7a64a2d9022b7c59e396&t=1699414548";
 
 
-
+   
     setTimeout(() => {
       wx.canvasToTempFilePath({
         x: 0,
         y: 0,
         canvas: this.data.canvas,
         success: res => {
-          console.log(res.tempFilePath)
+          wx.cloud.uploadFile({
+            cloudPath: 'userswish/' + Math.floor(Math.random()*1000000),
+            filePath: res.tempFilePath, // 文件路径
+            success: res => {
+              wx.cloud.callFunction({
+                // 云函数名称
+                name: 'user_init',
+                // 传给云函数的参数
+                data: {
+                  mywish:res.fileID
+                },
+                success: function(res) {
+                  console.log(res.result)
+                },
+                fail: console.error
+              })
+              
+            },
+            fail: err => {
+              // handle error
+            }
+          })
           this.setData({
             mywish: res.tempFilePath
           })
@@ -105,7 +126,7 @@ Page({
   // },
   onLoad(options) {
     // const content = options.content
-    console.log(options.pic)
+    // console.log(options.pic)
     this.setData({
       pic: options.pic,
       content: options.content
@@ -146,8 +167,10 @@ Page({
         dpr
       })
       this.canvasDraw()
-
+      //将画好的心愿上传到云存储
+      
     })
+    
     wx.loadFontFace({
       family: '哈',
       source: 'url("https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/B6E4F129E574E.OTF?sign=d9334a1e710aebfd434d349c55e5dd33&t=1698064541")',

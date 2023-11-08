@@ -8,7 +8,7 @@ Page({
     flower: true,
     seat: false,
     mapBg:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/seatmapbg.webp?sign=4bac0915a13dfd89cddcebc67d0022cd&t=1699432210',
-    flowerBg:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG438.jpg?sign=35fd592f0e3024f25eeabf92d78a9275&t=1698834049',
+    flowerBg:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/flowerContainerbg.webp?sign=fe621bde7d53b089d57a6b5d106e0b2d&t=1699445342',
     xx:[
       'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/1%20(1).webp?sign=661f5a402306ddcde2b4558a3e6898d2&t=1699002303',
       'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/2%20(1).webp?sign=cf99c0b5288aeabd073ddd3645f6d637&t=1699002313',

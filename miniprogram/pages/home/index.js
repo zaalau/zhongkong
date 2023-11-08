@@ -14,12 +14,12 @@ Page({
       url: `../intro/index`
     })
   },
-  toPageLive() {
-    wx.vibrateShort()
-    wx.navigateTo({
-      url: '/pages/web/web?url=' + 'www.baidu.com'
-    })
-  },
+  // toPageLive() {
+  //   wx.vibrateShort()
+  //   wx.navigateTo({
+  //     url: '/pages/web/web?url=' + 'www.baidu.com'
+  //   })
+  // },
   toPageGame() {
     wx.vibrateShort()
     wx.navigateTo({
@@ -74,15 +74,7 @@ Page({
         })
       }
     })
-    // wx.cloud.callFunction({
-    //     name: 'biwww',
-    //     complete: res => {
-    //         console.log(res)
-    //     //   this.setData({
-    //     //     if_show_check : res.result.data.if_show_check
-    //     //   })
-    //     }
-    //   })
+    
 
 
     wx.loadFontFace({

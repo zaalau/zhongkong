@@ -8,19 +8,19 @@ Page({
     process: true,
     thirty:  false,
     introContainerHeight: '',
-    processBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG331.jpg?sign=994d3f84189851b3e4b3aabe961d52e7&t=1697509008',
+    processBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/introthirtybg.webp?sign=a265d54b2eebdf7641c871a844b70b7f&t=1699421194',
     thirtyBg:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG265-_1_.webp?sign=645c7e81dc892bcf43a697ecea52ba0a&t=1698912959',
 
     ourThirty: [
         {
       type: 'timeline',
-      bgsrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG332.jpg?sign=35c2440239bd4431b3a9ca5f677c5579&t=1697509466',
+      bgsrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtybgsrc.webp?sign=67cb4cd559c8bc84c3e6e8d600209650&t=1699424232',
       firstTitleText: '动态大事记',
-      secTitleBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG327.jpg?sign=dd9fce019223084a821f028905b895f8&t=1697509982',
+      secTitleBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtysectitbg.webp?sign=5af7e0f45a5f4eb31d5751200a0b56f0&t=1699430845',
       secText: '中控历程：从跟跑到并跑领跑',
       content: [{
-          bigText: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG328.jpg?sign=bc585585103e6a00f70d781a71693df3&t=1697510447',
-          separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG329.jpg?sign=71048d9f13d0d4e5105f716c6cff218e&t=1697510440',
+          bigText: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtybigTextbg.webp?sign=b383c512c591606af6a4b1ac1c6e87a1&t=1699431245',
+          separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtyseparatepic.webp?sign=6e097fb68974b6d47c1226b7d1f6ffb9&t=1699431229',
           text: '创立-2005',
 
           midText: [{
@@ -48,8 +48,8 @@ Page({
           ]
 
         }, {
-          bigText: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG328.jpg?sign=bc585585103e6a00f70d781a71693df3&t=1697510447',
-          separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG329.jpg?sign=71048d9f13d0d4e5105f716c6cff218e&t=1697510440',
+          bigText: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtybigTextbg.webp?sign=b383c512c591606af6a4b1ac1c6e87a1&t=1699431245',
+          separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtyseparatepic.webp?sign=6e097fb68974b6d47c1226b7d1f6ffb9&t=1699431229',
           text: '2006-2011',
           midText: [{
               text: '进军高端，打破技术垄断'
@@ -82,8 +82,8 @@ Page({
 
         },
         {
-          bigText: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG328.jpg?sign=bc585585103e6a00f70d781a71693df3&t=1697510447',
-          separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG329.jpg?sign=71048d9f13d0d4e5105f716c6cff218e&t=1697510440',
+          bigText: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtybigTextbg.webp?sign=b383c512c591606af6a4b1ac1c6e87a1&t=1699431245',
+          separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtyseparatepic.webp?sign=6e097fb68974b6d47c1226b7d1f6ffb9&t=1699431229',
           text: '2012-2016',
           midText: [{
               text: '持续精耕，引领智能制造'
@@ -111,8 +111,8 @@ Page({
 
         },
         {
-          bigText: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG328.jpg?sign=bc585585103e6a00f70d781a71693df3&t=1697510447',
-          separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG329.jpg?sign=71048d9f13d0d4e5105f716c6cff218e&t=1697510440',
+          bigText: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtybigTextbg.webp?sign=b383c512c591606af6a4b1ac1c6e87a1&t=1699431245',
+          separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtyseparatepic.webp?sign=6e097fb68974b6d47c1226b7d1f6ffb9&t=1699431229',
           text: '2017-至今',
           midText: [{
               text: '创新商业模式，开启国际化新征程'
@@ -191,11 +191,11 @@ Page({
           }
         ],
         timeInfoRemarksContainer: [{
-            src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG271%E5%88%98.jpg?sign=493355a942d156121fe51a47a700a714&t=1698736884',
+            src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/timepositioninfobg.webp?sign=cf6cb766b70fc22cd196336964513630&t=1699419186',
             text: '大会时间：2023/11/23（ 14: 00-17: 00 ）'
           },
           {
-            src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG271%E5%88%98.jpg?sign=493355a942d156121fe51a47a700a714&t=1698736884',
+            src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/timepositioninfobg.webp?sign=cf6cb766b70fc22cd196336964513630&t=1699419186',
             text: '大会地址：杭州奥体中心网球中心（ 小莲花 ）'
           }
         ]
@@ -206,7 +206,7 @@ Page({
       },
       {
         type: 'performanceList',
-        bgSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG274.jpg?sign=91361d4d0fc2cd43c2bcb0c6ec4972a6&t=1697448382',
+        bgSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/introoerformancebg.webp?sign=f862cb034c36f3f23d5d083dcf495050&t=1699420693',
         midSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG276.jpg?sign=0e24468b7d916575181a62f213b9ef2a&t=1697456504',
         topTitleText: '节目单',
         data: [{

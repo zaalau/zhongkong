@@ -72,7 +72,7 @@ Page({
 
 
     };
-    img.src = "https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG130.jpg?sign=7c8279983562e01b8e747ea63a0361df&t=1698333872";
+    img.src = "https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/wishbg.webp?sign=e1c86dec3faf7a64a2d9022b7c59e396&t=1699414548";
 
 
 

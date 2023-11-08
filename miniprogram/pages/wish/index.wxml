@@ -5,18 +5,18 @@
   <button id="agree-btn" open-type="agreePrivacyAuthorization" bindagreeprivacyauthorization="handleAgreePrivacyAuthorization">同意</button>
 </view> -->
 
-<view class="wishContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG380.jpg?sign=ee80f67b31c1ab948243117bc84d330e&t=1697622895');  min-height: {{wishContainerHeight}}px;">
+<view class="wishContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/wishcontainerbg.webp?sign=2f57726d08361715b6c2e10b26163686&t=1699432686');  min-height: {{wishContainerHeight}}px;">
   <view class="wishTop" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG381-_1_-_1_.webp?sign=4216f468ad459f9b6090a8f0ff35d8f6&t=1698914828');"></view>
-  <view class="toDraw" bindtap='toDraw' style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG382.jpg?sign=dda0cb449307c57f45c44ca3b9602715&t=1697622926');"></view>
+  <view class="toDraw" bindtap='toDraw' style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/gotodrawpic.webp?sign=dbbbe7691ce2cac546721de5fb6e3c2a&t=1699432905');"></view>
   <view class="addPic" bindtap='addPic' style="background-image: url({{picSrc}});"></view>
   <textarea class="addText" value="{{content}}" placeholder="请输入祝福语..." maxlength="{{wordLimit}}" bindinput="addText" type="text">
     <view class="textCount">{{wordCount || 0}} / {{wordLimit}}</view>
   </textarea>  
   <view class="addButtonContainer">
-    <image class="airplaneLogo" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG384.jpg?sign=7abd49b8d4dc1eb161a52e697fa2ac57&t=1697622977" mode=""/>
-    <view class="addButton" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG132.jpg?sign=7370e80c61df2307e60e6db8ed9d32dc&t=1698331154');" bindtap="addWish"></view>
+    <image class="airplaneLogo" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/airplanepic.webp?sign=8c58ee602667720306cbf0fdc741c467&t=1699433116" mode=""/>
+    <view class="addButton" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/sendwishbtn.webp?sign=62903a346a060fa39941c87dac127dab&t=1699414750');" bindtap="addWish"></view>
   </view>
-  <view class="myWishButton" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG385.jpg?sign=85b3168d865a5557586580164a8de3b5&t=1697622995');" bindtap='toHistoryWish'></view>
+  <view class="myWishButton" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/toHistoryWishlogo.webp?sign=fb004b267713745419721e30cee19a87&t=1699433225');" bindtap='toHistoryWish'></view>
 </view>
 
 

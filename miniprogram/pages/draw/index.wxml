@@ -1,6 +1,6 @@
 <!--pages/draw/index.wxml-->
 <view  class="drawContainer" style="height: {{drawContainerHeight}}px;">
-  <video class="video"  id="video" object-fit='cover'  bindended='drawEnded' controls="{{false}}" show-center-play-btn="{{false}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E6%8A%BD%E5%A5%96%E5%8A%A8%E7%94%BB.mp4?sign=9b9b6ea968ddce9d91175d1ecf2de7c3&t=1699233737"/>
+  <video class="video" autoplay="{{false}}" id="video" object-fit='cover'  bindended='drawEnded' controls="{{false}}" show-center-play-btn="{{false}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E6%8A%BD%E5%A5%96%E5%8A%A8%E7%94%BB.mp4?sign=9b9b6ea968ddce9d91175d1ecf2de7c3&t=1699233737"/>
   <view class="drawBtnContainer" wx:if="{{drawStatus!='end'}}" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/choujiangwaifaguang.webp?sign=2f9852d4fc6826a4237419772f599dd6&t=1699073893');">
     <view class="drawBtn0" bindtap="draw" wx:if="{{chance===0}}">
     </view>

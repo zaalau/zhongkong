@@ -24,7 +24,7 @@
 	</view>
 
 	<view class="departureContainer" wx:if="{{departure}}" style="background-image: url('{{departureBg}}');">
-		<view class="contentContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG209.jpg?sign=8068ff2f0c339232ddddb6691056a99f&t=1697183992');">
+		<view class="contentContainer" style="background-image: url('{{contentBg}}');">
 
 			<!-- <image class="containerLogo" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG195.jpg?sign=cb8a0fbf4d744459706aac6033fe838b&t=1697173215" /> -->
 			<view wx:for="{{departuretContent}}" wx:for-item="item" wx:key="index" class="carInfoContainer" style="background-image: url('{{item.carinfoBg}}');">
@@ -76,7 +76,7 @@
 
 
 	<view class="gohomeContainer" wx:if="{{gohome}}" style="background-image: url('{{gohomeBg}}');">
-		<view class="contentContainer2"  style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG209.jpg?sign=8068ff2f0c339232ddddb6691056a99f&t=1697183992');">
+		<view class="contentContainer2"  style="background-image: url('{{contentBg}}');">
 			<view class="gohomeInfoContainer" wx:for="{{gohomeContent}}"  wx:for-index="gohomeIndex"wx:for-item="gohomeItem" wx:key="gohomeIndex" style="background-image: url('{{gohomeItem.bgUrl}}'); margin-bottom: {{gohomeIndex === gohomeContent.length - 1 ? '0' : '50rpx'}};">
 				<view class="title2" style="background-image: url('{{gohomeItem.titleBg}}');">{{gohomeItem.title}}</view>
 				<view class="gohomeDetailContainer" wx:for="{{gohomeItem.gohomeDetail}}" wx:for-item="gohomeDetailItem" wx:key="gohomeDetailIndex">

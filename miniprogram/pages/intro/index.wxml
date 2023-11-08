@@ -64,7 +64,7 @@
 
 	<view class="thirtyContainer" style="background-image: url('{{thirtyBg}}');" wx:if="{{thirty}}">
 		<view wx:for="{{processContent}}" wx:for-item="processItem" wx:key="processIndex">
-			<view wx:if="{{processItem.type==='background'}}" class="conferenceBackgroundContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG266.jpg?sign=8070002277ed6e600664c76bf01e0561&t=1697444737');">
+			<view wx:if="{{processItem.type==='background'}}" class="conferenceBackgroundContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/conferenceBg.webp?sign=95d9a0fa3822de9e1d689f114d607012&t=1699425194');">
 				<view class="topTitle">
 					<image class="leftImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG267.jpg?sign=b999be1edec1a66e56f9e39768e77d7b&t=1697444840" mode="" />
 					<image class="midImg" src="{{processItem.midSrc}}" mode="" />

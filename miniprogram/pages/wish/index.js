@@ -23,7 +23,6 @@ Page({
         sizeType:['compressed'],
         camera: 'back',
         success: res=> {
-          console.log(res.tempFiles[0].tempFilePath)
           wx.editImage({
             src: res.tempFiles[0].tempFilePath, // 图片路径
             success: res=> {

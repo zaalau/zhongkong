@@ -1,12 +1,11 @@
 <!--pages/mywish/index.wxml-->
-<view class="mywishContainer" style="min-height: {{mywishContainerHeight}}px; background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG424.jpg?sign=42cebe77d616599e90bb964c9991c0f5&t=1698064450');">
+<view class="mywishContainer" style="min-height: {{mywishContainerHeight}}px; background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/mywishContainerbg.webp?sign=eba4369ac211915750dddf3734edf1ec&t=1699433700');">
 
 	<canvas type="2d" id="canvas" />
 	<view class="controlArea">
-		<view class="savewish" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG33.jpg?sign=7829e51c57762df97d63b3ec56834a95&t=1698337157');" bindtap='save'></view>
+		<view class="savewish" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/mywishsave.webp?sign=3f5cbf3b83a2a82c5e96e365d8b81900&t=1699421014');" bindtap='save'></view>
 		
-    <view class="sharewish" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG32.jpg?sign=aeb3b94e080f9dff6bec95fae5e58170&t=1698337142');" ></view>
-		<!-- <button class="sharewish" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG32.jpg?sign=aeb3b94e080f9dff6bec95fae5e58170&t=1698337142');" open-type='share'>分享</button> -->
+    <view class="sharewish" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/mywishshare.webp?sign=dbb8fdc7f58be947e030749e78c64a54&t=1699421028');" ></view>
 
 </view>
 

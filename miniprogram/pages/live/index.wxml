@@ -1,6 +1,6 @@
 <!--pages/live/index.wxml-->
-<view class="liveContainer" style="min-height: {{liveContainerHeight}}px;background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/LiveImage.webp?sign=6d252a5389112dad40ea3ddd033c18a2&t=1699348441');">
-  <image bindtap="save" class="liveCard" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/Live%20Card.webp?sign=23b9e297f108a6ca79ec91c135c5548b&t=1699345947" show-menu-by-longpress="true" />
+<view class="liveContainer" style="min-height: {{liveContainerHeight}}px;background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/livebg.webp?sign=fb831257a2e58d402bd506ef9ab0e027&t=1699424772');">
+  <image bindtap="save" class="liveCard" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/Live%20Card.webp?sign=23b9e297f108a6ca79ec91c135c5548b&t=1699345947"  />
   <view class="balloon" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/Balloon.webp?sign=f1db59cc4ffb6c73c09168fba25f8ded&t=1699349181');"></view>
 </view>
 

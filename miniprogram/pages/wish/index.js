@@ -23,17 +23,22 @@ Page({
         sizeType:['compressed'],
         camera: 'back',
         success: res=> {
-          wx.editImage({
-            src: res.tempFiles[0].tempFilePath, // 图片路径
-            success: res=> {
-              this.setData({
-                pic: res.tempFilePath,
-                // pic: res.tempFiles[0].tempFilePath,
-                picSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG133.webp?sign=926d360ddc5050af1433c39a879c8eb9&t=1698920818',
-                ifPic:true
-              })
-            }
+          this.setData({
+            pic: res.tempFiles[0].tempFilePath,
+            picSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG133.webp?sign=926d360ddc5050af1433c39a879c8eb9&t=1698920818',
+            ifPic:true
           })
+          // wx.editImage({
+          //   src: res.tempFiles[0].tempFilePath, // 图片路径
+          //   success: res=> {
+          //     this.setData({
+          //       pic: res.tempFilePath,
+          //       // pic: res.tempFiles[0].tempFilePath,
+          //       picSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG133.webp?sign=926d360ddc5050af1433c39a879c8eb9&t=1698920818',
+          //       ifPic:true
+          //     })
+          //   }
+          // })
          
         }
         
@@ -54,7 +59,7 @@ Page({
     },
     addText(e) {
       const content = e.detail.value.trim()
-      const wordCount = e.detail.cursor
+      const wordCount = content.length
       if(content.length&&content.length>0) {
         this.setData({
           ifText:true
@@ -104,6 +109,7 @@ Page({
     
 
     onLoad(options) {
+      console.log('coming!')
       wx.getSystemInfo({
         success: res => {
           this.setData({
@@ -111,6 +117,7 @@ Page({
           })
         }
       })
+      
       // wx.getPrivacySetting({
       //   success: res => {
       //     // console.log(res) // 返回结果为: res = { needAuthorization: true/false, privacyContractName: '《xxx隐私保护指引》' }
@@ -143,7 +150,13 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow() {
-      
+      // this.setData({
+      //   ifPic:false,
+      //   ifText:false,
+      //   picSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG131.webp?sign=db56f06175f98b151fd0425658fbde9f&t=1698920450',
+      //   content:'',
+      //   wordCount:0
+      // })
     },
 
     /**

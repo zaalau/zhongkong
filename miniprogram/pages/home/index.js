@@ -51,21 +51,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    // const ifShowCheck = options.ifShowCheck
-    // // console.log(ifShowCheck)
-    // if (ifShowCheck != undefined) {
-    //   this.setData({
-    //     if_show_check: ifShowCheck
-    //   })
-    // }
-    // const if_show_check = this.data.if_show_check
-    // // console.log(if_show_check)
-    // if (if_show_check === true) {
-    //   wx.navigateTo({
-    //     url: '../check/index',
-    //   })
-    // }
-
+    wx.cloud.callFunction({
+      // 云函数名称
+      name: 'home_init',
+      // 传给云函数的参数
+      success: function(res) {
+        console.log(res.result)
+      },
+      fail: console.error
+    })
     wx.getSystemInfo({
       success: res => {
         this.setData({

@@ -88,7 +88,7 @@ Page({
             success: res => {
               wx.cloud.callFunction({
                 // 云函数名称
-                name: 'user_init',
+                name: 'upload_wish',
                 // 传给云函数的参数
                 data: {
                   mywish:res.fileID

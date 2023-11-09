@@ -1,25 +1,11 @@
 <!--pages/historyWish/index.wxml-->
 <view class="historyWishContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/%E5%8E%86%E5%8F%B2%E5%BF%83%E6%84%BF.webp?sign=588fe0ebf0e5bfe60fad3a8adca69dac&t=1698908963'); height: {{historyWishContainerHeight}}px;">
   <view class="historyWishDataContainer">
-    <!-- <view class="content" style="background-image: url('http://tmp/y0nEGRc52k9x039c97b86a2ffe4c281206178132f406.png');"></view> -->
-    <view class="content" bindtap='preview'>
-      <!-- <view class="wish" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/5IfntoH28Ggh0b441766775fca3300be8dd0cf21f578.png?sign=4c798b4e1dd040016f4397200f74efe5&t=1698398594');"></view> -->
-      <image class="wish" src="cloud://zhongkong-0gr2bnjw8020e857.7a68-zhongkong-0gr2bnjw8020e857-1321404713/3aFN48Gbd9XQ602bf8f8649afabf9cd9e47d4a58c1c9.png" mode=""/>
-      <view class="wishCount">1/4</view>
+    <view class="content" bindtap='preview' data-pic-src="{{historyWishItem.mywish}}" wx:for="{{historyWish}}" wx:for-item="historyWishItem" wx:key="historyWishIndex" wx:for-index='historyWishIndex'>
+      <image class="wish" src="{{historyWishItem.mywish}}" mode=""/>
+      <view class="wishCount">{{historyWishIndex+1}}/{{historyWish.length}}</view>
     </view>
-    <view class="content" bindtap='preview'>
-      <!-- <view class="wish" style="background-image: url('cloud://zhongkong-0gr2bnjw8020e857.7a68-zhongkong-0gr2bnjw8020e857-1321404713/351696467657_.pic.jpg');"></view> -->
-      <image class="wish" src="cloud://zhongkong-0gr2bnjw8020e857.7a68-zhongkong-0gr2bnjw8020e857-1321404713/3aFN48Gbd9XQ602bf8f8649afabf9cd9e47d4a58c1c9.png" mode=""/>
-      <view class="wishCount">2/4</view>
-    </view>
-    <view class="content" bindtap='preview'>
-      <image class="wish" src="cloud://zhongkong-0gr2bnjw8020e857.7a68-zhongkong-0gr2bnjw8020e857-1321404713/3aFN48Gbd9XQ602bf8f8649afabf9cd9e47d4a58c1c9.png" mode=""/>
-      <view class="wishCount">3/4</view>
-    </view>
-    <view class="content" bindtap='preview'>
-      <image class="wish" src="cloud://zhongkong-0gr2bnjw8020e857.7a68-zhongkong-0gr2bnjw8020e857-1321404713/3aFN48Gbd9XQ602bf8f8649afabf9cd9e47d4a58c1c9.png" mode=""/>
-      <view class="wishCount">4/4</view>
-    </view>
+    
   </view>
 
 

@@ -81,18 +81,22 @@ Page({
       if (draw === 1) {
         if (workNumber === '') {
           this.setData({
-            ifShowInput: true
+            ifShowInput: true,
+            canibind:true
           })
         } else {
           wx.cloud.callFunction({
             // 云函数名称
             name: 'drawing',
             success: res => {
-              // console.log(res.result);
+              console.log(res.result);
+              const user = res.result.data.user
               //开始抽奖，动效播放、抽奖机状态改为抽奖中、减少抽奖次数
               var videoplay = wx.createVideoContext('video')
               this.setData({
                 videoplay,
+                user
+
               })
               videoplay.play()
             },
@@ -116,7 +120,8 @@ Page({
         console.log(res.result.user);
         this.setData({
           user: res.result.user,
-          igotgift: 'yes'
+          igotgift: 'yes',
+          drawStatus:this.data.user.drawStatus
         })
       },
       fail: console.error
@@ -147,6 +152,7 @@ Page({
     const workNumber = e.detail.value.trim()
     // const user = this.data.user
     // user.workNumber = workNumber
+
     this.setData({
       workNumber
     })
@@ -157,31 +163,34 @@ Page({
 
     const {
       workNumber,
-      user
+      canibind
     } = this.data
 
+   if(canibind){
     if (workNumber != '') {
+      this.setData({
+        canibind:false
+      })
       wx.cloud.callFunction({
         // 云函数名称
         name: 'bind_worknumber',
         // 传给云函数的参数
         data: {
-          workNumber
+          WORKNUMBER:workNumber
         },
         success: res => {
           const MSG = res.result.data.MSG
-          const success = res.result.success
+          const success = res.result.data.success
+          const user = res.result.data.user
           if (success) {
             wx.vibrateShort()
-            user.workNumber = workNumber
-
             this.setData({
               user,
               ifShowInput: false
             })
             wx.showToast({
               icon: "success",
-              title: '绑定成功',
+              title: MSG,
               duration: 500
             })
           } else {
@@ -190,6 +199,10 @@ Page({
               icon: "error",
               title: MSG,
               duration: 1000
+            })
+            this.setData({
+              canibind:true
+              
             })
           }
 
@@ -205,8 +218,9 @@ Page({
         duration: 1000
       })
     }
-
-
+   }
+      
+    
   },
   /**
    * 生命周期函数--监听页面加载
@@ -216,7 +230,8 @@ Page({
       success: res => {
         this.setData({
           drawContainerHeight: res.windowHeight,
-          ratio: 750 / res.windowWidth
+          ratio: 750 / res.windowWidth,
+          
         })
       }
     })
@@ -227,7 +242,8 @@ Page({
       success: res => {
         console.log(res.result.user);
         this.setData({
-          user: res.result.user
+          user: res.result.user,
+          drawStatus:res.result.user.drawStatus
         })
       },
       fail: console.error

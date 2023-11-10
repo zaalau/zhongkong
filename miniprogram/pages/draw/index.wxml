@@ -7,7 +7,7 @@
     <view class="drawBtn1" bindtap="draw" wx:if="{{user.draw===1}}">
     </view>
   </view>
-  <view class="prizeInfoContainer" wx:if="{{user.drawStatus==='end'}}">
+  <view class="prizeInfoContainer" wx:if="{{drawStatus==='end'}}">
     <view class="prizeInfo">
       <view class="workNumberInfo">工号：{{user.workNumber}}</view>
       <view class="giftInfo">奖品：{{user.gifttext}}</view>

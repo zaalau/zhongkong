@@ -24,7 +24,7 @@ exports.main = async (event, context) => {
         workNumber: WORKNUMBER
       }).get(),
     ])
-
+    console.log(users,WORKNUMBER)
     // 查询不到相同的工号
     if (users.data.length === 0) {
       await db.collection('user').where({

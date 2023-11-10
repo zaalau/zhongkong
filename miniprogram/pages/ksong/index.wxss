@@ -1,0 +1,15 @@
+/* pages/ksong/index.wxss */
+.ksongContainer {
+  background-size: 100% 100%;
+  width: 100%;
+  height: 2188rpx;
+}
+.topBtn {
+	width: 90rpx;
+	height: 90rpx;
+	/* background-color: rgba(0, 0, 0, 0.432); */
+	border-radius: 1000rpx;
+	position: fixed;
+	right: 30rpx;
+	bottom: 30rpx;
+}

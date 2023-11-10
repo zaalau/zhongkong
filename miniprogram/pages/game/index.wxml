@@ -2,10 +2,8 @@
 <view class="gameContainer" style="height: {{gameContainerHeight}}px; background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG225-_1_.webp?sign=0cdc62f116564dd34c57f3238ec939fe&t=1698912604'); ">
 	<view class="wall" bindtap='toPageWish'></view>
 	
-	<view class="draw" bindtap='toPageDraw'></view>
-	<view class="draw2" bindtap='toPageDraw'></view>
+	<view class="draw" bindtap='toPageksong'></view>
+	<view class="draw2" bindtap='toPageksong'></view>
 	
-	<!-- <view class="sing" bindtap='toSing'>
-		<web-view wx:if="{{ifK}}" src="https://mp.weixin.qq.com/s?__biz=MzkwMzM4NTczMQ==&mid=2247483779&idx=1&sn=ff6e817244079d1bce04617b061a3e18&chksm=c096466ff7e1cf79353f62a2c44863768d228917c91d2749894ced20153a38766e8e76b0d7d8#rd"/>
-	</view> -->
+
 </view>

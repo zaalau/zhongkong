@@ -3,9 +3,9 @@
   <view class="historyWishDataContainer">
     <view class="content" bindtap='preview' data-pic-src="{{historyWishItem.mywish}}" wx:for="{{historyWish}}" wx:for-item="historyWishItem" wx:key="historyWishIndex" wx:for-index='historyWishIndex'>
       <image class="wish" src="{{historyWishItem.mywish}}" mode=""/>
-      <view class="wishCount">{{historyWishIndex+1}}/{{historyWish.length}}</view>
+      <view class="wishCount">{{historyWishIndex+1}}/4</view>
     </view>
-    
+    <view class="haveNoWish" wx:if="{{historyWish.length===0}}">暂未发布心愿</view>
   </view>
 
 

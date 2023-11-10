@@ -28,10 +28,11 @@ exports.main = async (event, context) => {
     const newUser = {
       openid: OPENID, // 创建用户 openid
       create_time: new Date(), // 创建时间
+      drawStatus: 'static',
       draw: 0,
       workNumber: '',
       gift: '',
-      giftText: '',
+      gifttext: '',
       historyWish:[],
       extent_info: {} // 扩展信息，空对象
     }

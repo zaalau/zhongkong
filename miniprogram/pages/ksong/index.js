@@ -1,51 +1,42 @@
-// pages/game/index.js
+// pages/ksong/index.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
+
     },
-    // toSing() {
-    //     wx.navigateToMiniProgram({
-    //         appId: 'wxc88f41e36c417bff',
-    //         path: 'page/index',
-    //         // extraData: {
-    //         //   foo: 'bar'
-    //         // },
-    //         envVersion: 'develop',
-    //         success(res) {
-    //           // 打开成功
-    //         }
-    //       })
-    // },
-    
-    toPageWish() {
+    toTheTop() {
       wx.vibrateShort()
-      wx.navigateTo({
-        url: `../wish/index`
+      wx.pageScrollTo({
+        scrollTop: 0,
+        duration: 200
       })
     },
-    toPageksong() {
-      wx.vibrateShort()
-      wx.navigateTo({
-        url: `../ksong/index`
-      })
+    onPageScroll: function (e) {
+      console.log(e.scrollTop)
+      const { ratio } = this.data
+      if (e.scrollTop > 340/ratio) {
+        this.setData({
+          ifBottom: true
+        })
+      } else {
+        this.setData({
+          ifBottom: false
+        })
+      }
     },
     /**
      * 生命周期函数--监听页面加载
      */
-    // handleXY(e) {
-    //   console.log(e.detail.x,e.detail.y)
-    // },
     onLoad(options) {
       wx.getSystemInfo({
         success: res => {
           this.setData({
-            gameContainerHeight: res.windowHeight,
-
+            ksongContainerHeight: res.windowHeight,
+            ratio:750/res.windowWidth
           })
-          // console.log(res.windowWidth,res.windowHeight)
         }
       })
     },

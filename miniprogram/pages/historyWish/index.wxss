@@ -34,3 +34,12 @@
   font-size: 20rpx;
   color: #646262;
 }
+.haveNoWish {
+  position: fixed;
+  top: 45%;
+  left: 255rpx;
+  color: #ffffff;
+  text-shadow: 0 0 5px #ffa7ca;
+  font-size: 42rpx;
+  font-weight: bold;
+}

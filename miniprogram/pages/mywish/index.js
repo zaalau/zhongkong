@@ -24,8 +24,14 @@ Page({
         }
       })
     }
+    
 
-
+  },
+  share() {
+    const mywish = this.data.mywish
+    wx.showShareImageMenu({
+      path: mywish
+    })
   },
   canvasDraw() {
     let img = this.data.canvas.createImage(); //创建img对象
@@ -116,14 +122,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  // onLoad(options) {
-  //     const myWish = this.data.myWish
-  //     myWish.push(options)
-  //     console.log(options,this.data.myWish)
-  //     this.setData({
-  //         myWish: myWish
-  //     })
-  // },
+  
   onLoad(options) {
     // const content = options.content
     // console.log(options.pic)

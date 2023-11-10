@@ -65,7 +65,7 @@ Page({
         ],
         carPosition: '发车地点',
         carText: '中控科技园（循环发车，坐满即走）',
-        picSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG193.jpg?sign=2b17edef044eb7ff3f072700eaf706c1&t=1697186856',
+        picSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/zkkjy.webp?sign=ed856e76ab49a5c208eb00ed630943fd&t=1699517443',
         contentLogo: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/sredcar.webp?sign=b10eec230ad87592dac866ea9affd0fc&t=1699417430'
       },
       {
@@ -83,7 +83,7 @@ Page({
         ],
         carPosition: '发车地点',
         carText: '中控信息大厦（循环发车，坐满即走）',
-        picSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG226.jpg?sign=921c66c71180eb3263d156240d458746&t=1697192851',
+        picSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/zkxxds.webp?sign=fe6b064f74277fe3540e5c7747045c4a&t=1699517461',
         contentLogo: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/spurcar.webp?sign=f16e47ff331be24fa2e243ecdedc2b59&t=1699417652'
       },
       {
@@ -101,7 +101,7 @@ Page({
         ],
         carPosition: '发车地点',
         carText: '富阳产业园（循环发车，坐满即走）',
-        picSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG230.jpg?sign=8d93ce3172b6ccd03ff8eae52f900215&t=1697193676',
+        picSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/fycyy.webp?sign=ec1a21bd125dd2c8dea78e04bba3fa04&t=1699517486',
         contentLogo: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/sbluecar.webp?sign=6560d2d87678b35e04068fb2d607b56c&t=1699417789'
       },
       {

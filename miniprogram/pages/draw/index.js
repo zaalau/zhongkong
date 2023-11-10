@@ -5,116 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    chance: 1,
     igotgift: 'none',
-    drawStatus: 'static',
-    gift: '',
     ifShowInput: false,
     workNumber: '',
-
-    user: {
-      chance: 1,
-      openid: '',
-      workNumber: '',
-      gift: '',
-    },
-
-    prizes: [{
-        gift: '100元京东卡',
-        gifttext: '100元京东卡',
-        quantity: 49
-      },
-      {
-        gift: 'kfc心意卡',
-        gifttext: 'kfc心意卡',
-        quantity: 100
-      },
-      {
-        gift: '必胜客心意卡',
-        gifttext: '必胜客心意卡',
-        quantity: 100
-      },
-      {
-        gift: 'pop mart盲盒',
-        gifttext: 'pop mart盲盒',
-        quantity: 100
-      },
-      {
-        gift: '喜茶券',
-        gifttext: '喜茶券',
-        quantity: 100
-      },
-      {
-        gift: '咖啡券',
-        gifttext: '咖啡券',
-        quantity: 50
-      },
-      {
-        gift: '腾讯视频会员',
-        gifttext: '腾讯视频会员',
-        quantity: 100
-      },
-      {
-        gift: '网易云音乐会员',
-        gifttext: '网易云音乐会员',
-        quantity: 100
-      },
-      {
-        gift: '按摩锤',
-        gifttext: '按摩锤',
-        quantity: 100
-      },
-      {
-        gift: '厨房纸',
-        gifttext: '厨房纸',
-        quantity: 150
-      },
-      {
-        gift: '卷纸',
-        gifttext: '卷纸',
-        quantity: 150
-      },
-      {
-        gift: '抽纸',
-        gifttext: '抽纸',
-        quantity: 100
-      },
-      {
-        gift: '洗脸巾一包',
-        gifttext: '洗脸巾一包',
-        quantity: 200
-      },
-      {
-        gift: '三十周年周边',
-        gifttext: '三十周年周边',
-        quantity: 100
-      },
-      {
-        gift: '不负星光，一路绽放',
-        gifttext: '很遗憾，你没有抽到奖品哦~',
-        quantity: 2000
-      },
-      {
-        gift: '狂吃不胖，美梦不空',
-        gifttext: '很遗憾，你没有抽到奖品哦~',
-        quantity: 2000
-      },
-      {
-        gift: '感恩有你，一路同行',
-        gifttext: '很遗憾，你没有抽到奖品哦~',
-        quantity: 2000
-      },
-      {
-        gift: '长风万里，前程似锦',
-        gifttext: '很遗憾，你没有抽到奖品哦~',
-        quantity: 2000
-      },
-      {
-        gift: '心有所期，忙而不芒',
-        gifttext: '很遗憾，你没有抽到奖品哦~',
-        quantity: 2000
-      },
-    ]
   },
 
   drawPrize() {
@@ -122,10 +15,10 @@ Page({
     const user = this.data.user
     if (user.workNumber === '0000066666') {
       user.gift = '100元京东卡'
-          user.gifttext = '100元京东卡'
-          this.setData({
-            user
-          })
+      user.gifttext = '100元京东卡'
+      this.setData({
+        user
+      })
     } else {
       let totalQuantity = 0;
       let prizes = this.data.prizes
@@ -165,13 +58,18 @@ Page({
 
   },
 
+  //点击开始抽奖按钮函数
   draw() {
     //如果抽奖机处于静态(从未抽奖过)
-    const drawStatus = this.data.drawStatus
+    const {
+      draw,
+      workNumber,
+      drawStatus
+    } = this.data.user
     if (drawStatus === 'static') {
       //如果抽奖次数为0（还没发送心愿）
       wx.vibrateShort({})
-      if (this.data.chance === 0) {
+      if (draw === 0) {
         wx.vibrateLong()
         wx.showToast({
           icon: "error",
@@ -180,21 +78,27 @@ Page({
         })
       }
       //如果已经发送过心愿
-      if (this.data.chance === 1) {
-        if (this.data.user.workNumber === '') {
+      if (draw === 1) {
+        if (workNumber === '') {
           this.setData({
             ifShowInput: true
           })
         } else {
-          this.drawPrize()
-          //开始抽奖，动效播放、抽奖机状态改为抽奖中、减少抽奖次数
-          var videoplay = wx.createVideoContext('video')
-          this.setData({
-            videoplay,
-            chance: 0,
-            drawStatus: 'drawing'
+          wx.cloud.callFunction({
+            // 云函数名称
+            name: 'drawing',
+            success: res => {
+              // console.log(res.result);
+              //开始抽奖，动效播放、抽奖机状态改为抽奖中、减少抽奖次数
+              var videoplay = wx.createVideoContext('video')
+              this.setData({
+                videoplay,
+              })
+              videoplay.play()
+            },
+            fail: console.error
           })
-          videoplay.play()
+
         }
 
 
@@ -202,29 +106,43 @@ Page({
     }
 
   },
+
+  //动画播放完毕、抽奖结束函数
   drawEnded() {
+    wx.cloud.callFunction({
+      // 云函数名称
+      name: 'draw_init',
+      success: res => {
+        console.log(res.result.user);
+        this.setData({
+          user: res.result.user,
+          igotgift: 'yes'
+        })
+      },
+      fail: console.error
+    })
+
 
     //动效播放完毕即抽奖结束、出现奖品弹窗信息
-    this.setData({
-      igotgift: 'yes',
 
-    })
     //弹窗消失，抽奖全过程结束，抽奖机状态变更为end，抽奖按钮消失
     setTimeout(() => {
-      // const videoplay = this.data.videoplay
-      // videoplay.seek(0)
       this.setData({
         igotgift: 'sayo',
         drawStatus: 'end'
       })
     }, 4000)
   },
+
+  //关闭工号表单函数
   closeInput() {
     this.setData({
       ifShowInput: false,
       workNumber: ''
     })
   },
+
+  //处理工号值
   handleWorkNum(e) {
     const workNumber = e.detail.value.trim()
     // const user = this.data.user
@@ -233,26 +151,52 @@ Page({
       workNumber
     })
   },
+
+  //点击表单绑定按钮函数
   sendWorkNum() {
 
     const {
-      user,
       workNumber,
-      gift
+      user
     } = this.data
-    if (workNumber != '') {
-      wx.vibrateShort()
-      user.workNumber = workNumber
 
-      this.setData({
-        user,
-        ifShowInput: false
+    if (workNumber != '') {
+      wx.cloud.callFunction({
+        // 云函数名称
+        name: 'bind_worknumber',
+        // 传给云函数的参数
+        data: {
+          workNumber
+        },
+        success: res => {
+          const MSG = res.result.data.MSG
+          const success = res.result.success
+          if (success) {
+            wx.vibrateShort()
+            user.workNumber = workNumber
+
+            this.setData({
+              user,
+              ifShowInput: false
+            })
+            wx.showToast({
+              icon: "success",
+              title: '绑定成功',
+              duration: 500
+            })
+          } else {
+            wx.vibrateLong()
+            wx.showToast({
+              icon: "error",
+              title: MSG,
+              duration: 1000
+            })
+          }
+
+        },
+        fail: console.error
       })
-      wx.showToast({
-        icon: "success",
-        title: '绑定成功',
-        duration: 500
-      })
+
     } else {
       wx.vibrateLong()
       wx.showToast({
@@ -276,7 +220,18 @@ Page({
         })
       }
     })
-    // console.log(Math.floor(Math.random() * (1 - 15)) + 15)
+    wx.cloud.callFunction({
+      // 云函数名称
+      name: 'draw_init',
+      // 传给云函数的参数
+      success: res => {
+        console.log(res.result.user);
+        this.setData({
+          user: res.result.user
+        })
+      },
+      fail: console.error
+    })
   },
 
   /**

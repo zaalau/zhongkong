@@ -1,0 +1,4 @@
+<!--pages/ksong/index.wxml-->
+<view class="ksongContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ksong.webp?sign=c6e7cb9cd89c0d9421e66fe9f3d5f09f&t=1699597999'); min-height: {{ksongContainerHeight}}px;">
+  <image class="topBtn" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/bluetop.webp?sign=d2103264777bc3f6ac7c944e668ae64f&t=1699598681" bindtap='toTheTop' wx:if="{{ifBottom}}"></image>
+</view>

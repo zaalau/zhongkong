@@ -23,6 +23,9 @@ Page({
         sizeType:['compressed'],
         camera: 'back',
         success: res=> {
+          const ratio = this.data.ratio
+          
+
           this.setData({
             pic: res.tempFiles[0].tempFilePath,
             picSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG133.webp?sign=926d360ddc5050af1433c39a879c8eb9&t=1698920818',
@@ -109,11 +112,11 @@ Page({
     
 
     onLoad(options) {
-      console.log('coming!')
       wx.getSystemInfo({
         success: res => {
           this.setData({
-            wishContainerHeight: res.windowHeight
+            wishContainerHeight: res.windowHeight,
+            ratio: 750/res.windowWidth
           })
         }
       })

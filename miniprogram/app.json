@@ -1,9 +1,4 @@
 {
-
-    
-
-  
-  
     "cloud": true,
     "pages": [
         "pages/home/index",
@@ -16,9 +11,8 @@
         "pages/mywish/index",
         "pages/live/index",
         "pages/traffic/index",
-        "pages/historyWish/index"
-        
-
+        "pages/historyWish/index",
+        "pages/ksong/index"
     ],
     "window": {
         "backgroundColor": "#F6F6F6",
@@ -30,8 +24,6 @@
     "sitemapLocation": "sitemap.json",
     "style": "v2",
     "lazyCodeLoading": "requiredComponents",
-
-    
     "permission": {
         "scope.userLocation": {
             "desc": "你的位置信息将用于小程序定位"

@@ -66,7 +66,7 @@ Page({
       workNumber,
       drawStatus
     } = this.data.user
-    if (drawStatus === 'static') {
+    if (drawStatus === 'static'&&this.data.drawStatus === 'static') {
       //如果抽奖次数为0（还没发送心愿）
       wx.vibrateShort({})
       if (draw === 0) {
@@ -85,12 +85,22 @@ Page({
             canibind:true
           })
         } else {
+          this.setData({
+            drawStatus: 'drawing'
+          })
           wx.cloud.callFunction({
             // 云函数名称
             name: 'drawing',
             success: res => {
               console.log(res.result);
               const user = res.result.data.user
+              const MSG = res.result.data.MSG
+              if(MSG==='SOMEONE IS DRAWING') {
+                this.setData({
+                  drawStatus: 'static'
+                })
+                this.draw()
+              }
               //开始抽奖，动效播放、抽奖机状态改为抽奖中、减少抽奖次数
               var videoplay = wx.createVideoContext('video')
               this.setData({
@@ -121,7 +131,7 @@ Page({
         this.setData({
           user: res.result.user,
           igotgift: 'yes',
-          drawStatus:this.data.user.drawStatus
+          
         })
       },
       fail: console.error
@@ -194,6 +204,12 @@ Page({
               duration: 500
             })
           } else {
+            if(MSG==='SOMEONE IS BINDING') {
+              this.setData({
+                canibind:true 
+              })
+              this.sendWorkNum()
+            }
             wx.vibrateLong()
             wx.showToast({
               icon: "error",
@@ -201,8 +217,7 @@ Page({
               duration: 1000
             })
             this.setData({
-              canibind:true
-              
+              canibind:true 
             })
           }
 

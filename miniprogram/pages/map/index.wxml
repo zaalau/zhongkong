@@ -17,8 +17,8 @@
   </view>
 
   <view class="flowerContainer" style="background-image: url('{{flowerBg}}'); height: {{mapContainerHeight - topBgHeight}}px;" wx:if="{{flower}}">
-    <view class="flowermap" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/%E5%9C%B0%E5%9B%BE.webp?sign=020d81d06ce169bf31459c155527d669&t=1698990179" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/%E5%9C%B0%E5%9B%BE%E6%8A%95%E5%BD%B1.webp?sign=a5af1e985b364dc575a14544bab5a781&t=1698990407');"></view>
-    <view class="bigbig" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/%E5%9C%B0%E5%9B%BE.webp?sign=020d81d06ce169bf31459c155527d669&t=1698990179" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG437.jpg?sign=2444f1bfeccee1d22ea43fc5128cc607&t=1698834714');"></view>
+    <view class="flowermap" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ditubig.webp?sign=0ad1d6367debe7ff799bf24555ed2d4a&t=1699858278" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ditupreview.webp?sign=236b60887eeed11faac10b3a954d2c04&t=1699858213');"></view>
+    <view class="bigbig" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ditubig.webp?sign=0ad1d6367debe7ff799bf24555ed2d4a&t=1699858278" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG437.jpg?sign=2444f1bfeccee1d22ea43fc5128cc607&t=1698834714');"></view>
   </view>
 
   <view class="seatContainer" style="background-image: url('{{mapBg}}'); min-height: {{mapContainerHeight - topBgHeight}}px;" wx:if="{{!flower}}">

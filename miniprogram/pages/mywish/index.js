@@ -100,7 +100,9 @@ Page({
                   mywish:res.fileID
                 },
                 success: function(res) {
-                  console.log(res.result)
+                  this.setData({
+                    mywish: res.tempFilePath
+                  })
                 },
                 fail: console.error
               })
@@ -110,9 +112,7 @@ Page({
               // handle error
             }
           })
-          this.setData({
-            mywish: res.tempFilePath
-          })
+          
         }
       })
     }, 1000)

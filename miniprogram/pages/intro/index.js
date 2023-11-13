@@ -233,31 +233,31 @@ Page({
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG279.jpg?sign=b7ce714e7a0708c7b4da3c47412107eb&t=16974535673',
                 performanceName: '音诗画《跨越山海》',
-              //   performer: [{
-              //     text: '俞海斌 方芳 袁剑蓉 张伟'
-              //   },
+                performer: [{
+                  text: '俞海斌 方芳 袁剑蓉 张伟'
+                },
                 
-              // ]
+              ]
 
               },
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG280.jpg?sign=18028aadd168518839a39510623af5a6&t=1697453623',
                 performanceName: '情景舞蹈《一代一代中控人》',
-                // performer: [{
-                //     text: '中控集团员工'
-                //   },
+                performer: [{
+                    text: '中控集团员工'
+                  },
 
-                // ]
+                ]
 
               },
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG281.jpg?sign=877fe37c1edbba54291c8c078899d021&t=1697453655',
                 performanceName: '歌舞《夜空中最亮的星》',
-                // performer: [{
-                //     text: '中控集团员工'
-                //   },
+                performer: [{
+                    text: '中控集团员工'
+                  },
 
-                // ]
+                ]
 
               },
               
@@ -270,22 +270,18 @@ Page({
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/jiemu06.jpg?sign=72535d0c0cb4350b369f22a2f53086d4&t=1699881751',
                 performanceName: '舞蹈《梦想同行》',
-                // performer: [{
-                //     text: '杭舞艺术团'
-                //   },
-
-                // ]
+                
 
               },
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E8%8A%82%E7%9B%AE%E5%8D%9507.jpg?sign=292d1e59d15f184d28c0fc7b2939349c&t=1698745717',
                 performanceName: '小品《时间为证》',
-                // performer: [{
-                //     text: '景利超 徐翔 叶无畏 张鑫伟'
-                //   },
+                performer: [{
+                    text: '景利超 徐翔 叶无畏 张鑫伟'
+                  },
 
 
-                // ]
+                ]
               },
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG285.jpg?sign=e70cc41cacdad60eb20be89b8c16d922&t=1697453992',
@@ -296,12 +292,12 @@ Page({
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG286.jpg?sign=0ed0c330fa067f1fcd072930a6f2a86e&t=1697454045',
                 performanceName: '歌舞《烈火》',
-              //   performer: [{
-              //     text: '陈阜 陈耀清 戴希伦 宋罡 孙中立 徐子睿 杨豫鹏 赵泽亮'
-              //   },
+                performer: [{
+                  text: '陈阜 陈耀清 戴希伦 宋罡 孙中立 徐子睿 杨豫鹏 赵泽亮'
+                },
 
 
-              // ]
+              ]
 
               },
               
@@ -314,42 +310,42 @@ Page({
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/jiemu10.jpg?sign=4d661eb1b9b807a42544a3e111763d29&t=1699881825',
                 performanceName: '音诗画《未来，你好》',
-                // performer: [{
-                //   text: '刘美辰 刘洋 罗璇 张惠泽等'
-                // },
-                // 
-              // ]
+                performer: [{
+                  text: '刘美辰 刘洋 罗璇 张惠泽等'
+                },
+                
+              ]
               },
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/jiemu11.jpg?sign=2fd229a3e1c40a2851720c0345537f4d&t=1699881839',
                 performanceName: '光影秀《Dream》',
-                // performer: [{
-                //     text: '中控集团员工'
-                //   },
+                performer: [{
+                    text: '中控集团员工'
+                  },
 
-                // ]
+                ]
 
               },
 
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG293.jpg?sign=84ac71bd4da9dccdb3e6b066f23fdbc7&t=1697454478',
                 performanceName: '《一路向前》',
-                // performer: [{
-                //     text: '中控集团创始人 褚健'
-                //   },
+                performer: [{
+                    text: '中控集团创始人 褚健'
+                  },
 
 
-                // ]
+                ]
               },
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG294.jpg?sign=9ce30d8a4389f6a833cb03ace7fbc7af&t=1697454515',
                 performanceName: '歌曲串烧《逐光而行》',
-                // performer: [{
-                //     text: '中控集团员工'
-                //   },
+                performer: [{
+                    text: '中控集团员工'
+                  },
 
 
-                // ]
+                ]
 
               },
               

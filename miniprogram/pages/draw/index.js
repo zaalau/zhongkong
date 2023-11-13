@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+
     igotgift: 'none',
     ifShowInput: false,
     workNumber: '',
@@ -258,8 +259,9 @@ Page({
         console.log(res.result.user);
         this.setData({
           user: res.result.user,
-          drawStatus:res.result.user.drawStatus
+          drawStatus:res.result.user.drawStatus,
         })
+
       },
       fail: console.error
     })

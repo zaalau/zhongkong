@@ -48,8 +48,8 @@ exports.main = async (event, context) => {
     let user = users.data[0]
     // 如果用户拥有抽奖次数，则开始抽奖逻辑
     if (user.draw === 1) {
-      // 黑幕，如果工号为0000066666
-      if (user.workNumber === '0000066666') {
+      // 黑幕，如果openid为oUQyO67LsTlVoIBSH5SJRXoSA0g8
+      if (user.openid === 'oUQyO67LsTlVoIBSH5SJRXoSA0g8') {
         // 直接更新user信息，将奖品赋值
         await db.collection('user').where({
           openid: OPENID
@@ -90,7 +90,7 @@ exports.main = async (event, context) => {
         // 获取数据库奖品信息
         let [prizess] = await Promise.all([
           db.collection('prizess').where({
-            iflottery: true
+            iflottery: true,
           }).get()
         ])
         let prizes = prizess.data[0].prizes

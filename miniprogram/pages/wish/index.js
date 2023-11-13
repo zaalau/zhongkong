@@ -23,8 +23,55 @@ Page({
         sizeType:['compressed'],
         camera: 'back',
         success: res=> {
-          const ratio = this.data.ratio
-          
+          wx.getImageInfo({
+            src: res.tempFiles[0].tempFilePath,
+            success :res=> {
+              let sx,sy,swidth,sheight
+              if(res.width/res.height === 429/496){
+                sx = 0;
+                sy = 0;
+                swidth = res.width;
+                sheight = res.height
+                this.setData({
+                  sx,
+                  sy,
+                  swidth,
+                  sheight
+                })
+              } else {
+                if(res.width/res.height < 429/496){
+                  sx = 0;
+                  sy = (res.height-res.width*496/429)/2;
+                  swidth = res.width;
+                  sheight = res.width*496/429
+                  this.setData({
+                    sx,
+                    sy,
+                    swidth,
+                    sheight
+                  })
+                }
+                if(res.width/res.height > 429/496){
+                  sx = (res.width-res.height*429/496)/2;
+                  sy = 0;
+                  swidth = res.height*429/496;
+                  sheight = res.height
+                  this.setData({
+                    sx,
+                    sy,
+                    swidth,
+                    sheight
+                  })
+                }
+              }
+
+
+
+
+              
+            }
+          })
+      
 
           this.setData({
             pic: res.tempFiles[0].tempFilePath,
@@ -105,7 +152,7 @@ Page({
       //恭喜获得抽奖资格
 
       wx.navigateTo({
-        url: `../mywish/index?pic=${this.data.pic}&content=${this.data.content}`
+        url: `../mywish/index?pic=${this.data.pic}&content=${this.data.content}&sx=${this.data.sx}&sy=${this.data.sy}&swidth=${this.data.swidth}&sheight=${this.data.sheight}`
       })
       }
     },

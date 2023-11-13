@@ -5,7 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    myWish: []
   },
   save() {
     wx.showLoading({
@@ -64,7 +63,11 @@ Page({
       
       let img2 = this.data.canvas.createImage(); //创建img对象
       img2.onload = () => {
-        this.data.ctx.drawImage(img2, 110/ratio, 123/ratio, 429/ratio, 496/ratio);
+        const sx = this.data.sx;
+        const sy = this.data.sy;
+        const swidth = this.data.swidth;
+        const sheight = this.data.sheight;
+        this.data.ctx.drawImage(img2,sx,sy,swidth, sheight,110/ratio, 123/ratio,429/ratio, 496/ratio);
         // this.data.ctx.font = '21px 哈';
         this.data.ctx.font = `${40/this.data.ratio}px 哈`;
         this.data.ctx.strokeStyle = "#ffffff70";
@@ -99,10 +102,8 @@ Page({
                 data: {
                   mywish:res.fileID
                 },
-                success: function(res) {
-                  this.setData({
-                    mywish: res.tempFilePath
-                  })
+                success: res => {
+                  
                 },
                 fail: console.error
               })
@@ -112,10 +113,12 @@ Page({
               // handle error
             }
           })
-          
+          this.setData({
+            mywish: res.tempFilePath
+          })
         }
       })
-    }, 1000)
+    }, 500)
 
 
   },
@@ -128,7 +131,11 @@ Page({
     // console.log(options.pic)
     this.setData({
       pic: options.pic,
-      content: options.content
+      content: options.content,
+      sx: options.sx,
+      sy: options.sy,
+      swidth: options.swidth,
+      sheight: options.sheight
     })
     wx.getSystemInfo({
       success: res => {

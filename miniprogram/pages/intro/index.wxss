@@ -259,11 +259,13 @@
 	bottom: 30rpx;
 }
 .conferenceBackgroundContainer {
-
-	background-size: 750rpx 100%;
-	padding: 35rpx 40rpx 25rpx;
+  height: 400rpx;
+	background-size: 100% 100%;
+  /* padding: 35rpx 40rpx 25rpx; */
+  padding: 100rpx 40rpx;
 	box-sizing: border-box;
-	color: #2b467c;
+  color: #2b467c;
+
 
 }
 .topTitle {

@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    isloading:true
+    isloading:true,
+    canvasstyle:'position:fixed;top:8000px'
   },
   save() {
     wx.showLoading({
@@ -107,7 +108,8 @@ Page({
                 success: res => {
                   this.setData({
                     mywish,
-                    isloading:false
+                    isloading:false,
+                    canvasstyle:''
                   })
                   wx.hideLoading()
                 },

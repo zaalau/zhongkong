@@ -1,8 +1,8 @@
 <!--pages/mywish/index.wxml-->
 <view class="mywishContainer"  style="min-height: {{mywishContainerHeight}}px; background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/mywishContainerbg.webp?sign=eba4369ac211915750dddf3734edf1ec&t=1699433700');">
   <view class="loading" wx:if="{{isloading}}"></view>
-	<canvas type="2d" id="canvas" />
-	<view class="controlArea">
+	<canvas type="2d" id="canvas" style="{{canvasstyle}}" />
+	<view class="controlArea" style="{{canvasstyle}}">
 		<view class="savewish" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/mywishsave.webp?sign=3f5cbf3b83a2a82c5e96e365d8b81900&t=1699421014');" bindtap='save'></view>
 		
     <view class="sharewish" bindtap='share' style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/mywishshare.webp?sign=dbb8fdc7f58be947e030749e78c64a54&t=1699421028');" ></view>

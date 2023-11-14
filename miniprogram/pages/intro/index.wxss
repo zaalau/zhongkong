@@ -343,7 +343,7 @@
 }
 .performanceName {
   font-family: "粗";
-  /* margin-bottom: 10rpx; */
+  margin-bottom: 10rpx;
 }
 .performanceName00{
   font-family: "粗";

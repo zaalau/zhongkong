@@ -3,6 +3,8 @@
 .mywishContainer {
   background-size: 100% 100%;
   box-sizing: border-box;
+  width: 100%;
+  height: 100%;
   /* padding: 30% 0 0; */
 }
 
@@ -23,9 +25,11 @@
   border-radius: 25px;
   padding: 0;
   box-sizing: border-box;
+  /* position: fixed;
+  top: 8000rpx; */
 }
 .controlArea {
-  
+  margin-bottom: 50rpx;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,4 +48,14 @@
 
 	height: 90rpx;
 }
-
+.loading {
+  background-image: url('data:image/webp;base64,UklGRgwBAABXRUJQVlA4TAABAAAv8wHxEB8QEWLSBK91N3VMgBzJdtwmCmUmJQNUAfnINnH3gh+QFt6J8n8RjJfTi+j/BJwv5Cexf6N1+8/+s//sP/vP/rP/7D/7z7cKNtl/9p/9Z//Zf/af/Wf/2X8uRmUraKuRxdHJPp5oK9D2j0J2u1WyNdBChUyzk62oZILbOtkejUxHQctKFltDywKW+U4W2xVtZCXL9wKmQNtXgu1xU+eSxgBL6aNgRcRzoL3MjiXNSLLMF7JxzAK29g3tNshCWbmWchYupZLtSqaYDW10sNRGJq3GVtEEFqlb55K0o0WiKRua2FZH039csMn+s//sP/vP/rP/7D8XRuznC/kJ');
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

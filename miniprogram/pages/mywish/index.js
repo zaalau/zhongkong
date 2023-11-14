@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isloading:true
   },
   save() {
     wx.showLoading({
@@ -91,9 +92,10 @@ Page({
         y: 0,
         canvas: this.data.canvas,
         success: res => {
+          const mywish = res.tempFilePath
           wx.cloud.uploadFile({
             cloudPath: 'userswish/' + Math.floor(Math.random()*1000000),
-            filePath: res.tempFilePath, // 文件路径
+            filePath: mywish, // 文件路径
             success: res => {
               wx.cloud.callFunction({
                 // 云函数名称
@@ -103,7 +105,11 @@ Page({
                   mywish:res.fileID
                 },
                 success: res => {
-                  
+                  this.setData({
+                    mywish,
+                    isloading:false
+                  })
+                  wx.hideLoading()
                 },
                 fail: console.error
               })
@@ -113,9 +119,9 @@ Page({
               // handle error
             }
           })
-          this.setData({
-            mywish: res.tempFilePath
-          })
+          
+          
+          
         }
       })
     }, 500)
@@ -129,7 +135,14 @@ Page({
   onLoad(options) {
     // const content = options.content
     // console.log(options.pic)
+    wx.showLoading({
+      title: '绘制中',
+    })
+    
+    
+    
     this.setData({
+      
       pic: options.pic,
       content: options.content,
       sx: options.sx,

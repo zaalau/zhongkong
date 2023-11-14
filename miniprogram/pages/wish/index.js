@@ -151,7 +151,7 @@ Page({
       //跳转当前心愿页
       //恭喜获得抽奖资格
 
-      wx.navigateTo({
+      wx.redirectTo({
         url: `../mywish/index?pic=${this.data.pic}&content=${this.data.content}&sx=${this.data.sx}&sy=${this.data.sy}&swidth=${this.data.swidth}&sheight=${this.data.sheight}`
       })
       }

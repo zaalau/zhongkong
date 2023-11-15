@@ -100,6 +100,7 @@ Page({
                 this.setData({
                   drawStatus: 'static'
                 })
+                // settimeout
                 this.draw()
               }
               //开始抽奖，动效播放、抽奖机状态改为抽奖中、减少抽奖次数

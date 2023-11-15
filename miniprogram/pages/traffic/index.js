@@ -57,14 +57,15 @@ Page({
         timeTitle: '发车时间',
         timeText:[
           {
-            text:'第一批：11:30'
+            text:'第一批:11:30（20-50号车，循序发车）'
           },
           {
-            text:'第二批：12:30'
-          }
+            text:'第二批:12:40（20-64号车，循序发车）'
+          },
+          
         ],
         carPosition: '发车地点',
-        carText: '中控科技园（循环发车，坐满即走）',
+        carText: '详见地图',
         picSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/zkkjy.webp?sign=ed856e76ab49a5c208eb00ed630943fd&t=1699517443',
         contentLogo: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/sredcar.webp?sign=b10eec230ad87592dac866ea9affd0fc&t=1699417430'
       },
@@ -78,11 +79,11 @@ Page({
         timeText:[
         
           {
-            text:'12:50（32-49号车，循序发车）'
+            text:'11:30（51-70号车，循序发车）'
           }
         ],
         carPosition: '发车地点',
-        carText: '中控信息大厦（循环发车，坐满即走）',
+        carText: '详见地图',
         picSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/zkxxds.webp?sign=fe6b064f74277fe3540e5c7747045c4a&t=1699517461',
         contentLogo: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/spurcar.webp?sign=f16e47ff331be24fa2e243ecdedc2b59&t=1699417652'
       },
@@ -96,31 +97,13 @@ Page({
         timeTitle: '发车时间',
         timeText:[
           {
-            text:'11:30（2-16号车，循序发车）'
+            text:'11:30（1-18号车，循序发车）'
           },
         ],
         carPosition: '发车地点',
-        carText: '富阳产业园（循环发车，坐满即走）',
+        carText: '详见地图',
         picSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/fycyy.webp?sign=ec1a21bd125dd2c8dea78e04bba3fa04&t=1699517486',
         contentLogo: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/sbluecar.webp?sign=6560d2d87678b35e04068fb2d607b56c&t=1699417789'
-      },
-      {
-        type: 'noPic',
-        contentBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/departurecontentbg.webp?sign=3c2c164d172a6a3e85f1d3525a1c085a&t=1699421997',
-        
-        carinfoBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/carinfobg.webp?sign=29e856edf48182cee31588ba4a5766da&t=1699421769',
-        titleBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG216.jpg?sign=95a79af5759c73da1e55bf18bb1496ee&t=1697194959',
-        title: '教仪工厂（富阳）',
-        timeTitle: '发车时间',
-        timeText:[
-          {
-            text:'11:30（1号车）'
-          },
-        ],
-        carPosition: '发车地点',
-        carText: '教仪工厂（富阳）（循环发车，坐满即走）',
-        
-        contentLogo: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/syellowcar.webp?sign=642b6d6e9ac37c977bb642967c101205&t=1699418159'
       },
       {
         type: 'noPic',
@@ -132,11 +115,11 @@ Page({
         timeTitle: '发车时间',
         timeText:[
           {
-            text:'12:35（17号车）'
+            text:'12:35（19号车）'
           },
         ],
         carPosition: '发车地点',
-        carText: '金盛产业园（循环发车，坐满即走）',
+        carText: '金盛科技园',
         
         contentLogo: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/slightbluecar.webp?sign=b8729381d0bde5c5a94dd9541cfcc5dc&t=1699418277'
       }
@@ -148,29 +131,26 @@ Page({
         title: '中控科技园',
         gohomeDetail: [
           {
-            gohomeTitle:'返程时间:',
+            gohomeTitle:'返程时间',
             gohomeText: [
               {
-                text: '第一批：17:15'
-              },
-              {
-                text: '第二批：18:15'
-              }
-            ]
-          },
-          {
-            gohomeTitle:'返程地点:',
-            gohomeText: [
-              {
-                text: '小莲花1号门36-70号车、小莲花1号门36-70号车'
+                text: '17:30'
               },
             ]
           },
           {
-            gohomeTitle:'地铁线路指南:',
+            gohomeTitle:'返程集合地点',
             gohomeText: [
               {
-                text: '小莲花1号门-6号线奥体中心地铁站C口桂花西路方向-中医药大学地铁站B口'
+                text: '小莲花1号门员工上车点'
+              },
+            ]
+          },
+          {
+            gohomeTitle:'地铁线路指南',
+            gohomeText: [
+              {
+                text: '小莲花2号门-6号线奥体中心地铁站C口（桂花西路方向）C口-中医药大学地铁站B口'
               },
             ]
           }
@@ -184,27 +164,27 @@ Page({
         title: '中控信息大厦',
         gohomeDetail: [
           {
-            gohomeTitle:'返程时间:',
+            gohomeTitle:'返程时间',
             gohomeText: [
               {
-                text: '17:35'
+                text: '17:30'
               },
               
             ]
           },
           {
-            gohomeTitle:'返程地点:',
+            gohomeTitle:'返程集合地点',
             gohomeText: [
               {
-                text: '小莲花1号门18-35号车'
+                text: '小莲花1号门员工上车点'
               },
             ]
           },
           {
-            gohomeTitle:'地铁线路指南:',
+            gohomeTitle:'地铁线路指南',
             gohomeText: [
               {
-                text: '小莲花1号门-6号线奥体中心地铁站C口桂花西路方向-长河地铁站换乘-5号线长河地铁站（姑娘桥方向）-聚才路地铁站C口'
+                text: '小莲花2号门-6号线奥体中心地铁站C口（桂花西路方向）C口-中医药大学地铁站B口'
               },
             ]
           }
@@ -218,26 +198,26 @@ Page({
         title: '富阳产业园',
         gohomeDetail: [
           {
-            gohomeTitle:'返程时间:',
+            gohomeTitle:'返程时间',
             gohomeText: [
               {
-                text: '17:25'
+                text: '17:30'
               },
             ]
           },
           {
-            gohomeTitle:'返程地点:',
+            gohomeTitle:'返程集合地点',
             gohomeText: [
               {
-                text: '小莲花1号门2-16号车'
+                text: '小莲花1号门员工上车点'
               },
             ]
           },
           {
-            gohomeTitle:'地铁线路指南:',
+            gohomeTitle:'地铁线路指南',
             gohomeText: [
               {
-                text: '小莲花1号门-6号线奥体中心地铁站C口桂花西路方向-高桥地铁站D口-地铁高桥站D口公交站（车管所方向）-邦德公交站'
+                text: '小莲花2号门-6号线奥体中心地铁站C口（桂花西路方向）-高桥地铁站D口-地铁高桥站D口公交站 (车管所方向) -邦德公交站'
               },
             ]
           }
@@ -247,63 +227,30 @@ Page({
       },
       {
         bgUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/gohomeInfobgurl.webp?sign=e6b375037c20ab518b70087cd1bc4b7f&t=1699429253',
-        titleBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG20.jpg?sign=18d29a8cc53ad381916f9db4c2ac17d5&t=1697258150',
-        title: '教仪工厂（富阳）',
-        gohomeDetail: [
-          {
-            gohomeTitle:'返程时间:',
-            gohomeText: [
-              {
-                text: '17:25'
-              },
-            ]
-          },
-          {
-            gohomeTitle:'返程地点:',
-            gohomeText: [
-              {
-                text: '小莲花1号门附近1号车'
-              },
-            ]
-          },
-          {
-            gohomeTitle:'地铁线路指南:',
-            gohomeText: [
-              {
-                text: '小莲花1号门-6号线奥体中心地铁站C口桂花西路方向-高桥地铁站D口-地铁高桥站D口公交站（车管所方向）-临时站1公交站'
-              },
-            ]
-          }
-        ],
-        logo:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/byellowcar.webp?sign=35eb4ef6063ac50a4550d62f910772f4&t=1699418703'
-
-      },
-      {
-        bgUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/gohomeInfobgurl.webp?sign=e6b375037c20ab518b70087cd1bc4b7f&t=1699429253',
         titleBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG21.jpg?sign=d03a2f69617c4e3622cd2499d4240459&t=1697258162',
         title: '金盛产业园',
         gohomeDetail: [
           {
-            gohomeTitle:'返程时间:',
+            gohomeTitle:'返程时间',
             gohomeText: [
               {
-                text: '17:20'
+                text: '17:30'
               },
             ]
           },
           {
-            gohomeTitle:'返程地点:',
+            gohomeTitle:'返程集合地点',
             gohomeText: [
               {
-                text: '小莲花1号门附近17号车'
+                text: '小莲花1号门员工上车点'
               },
             ]
           },
           {
-            gohomeTitle:'地铁线路指南:',
+            gohomeTitle:'地铁线路指南',
             gohomeText: [
               {
-                text: '小莲花1号门-6号线奥体中心地铁站C口桂花西路方向-4号线中医药大学地铁站浦沿方向-浦沿地铁站A口'
+                text: '小莲花2号门-6号线奥体中心地铁站C口（桂花西路方向）-4号线中医药大学地铁站（浦沿方向）-浦沿地铁站A口'
               },
             ]
           }

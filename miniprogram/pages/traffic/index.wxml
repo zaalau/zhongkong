@@ -27,20 +27,20 @@
 		<view class="contentContainer" style="background-image: url('{{contentBg}}');">
 
 			<!-- <image class="containerLogo" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG195.jpg?sign=cb8a0fbf4d744459706aac6033fe838b&t=1697173215" /> -->
-			<view wx:for="{{departuretContent}}" wx:for-item="item" wx:key="index" class="carInfoContainer" style="background-image: url('{{item.carinfoBg}}');">
+			<view wx:for="{{departuretContent}}" wx:for-item="item" wx:for-index="index" wx:key="index" class="carInfoContainer" style="background-image: url('{{item.carinfoBg}}');">
 				<view wx:if="{{item.type === 'havePic'}}">
 					<view class="title" style="background-image: url('{{item.titleBg}}');">{{item.title}}</view>
 					<view class="detailContainer">
-						<view class="timeAndPosition">
+						<view class="timeAndPosition timeAndPosition{{index}}">
 							<view class="timeTitle">{{item.timeTitle}}</view>
 							<view class="timeContainer">
 
-								<view class="timeText" wx:for="{{item.timeText}}" wx:for-item="textItem" wx:key="textIndex">{{textItem.text}}</view>
+								<view class="timeText timeText1{{index}}{{textIndex}}" wx:for="{{item.timeText}}" wx:for-index="textIndex" wx:for-item="textItem" wx:key="textIndex">{{textItem.text}}</view>
 
 							</view>
 
 							<view class="timeTitle">{{item.carPosition}}</view>
-							<view class="timeText">{{item.carText}}</view>
+							<view class="carText">{{item.carText}}</view>
 						</view>
 						<view class="picContainer">
 							<image class="pic" bindtap='preview' data-pic-src="{{item.picSrc}}" src="{{item.picSrc}}" mode="" />

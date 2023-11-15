@@ -183,13 +183,13 @@ Page({
         type: 'background',
         midSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG268.jpg?sign=be0bfc5a7a6040ba15554cd40989b8d5&t=1697444855',
         // topTitleText: '大会背景',
-        conferenceBackgroundContent: [{
-            text: '1993年，中控怀抱着工业强国的梦想，迈上了自主研发之路，创业初期，中控自主创新、成长淬炼，打造以控制系统为核心的产品体系;后又进军高端，打破技术垄断，持续精耕，引领智能制造;而今中控创新服务模式，开启国际化新征程，以科技为高台，踏梦前行。'
-          },
-          {
-            text: '三十年，是几代中控人成长的厚重积淀，中控始终坚信一个信念，要做一家有使命感的企业，在中国发展进程中留下深深的印迹。'
-          }
-        ],
+        // conferenceBackgroundContent: [{
+        //     text: '1993年，中控怀抱着工业强国的梦想，迈上了自主研发之路，创业初期，中控自主创新、成长淬炼，打造以控制系统为核心的产品体系;后又进军高端，打破技术垄断，持续精耕，引领智能制造;而今中控创新服务模式，开启国际化新征程，以科技为高台，踏梦前行。'
+        //   },
+        //   {
+        //     text: '三十年，是几代中控人成长的厚重积淀，中控始终坚信一个信念，要做一家有使命感的企业，在中国发展进程中留下深深的印迹。'
+        //   }
+        // ],
         timeInfoRemarksContainer: [{
             src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/timepositioninfobg.webp?sign=cf6cb766b70fc22cd196336964513630&t=1699419186',
             text: '大会时间：2023/11/23（ 14: 00-17: 00 ）'

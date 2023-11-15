@@ -13,14 +13,14 @@ exports.main = async (event, context) => {
     OPENID
   } = cloud.getWXContext();
   let user;
+  try {
+    // 根据 openid 查询用户信息
 
-  // 根据 openid 查询用户信息
-
-  let [users] = await Promise.all([
-    db.collection('user').where({
-      openid: OPENID
-    }).get(),
-  ])
+    let [users] = await Promise.all([
+      db.collection('user').where({
+        openid: OPENID
+      }).get(),
+    ])
 
 
     // 默认取查到的第一个user记录
@@ -43,39 +43,41 @@ exports.main = async (event, context) => {
           },
         })
     } else {
-      if(historyWish.length===0) {
+      if (historyWish.length === 0) {
         await db.collection('user').where({
-          openid: OPENID
-        })
-        .update({
-          data: {
-            historyWish: _.push(event),
-            draw: _.inc(1)
-          },
-        })
-      }else {
+            openid: OPENID
+          })
+          .update({
+            data: {
+              historyWish: _.push(event),
+              draw: _.inc(1)
+            },
+          })
+      } else {
         await db.collection('user').where({
-          openid: OPENID
-        })
-        .update({
-          data: {
-            historyWish: _.push(event)
-          },
-        })
+            openid: OPENID
+          })
+          .update({
+            data: {
+              historyWish: _.push(event)
+            },
+          })
       }
-      
+
     }
 
+    return {
+      success: true,
+      data: {
+        successMSG: 'upload_wish success'
+      }
+    };
+  } catch (error) {
+    return {
+      success: false,
+      errMsg: error
+    };
+  }
 
-  
-
-  // 上次海报介绍时间大于间隔天数，则 if_show_introduce 为true
-
-  return {
-    success: true,
-    data: {
-      successMSG: 'upload_wish success'
-    }
-  };
 
 }

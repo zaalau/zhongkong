@@ -14,8 +14,8 @@ exports.main = async (event, context) => {
     OPENID
   } = cloud.getWXContext();
   let user;
-
-  // 根据 openid 查询用户信息
+  try {
+    // 根据 openid 查询用户信息
 
   let [users] = await Promise.all([
     db.collection('user').where({
@@ -48,5 +48,12 @@ exports.main = async (event, context) => {
       successMSG: 'HOME INIT SUCCESS'
     }
   };
+  } catch (error) {
+    return {
+      success: false,
+      errMsg: error
+    };
+  }
+  
 
 }

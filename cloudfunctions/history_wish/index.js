@@ -15,15 +15,22 @@ exports.main = async (event, context) => {
 
 
   // 根据 openid 查询用户信息
-
-  let [users] = await Promise.all([
-    db.collection('user').where({
-      openid: OPENID
-    }).get(),
-  ])
-  let { historyWish } = users.data[0]
-
-  return {
-    historyWish
+  try {
+    let [users] = await Promise.all([
+      db.collection('user').where({
+        openid: OPENID
+      }).get(),
+    ])
+    let { historyWish } = users.data[0]
+  
+    return {
+      historyWish
+    }
+  } catch (error) {
+    return {
+      success: false,
+      errMsg: error
+    };
   }
+  
 }

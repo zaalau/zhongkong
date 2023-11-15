@@ -1,8 +1,10 @@
 <!--pages/draw/index.wxml-->
-<view  class="drawContainer" style="height: {{drawContainerHeight}}px;">
+<view class="drawContainer" style="height: {{drawContainerHeight}}px;">
   <view class="drawisend" wx:if="{{drawStatus==='end'}}" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/drawisend.webp?sign=a30d33c96f21ba69361eb8ced2caf51e&t=1699883526');"></view>
-  <video class="video" wx:else autoplay="{{false}}" id="video" object-fit='cover'  bindended='drawEnded' binderror='drawEnded' controls="{{false}}" show-center-play-btn="{{false}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E6%8A%BD%E5%A5%96%E5%8A%A8%E7%94%BB_2.mp4?sign=04934cbab1167637f870e480394c8cea&t=1699881554"/>
-  
+  <view class="videoContainer" wx:else>
+    <video class="video"  autoplay="{{false}}" id="video" object-fit='cover' bindended='drawEnded' binderror='drawEnded' controls="{{false}}" show-center-play-btn="{{false}}" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E6%8A%BD%E5%A5%96%E5%8A%A8%E7%94%BB_2.mp4?sign=04934cbab1167637f870e480394c8cea&t=1699881554" />
+  </view>
+
   <view class="drawBtnContainer" wx:if="{{user.drawStatus==='static'}}" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/choujiangwaifaguang.webp?sign=2f9852d4fc6826a4237419772f599dd6&t=1699073893');">
     <view class="drawBtn0" bindtap="draw" wx:if="{{user.draw===0}}">
     </view>
@@ -13,19 +15,19 @@
     <view class="prizeInfo">
       <view class="workNumberInfo">工号：{{user.workNumber}}</view>
       <view class="giftInfo">奖品：{{user.gifttext}}</view>
-    
+
     </view>
     <view class="tips">(兑奖规则将于推文公布，记得关注哦～)</view>
   </view>
-  <view class="giftContainer" wx:if="{{igotgift==='yes'}}" >
-    <view class="giftText" >{{user.gift}}</view>
+  <view class="giftContainer" wx:if="{{igotgift==='yes'}}">
+    <view class="giftText">{{user.gift}}</view>
   </view>
-  
+
 
   <view class="workNumberContainer" wx:if="{{ifShowInput}}">
     <view class="workNumberInputContainer">
       <view class="closeInput" bindtap='closeInput'></view>
-      <input class="workNumberInput" placeholder="请输入工号..." type="number" value="{{workNumber}}" bindinput='handleWorkNum' maxlength='10'/>
+      <input class="workNumberInput" placeholder="请输入工号..." type="number" value="{{workNumber}}" bindinput='handleWorkNum' maxlength='10' />
       <view class="workNumberBtn" bindtap='sendWorkNum'></view>
     </view>
   </view>

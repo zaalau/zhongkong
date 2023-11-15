@@ -6,27 +6,27 @@
 }
 .wall {
 	position: absolute;
-	width: 400rpx;
-	height: 540rpx;
-	background-color: rgba(255, 255, 255, 0);
-	top: 250rpx;
+	width: 460rpx;
+  background-color: rgba(92, 196, 23, 0);
+	height: 37%;
+	top: 14%;
 
 }
 
 
 .draw {
 	position: absolute;
-	width: 255rpx;
-	height: 260rpx;
-	background-color: rgba(255, 255, 255, 0);
-	bottom: 510rpx;
+	width: 260rpx;
+  background-color: rgba(85, 21, 204, 0);
+	height: 21%;
+	top: 44%;
 	right: 0;
 }
 .draw2 {
 	position: absolute;
 	width: 455rpx;
-	height: 260rpx;
-	background-color: rgba(255, 255, 255, 0);
-	bottom: 250rpx;
+  background-color: rgba(146, 23, 105, 0);
+  height: 18%;
+  top: 65%;
 	right: 0;
 }

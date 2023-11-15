@@ -2,7 +2,6 @@
     "cloud": true,
     "pages": [
         "pages/home/index",
-        "pages/check/index",
         "pages/intro/index",
         "pages/game/index",
         "pages/map/index",

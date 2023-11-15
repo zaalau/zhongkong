@@ -224,7 +224,12 @@
 	position: absolute;
 	bottom: -30rpx;
 }
-
+.safetips {
+  background-size: 100% 100%;
+  margin: 60rpx auto;
+  width: 680rpx;
+  height: 458rpx;
+}
 
 
 

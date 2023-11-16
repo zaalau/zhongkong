@@ -26,7 +26,7 @@
     <image class="handPic" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/handpic.webp?sign=11a489d6ab28a540e9de262b680db4a0&t=1699431802"></image>
     <image class="handTip" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/handtip.webp?sign=556c8e9921c52fa257ec6c8385cc68e8&t=1699431986" mode="" />
     <view class="seatAllContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/seatAllContainerbg.webp?sign=5057ae5d9c534b65a50fd814ba8a18f4&t=1699431680');">
-      <view class="seatAllPic" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/seatticketend.webp?sign=2ea6659ec8d25d5d6d55d2b633cf7b95&t=1700133112');">
+      <view class="seatAllPic" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/seatticketfinal.webp?sign=e33cbf26941f97bfcc30dfc1e33fa3d6&t=1700143432');">
 
         <view class="district1-0" bindtap='preview2' data-pic-src="{{xx[0]}}"></view>
         <view class="district1-1" bindtap='preview2' data-pic-src="{{xx[0]}}"></view>

@@ -1,67 +1,32 @@
 /* pages/wish/index.wxss */
-/* .addPic {
 
-	background-color: rgba(255, 255, 0, 0.582);
-	width: 250rpx;
-	height: 250rpx;
-	border-radius: 200rpx;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 30rpx auto 0;
-	font-size: 40rpx;
-}
-.addText {
-	background-color: rgba(255, 255, 0, 0.582);
-	width: 80%;
-	height: 80rpx;
-	border-radius: 30rpx;
-	margin: 30rpx auto 0;
-}
-.addButton {
-	background-color: rgba(255, 255, 0, 0.582);
-	width: 250rpx;
-	height: 250rpx;
-	border-radius: 200rpx;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 30rpx auto 0;
-	font-size: 40rpx;
-}
-.myWishButton {
-	background-color: rgba(255, 255, 0, 0.582);
-	width: 250rpx;
-	height: 250rpx;
-	border-radius: 200rpx;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 200rpx auto 0;
-	font-size: 40rpx;
-} */
 .wishContainer {
 	background-size: 100% 100%;
-	position: relative;
+  position: relative;
+  box-sizing: border-box;
+	width: 750rpx;
+
 }
 .wishTop {
 	background-size: 100% 100%;
 	width: 750rpx;
-	height: 460rpx;
+  height: 460rpx;
+  box-sizing: border-box;
 }
 .toDraw {
 	background-size: 100% 100%;
-	width: 230rpx;
-	height: 74rpx;
+	width: 290rpx;
+	height: 93rpx;
 	position: absolute;
-	top: 370rpx;
-	right: 35rpx;
+	top: 372rpx;
+  right: 12rpx;
 }
 .addPic {
 	background-size: 100% 100%;
 	width: 513rpx;
 	height: 308rpx;
-	margin: 55rpx auto 0;
+  margin: 55rpx auto 0;
+  
 }
 .addText {
 	width: 485rpx;

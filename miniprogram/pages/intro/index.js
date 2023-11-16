@@ -188,7 +188,7 @@ Page({
             {
               dot: '●',
               dotColor: '#e507fe',
-              text: '2017年，发布具有我国自主知识产权的工业操作系统supOS，是国内首个拥有自主知识产权的工业操作系统'
+              text: '2017年，发布具有我国自主知识产权的工厂操作系统supOS，是国内首个拥有自主知识产权的工厂操作系统'
             },
             {
               dot: '●',
@@ -401,7 +401,7 @@ Page({
 
               {
                 src: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG293.jpg?sign=84ac71bd4da9dccdb3e6b066f23fdbc7&t=1697454478',
-                performanceName: '《主题报告》',
+                performanceName: '主题报告',
                 // performer: [{
                 //     text: '中控集团创始人 褚健'
                 //   },

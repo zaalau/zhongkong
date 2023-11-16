@@ -15,7 +15,7 @@ Page({
       })
     },
     onPageScroll: function (e) {
-      console.log(e.scrollTop)
+      // console.log(e.scrollTop)
       const { ratio } = this.data
       if (e.scrollTop > 340/ratio) {
         this.setData({

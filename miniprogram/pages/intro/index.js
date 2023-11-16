@@ -19,127 +19,226 @@ Page({
       secTitleBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtysectitbg.webp?sign=5af7e0f45a5f4eb31d5751200a0b56f0&t=1699430845',
       secText: '中控历程：从跟跑到并跑领跑',
       content: [{
-          bigText: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtybigTextbg.webp?sign=b383c512c591606af6a4b1ac1c6e87a1&t=1699431245',
-          separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtyseparatepic.webp?sign=6e097fb68974b6d47c1226b7d1f6ffb9&t=1699431229',
-          text: '创立-2005',
+          
 
           midText: [{
-              text: '自主创新，成长萃炼'
+              text: '自主自强，以中小市场为起点，星火燎原'
             },
-            {
-              text: '打造以控制系统为核心的产品体系'
-            }
+            
           ],
           smallText: [{
               dot: '●',
               dotColor: '#e507fe',
-              text: '成功自主研发第一台1:1热冗余DCS(JX-100)；推出第一台无纸记录仪(JL-20A)'
+              text: '1993年，成功自主研发第一台1:1热冗余DCS（JX-100）'
             },
             {
               dot: '●',
               dotColor: '#e507fe',
-              text: '在国内开始规模推广APC软件'
+              text: '1994年，推出第一代无纸记录仪（JL-20A）'
             },
             {
               dot: '●',
               dotColor: '#e507fe',
-              text: '“现场总线控制系统”荣获国家科技进步二等奖'
+              text: '1997年，JX-100荣获国家科技进步三等奖'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '1998年，在国内开始规模推广APC软件'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '1998年，首次进入公路交通行业，中标大溪岭-湖雾岭项目'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2001年，“现场总线控制系统”荣获国家科技进步二等奖'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2002年，被认定为国家火炬计划重点高新技术企业'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2003年，搬入中控科技园'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2005年，成功实施国内首条双向绿波带奠定在城市交通领域的技术优势'
             },
           ]
 
         }, {
-          bigText: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtybigTextbg.webp?sign=b383c512c591606af6a4b1ac1c6e87a1&t=1699431245',
+          
           separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtyseparatepic.webp?sign=6e097fb68974b6d47c1226b7d1f6ffb9&t=1699431229',
-          text: '2006-2011',
+          
           midText: [{
-              text: '进军高端，打破技术垄断'
+              text: '进军高端市场，打造国际标准，产品谱系不断拓展'
             },
-            {
-              text: '延伸控制阀、仪表、工业软件业务，不断拓展产品谱系'
-            }
+            
           ],
           smallText: [{
               dot: '●',
               dotColor: '#e507fe',
-              text: '面向大中装置的大规模联合控制系统ECS-700正式发布，相关研发成果“面向重大工程的联合控制系统的研发及其应用”荣获浙江省科学技术奖一等奖'
+              text: '2007年，正式发布面向大中装置的大规模联合控制系统ECS-700，并成功中标中石化武汉石化“500万吨/年炼油改造系统项目”，首次打破国外公司在核心装置上的垄断'
             },
             {
               dot: '●',
               dotColor: '#e507fe',
-              text: '成功中标中石化武汉石化“500万吨/年炼油改造系统项目”,“中国大脑”首次打破国外公司对中国石化核心装置控制系统垄断'
+              text: '2008年，参与奥运“水立方”自动控制项目建设'
             },
             {
               dot: '●',
               dotColor: '#e507fe',
-              text: '“新一代控制系统高性能现场总线—EPA”荣获国家技术发明二等奖，是中国第一个被国际认可的工业自动化标'
+              text: '2009年，新一代控制系统高性能现场总线—EPA荣获国家技术发明二等奖，是中国第一个被国际认可的工业自动化标准'
             },
             {
               dot: '●',
               dotColor: '#e507fe',
-              text: '“中控以标准国际化为核心的自动化技术创新工程”荣获围家科技进步二等奖'
+              text: '2010年，“中控以标准国际化为核心的自动化技术创新工程”荣获国家科技进步二等奖'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2010年，提出“e城市·易生活”理念'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2012年，“炼油化工重大工程自动化控制与优化一体化系统关键技术研究”荣获国家科技进步二等奖'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2012年，荣获“国家技术创新示范企业”称号'
+            },
+            
+          ]
+
+        },
+        {
+          
+          separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtyseparatepic.webp?sign=6e097fb68974b6d47c1226b7d1f6ffb9&t=1699431229',
+          
+          midText: [{
+              text: '聚焦智能制造， 拓展智慧城市，引领商业模式转型'
+            },
+            
+          ],
+          smallText: [{
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2014-2016年，中标中天合创鄂尔多斯煤炭深加工示范项目、国家能源集团宁煤公司百万吨级乙烯项目、东北制药大宗原料药等智能制造项目'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2015年，TCS-900安全控制系统获安全完整性SIL3等级认证'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2015年，连续突破多套千万吨级大型炼油装置项目'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2016年，中控信息大厦、中控产业园正式投入使用'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2016年，承担杭州G20峰会交通保障指挥平台建设和开幕式演出舞台控制系统'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2016年，自主研发大型轨道交通综合监控系统软件MetroView实现首台套应用，打破国外垄断'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2016-2018，完成宁煤公司百万吨级乙烯项目、九江石化、东北制药等一批国家级智能制造项目'
             },
           ]
 
         },
         {
-          bigText: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtybigTextbg.webp?sign=b383c512c591606af6a4b1ac1c6e87a1&t=1699431245',
           separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtyseparatepic.webp?sign=6e097fb68974b6d47c1226b7d1f6ffb9&t=1699431229',
-          text: '2012-2016',
           midText: [{
-              text: '持续精耕，引领智能制造'
+              text: '加速“二次创业”，推出“烈火计划”，打造更加规范化、现代化、国际化的新中控型'
             },
-            {
-              text: '从自动化产品供应商转型为智能制造整体解决方案供应商'
-            }
+            
           ],
           smallText: [{
               dot: '●',
               dotColor: '#e507fe',
-              text: '“炼油化工重大工程自动化控制与优化一体化系统关键技术研究”荣获国家科技进步二等奖'
+              text: '2017年，参建杭州城市大脑项目'
             },
             {
               dot: '●',
               dotColor: '#e507fe',
-              text: '“化工产业联合生产智能管控一体化综合系统”示范项目获得国家发改委、财政部、工信部的立项批复，列入国家智能制造装备发展专项'
+              text: '2017年～2023年，武汉轨道交通机场线、荆门第一人民医院南城区医院、杭州大毛坞—仁和大道供水管道工程获国家优质工程奖'
             },
             {
               dot: '●',
               dotColor: '#e507fe',
-              text: '成功中标中天合创鄂尔多斯煤炭深加工示范项目、国家能源集团宁煤公司百万吨级乙烯项目、东北制药国家级智能制造项目'
-            },
-          ]
-
-        },
-        {
-          bigText: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtybigTextbg.webp?sign=b383c512c591606af6a4b1ac1c6e87a1&t=1699431245',
-          separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtyseparatepic.webp?sign=6e097fb68974b6d47c1226b7d1f6ffb9&t=1699431229',
-          text: '2017-至今',
-          midText: [{
-              text: '创新商业模式，开启国际化新征程'
-            },
-            {
-              text: '打造“135客户价值创新模式”,实现从工业3.0到工业4.0的跨越'
-            }
-          ],
-          smallText: [{
-              dot: '●',
-              dotColor: '#e507fe',
-              text: '打造以“1种服务模式+3大产品技术平台+5T技术”为核心的中控“135客户价值创新模式”'
+              text: '2017年，发布具有我国自主知识产权的工业操作系统supOS，是国内首个拥有自主知识产权的工业操作系统'
             },
             {
               dot: '●',
               dotColor: '#e507fe',
-              text: '打造国际化业务生态圈，产品进入沙特阿美、巴斯夫及壳牌、埃克森美孚等跨国巨头企业，助力国际高端客户数字化转型'
+              text: '2019年，发布PLANTMATE品牌，打造“5S店+S2B平台”一站式工业服务新模式'
             },
             {
               dot: '●',
               dotColor: '#e507fe',
-              text: '在上海证券交易所科创板成功上市，股票代码688777;成功发行GDR,在瑞士证券交易所挂牌交易'
+              text: '2020年，中控技术在上海证券交易所科创板成功上市'
             },
             {
               dot: '●',
               dotColor: '#e507fe',
-              text: '入股石化盈科、众一伍德、达美盛，全资收购国际高端分析仪器公司Hobré(荷兰)'
+              text: '2020年至今，中控技术产品进入沙特阿美、巴斯夫及壳牌、埃克森美孚等跨国巨头企业，助力国际高端客户数字化转型'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2021年，重磅推出eCityOS基础设施数智化平台'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2022年，“城轨智能管控一体化软硬件关键技术及应用”获浙江省科学技术进步奖二等奖'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2022年，中控技术重磅推出OMC系统，并提出“135客户价值创新模式”，全面引领流程工业企业向智能化迈进'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2022年，中控信息建立“双5T战略方针 + 双业务驱动2.0”'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2023年，中控技术GDR在瑞交所成功发行上市，全球化战略进入全新阶段'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2023年，中控技术海外首家5S店落地沙特'
+            },
+            {
+              dot: '●',
+              dotColor: '#e507fe',
+              text: '2023年，中控技术推出 “1+2+N”智能工厂新架构，助力流程工业企业实现生产过程自动化（PA）和企业运营自动化（BA）'
             },
           ]
 
@@ -148,34 +247,7 @@ Page({
       ],
 
     },
-    // {
-    //     type:'media',
-    //     bgSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG237.jpg?sign=cb969372e04e7ea2f3469cab5bc09f5c&t=1697517673',
-    //     midSrc:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG233.jpg?sign=3328df78830a3585e65dcc2c7657d0dc&t=1697517695',
-    //     firstTitleText:'三十周年视频',
-    //     mediaContent: [{
-    //         textUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG234.jpg?sign=17c8ad72af65c64ff26e111dbb6c8b50&t=1697517740',
-    //         text:'纪录片',
-    //         separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG329.jpg?sign=71048d9f13d0d4e5105f716c6cff218e&t=1697510440',
-    //         vedio: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG98.jpg?sign=963b195401660c96dca2a18f267333bf&t=1697028568',
-    //         width: 82
-    //       },
-    //       {
-    //         textUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG235.jpg?sign=f44204ca47a56fc341e8fe1eaf7b9f89&t=1697517754',
-    //         text:'祝福视频',
-    //         separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG329.jpg?sign=71048d9f13d0d4e5105f716c6cff218e&t=1697510440',
-    //         vedio: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG96.jpg?sign=279274d9c6a8abaac190d2032d423a93&t=1697028642',
-    //         width: 95
-    //       },
-    //       {
-    //         textUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG236.jpg?sign=14c265a44718c8206745416d6bacad00&t=1697517765',
-    //         text:'主题曲MV',
-    //         separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG329.jpg?sign=71048d9f13d0d4e5105f716c6cff218e&t=1697510440',
-    //         vedio: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG97.jpg?sign=4948669c370edcc042cee9fbaf88b82e&t=1697028626',
-    //         width: 110
-    //       },
-    //     ],
-    // }
+   
 ],
 
     

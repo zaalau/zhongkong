@@ -191,6 +191,7 @@ Page({
           WORKNUMBER:workNumber
         },
         success: res => {
+          console.log(res)
           const MSG = res.result.data.MSG
           const success = res.result.data.success
           const user = res.result.data.user

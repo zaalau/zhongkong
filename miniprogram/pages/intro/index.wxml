@@ -26,10 +26,10 @@
 					<view class="firstTitleText">{{item.firstTitleText}}</view>
 					<image class="rightImg" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG325.jpg?sign=26d40fca77788eaa86dc2a068531951d&t=1697509555" mode="" />
 				</view>
-				<view class="secTitle" style="background-image: url('{{item.secTitleBg}}');">{{item.secText}}</view>
+				<view class="secTitle2" style="background-image: url('{{item.secTitleBg}}');">{{item.secText}}</view>
 				<view class="contentContainer" wx:for="{{item.content}}" wx:for-item="contentItem" wx:key="contentIndex">
-					<view class="bigText" style="background-image: url('{{contentItem.bigText}}');">{{contentItem.text}}</view>
-					<view class="separatePic" style="background-image: url('{{contentItem.separatePic}}');"></view>
+					<!-- <view class="bigText" style="background-image: url('{{contentItem.bigText}}');">{{contentItem.text}}</view> -->
+					<view class="separatePic" wx:if="{{contentItem.separatePic}}" style="background-image: url('{{contentItem.separatePic}}');"></view>
 					<view class="midText" wx:for="{{contentItem.midText}}" wx:for-item="midItem" wx:key="midIndex">{{midItem.text}}</view>
 					<view class="smallText" wx:for="{{contentItem.smallText}}" wx:for-item="smallItem" wx:key="smallIndex">
 						<text class="dot" style="color: {{smallItem.dotColor}}">{{smallItem.dot}}</text>

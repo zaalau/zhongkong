@@ -78,12 +78,12 @@
 
 	<view class="gohomeContainer" wx:if="{{gohome}}" style="background-image: url('{{gohomeBg}}');">
 		<view class="contentContainer2"  style="background-image: url('{{contentBg}}');">
-			<view class="gohomeInfoContainer" wx:for="{{gohomeContent}}"  wx:for-index="gohomeIndex"wx:for-item="gohomeItem" wx:key="gohomeIndex" style="background-image: url('{{gohomeItem.bgUrl}}'); margin-bottom: {{gohomeIndex === gohomeContent.length - 1 ? '0' : '50rpx'}};">
-				<view class="title2" style="background-image: url('{{gohomeItem.titleBg}}');">{{gohomeItem.title}}</view>
+			<view class="gohomeInfoContainer gohomeInfoContainer{{gohomeIndex}}" wx:for="{{gohomeContent}}"  wx:for-index="gohomeIndex"wx:for-item="gohomeItem" wx:key="gohomeIndex" style="background-image: url('{{gohomeItem.bgUrl}}'); margin-bottom: {{gohomeIndex === gohomeContent.length - 1 ? '0' : '50rpx'}};">
+				<view class="title2" wx:if="{{gohomeItem.titleBg}}" style="background-image: url('{{gohomeItem.titleBg}}');">{{gohomeItem.title}}</view>
 				<view class="gohomeDetailContainer" wx:for="{{gohomeItem.gohomeDetail}}" wx:for-item="gohomeDetailItem" wx:key="gohomeDetailIndex">
 					<view class="gohomeTitle">{{gohomeDetailItem.gohomeTitle}}</view>
 					<view class="gohomeTextContainer" >
-						<view class="gohomeText" wx:for="{{gohomeDetailItem.gohomeText}}" wx:for-item="goHomeTextItem" wx:key="goHomeTextIndex">{{goHomeTextItem.text}}</view>
+						<view class="gohomeText gohomeText{{gohomeIndex}}" wx:for="{{gohomeDetailItem.gohomeText}}" wx:for-item="goHomeTextItem" wx:key="goHomeTextIndex">{{goHomeTextItem.text}}</view>
 					</view>
 				</view>
 				<!-- <view class="gohomeDetailContainer">
@@ -94,7 +94,7 @@
 					<view class="gohomeTitle">地铁线路指南</view>
 					<view class="gohomeText">小莲花1号门-6号线奥体中心地铁站C口桂花西路方向-中医药大学地铁站B口</view>
 				</view> -->
-				<image class="contentLogo2" src="{{gohomeItem.logo}}" mode=""/>
+				<image class="contentLogo2" wx:if="{{gohomeItem.logo}}" src="{{gohomeItem.logo}}" mode=""/>
 
 			</view>
 		</view>

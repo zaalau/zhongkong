@@ -67,7 +67,8 @@ Page({
       workNumber,
       drawStatus
     } = this.data.user
-    if (drawStatus === 'static'&&this.data.drawStatus === 'static') {
+    const user = this.data.user
+    if (drawStatus === 'static' && this.data.drawStatus === 'static') {
       //如果抽奖次数为0（还没发送心愿）
       wx.vibrateShort({})
       if (draw === 0) {
@@ -83,7 +84,7 @@ Page({
         if (workNumber === '') {
           this.setData({
             ifShowInput: true,
-            canibind:true
+            canibind: true
           })
         } else {
           this.setData({
@@ -92,25 +93,30 @@ Page({
           wx.cloud.callFunction({
             // 云函数名称
             name: 'drawing',
+            data: {
+              user
+            },
             success: res => {
-              console.log(res.result);
-              const user = res.result.data.user
-              const MSG = res.result.data.MSG
-              if(MSG==='SOMEONE IS DRAWING') {
-                this.setData({
-                  drawStatus: 'static'
-                })
-                // settimeout
-                this.draw()
-              }
-              //开始抽奖，动效播放、抽奖机状态改为抽奖中、减少抽奖次数
-              var videoplay = wx.createVideoContext('video')
-              this.setData({
-                videoplay,
-                user
+              console.log(res);
 
+              const MSG = res.result.MSG
+              // //开始抽奖，动效播放、抽奖机状态改为抽奖中、减少抽奖次数
+              wx.cloud.callFunction({
+                // 云函数名称
+                name: 'update_user',
+                data: {
+                  user: res.result.user
+                },
+                success: res => {
+                  var videoplay = wx.createVideoContext('video')
+                  this.setData({
+                    videoplay,
+                    user:res.result.user
+                  })
+                  videoplay.play()
+                },
+                fail: console.error
               })
-              videoplay.play()
             },
             fail: console.error
           })
@@ -133,7 +139,7 @@ Page({
         this.setData({
           user: res.result.user,
           igotgift: 'yes',
-          
+
         })
       },
       fail: console.error
@@ -178,67 +184,67 @@ Page({
       canibind
     } = this.data
 
-   if(canibind){
-    if (workNumber != '') {
-      this.setData({
-        canibind:false
-      })
-      wx.cloud.callFunction({
-        // 云函数名称
-        name: 'bind_worknumber',
-        // 传给云函数的参数
-        data: {
-          WORKNUMBER:workNumber
-        },
-        success: res => {
-          console.log(res)
-          const MSG = res.result.data.MSG
-          const success = res.result.data.success
-          const user = res.result.data.user
-          if (success) {
-            wx.vibrateShort()
-            this.setData({
-              user,
-              ifShowInput: false
-            })
-            wx.showToast({
-              icon: "success",
-              title: MSG,
-              duration: 500
-            })
-          } else {
-            if(MSG==='SOMEONE IS BINDING') {
+    if (canibind) {
+      if (workNumber != '') {
+        this.setData({
+          canibind: false
+        })
+        wx.cloud.callFunction({
+          // 云函数名称
+          name: 'bind_worknumber',
+          // 传给云函数的参数
+          data: {
+            WORKNUMBER: workNumber
+          },
+          success: res => {
+            console.log(res)
+            const MSG = res.result.data.MSG
+            const success = res.result.data.success
+            const user = res.result.data.user
+            if (success) {
+              wx.vibrateShort()
               this.setData({
-                canibind:true 
+                user,
+                ifShowInput: false
               })
-              this.sendWorkNum()
+              wx.showToast({
+                icon: "success",
+                title: MSG,
+                duration: 500
+              })
+            } else {
+              if (MSG === 'SOMEONE IS BINDING') {
+                this.setData({
+                  canibind: true
+                })
+                this.sendWorkNum()
+              }
+              wx.vibrateLong()
+              wx.showToast({
+                icon: "error",
+                title: MSG,
+                duration: 1000
+              })
+              this.setData({
+                canibind: true
+              })
             }
-            wx.vibrateLong()
-            wx.showToast({
-              icon: "error",
-              title: MSG,
-              duration: 1000
-            })
-            this.setData({
-              canibind:true 
-            })
-          }
 
-        },
-        fail: console.error
-      })
+          },
+          fail: console.error
+        })
 
-    } else {
-      wx.vibrateLong()
-      wx.showToast({
-        icon: "error",
-        title: '工号有误',
-        duration: 1000
-      })
+      } else {
+        wx.vibrateLong()
+        wx.showToast({
+          icon: "error",
+          title: '工号有误',
+          duration: 1000
+        })
+      }
     }
-   }
-      
-    
+
+
   },
   /**
    * 生命周期函数--监听页面加载
@@ -249,7 +255,7 @@ Page({
         this.setData({
           drawContainerHeight: res.windowHeight,
           ratio: 750 / res.windowWidth,
-          
+
         })
       }
     })
@@ -261,7 +267,7 @@ Page({
         console.log(res.result.user);
         this.setData({
           user: res.result.user,
-          drawStatus:res.result.user.drawStatus,
+          drawStatus: res.result.user.drawStatus,
         })
 
       },

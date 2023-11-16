@@ -57,10 +57,10 @@ Page({
         timeTitle: '发车时间',
         timeText:[
           {
-            text:'第一批:11:30（20-50号车，循序发车）'
+            text:'第一批:11:30（循序发车，坐满即走）'
           },
           {
-            text:'第二批:12:40（20-64号车，循序发车）'
+            text:'第二批:12:40（循序发车，坐满即走）'
           },
           
         ],
@@ -79,7 +79,7 @@ Page({
         timeText:[
         
           {
-            text:'11:30（51-70号车，循序发车）'
+            text:'11:30（循序发车，坐满即走）'
           }
         ],
         carPosition: '发车地点',
@@ -97,7 +97,7 @@ Page({
         timeTitle: '发车时间',
         timeText:[
           {
-            text:'11:30（1-18号车，循序发车）'
+            text:'11:30（循序发车，坐满即走）'
           },
         ],
         carPosition: '发车地点',
@@ -105,93 +105,9 @@ Page({
         picSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/fycyy.webp?sign=ec1a21bd125dd2c8dea78e04bba3fa04&t=1699517486',
         contentLogo: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/sbluecar.webp?sign=6560d2d87678b35e04068fb2d607b56c&t=1699417789'
       },
-      {
-        type: 'noPic',
-        contentBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/departurecontentbg.webp?sign=3c2c164d172a6a3e85f1d3525a1c085a&t=1699421997',
-        
-        carinfoBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/carinfobg.webp?sign=29e856edf48182cee31588ba4a5766da&t=1699421769',
-        titleBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG218.jpg?sign=40461833a85f205e4e5d017c5fc2dee2&t=1697193640',
-        title: '金盛产业园',
-        timeTitle: '发车时间',
-        timeText:[
-          {
-            text:'12:35（19号车）'
-          },
-        ],
-        carPosition: '发车地点',
-        carText: '金盛科技园',
-        
-        contentLogo: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/slightbluecar.webp?sign=b8729381d0bde5c5a94dd9541cfcc5dc&t=1699418277'
-      }
+      
     ],
     gohomeContent: [
-      {
-        bgUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/gohomeInfobgurl.webp?sign=e6b375037c20ab518b70087cd1bc4b7f&t=1699429253',
-        titleBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG196.jpg?sign=c1ab84e33e2dc02b6e51f1ac2440c44c&t=1697177026',
-        title: '中控科技园',
-        gohomeDetail: [
-          {
-            gohomeTitle:'返程时间',
-            gohomeText: [
-              {
-                text: '17:30'
-              },
-            ]
-          },
-          {
-            gohomeTitle:'返程集合地点',
-            gohomeText: [
-              {
-                text: '小莲花1号门员工上车点'
-              },
-            ]
-          },
-          {
-            gohomeTitle:'地铁线路指南',
-            gohomeText: [
-              {
-                text: '小莲花2号门-6号线奥体中心地铁站C口（桂花西路方向）C口-中医药大学地铁站B口'
-              },
-            ]
-          }
-        ],
-        logo:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/bredcar.webp?sign=ce2e87a9e3b8e43a84e0f7e13c8c507a&t=1699418648'
-
-      },
-      {
-        bgUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/gohomeInfobgurl.webp?sign=e6b375037c20ab518b70087cd1bc4b7f&t=1699429253',
-        titleBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG18.jpg?sign=5243dacbec3c7a7e2583080763f34ac9&t=1697258094',
-        title: '中控信息大厦',
-        gohomeDetail: [
-          {
-            gohomeTitle:'返程时间',
-            gohomeText: [
-              {
-                text: '17:30'
-              },
-              
-            ]
-          },
-          {
-            gohomeTitle:'返程集合地点',
-            gohomeText: [
-              {
-                text: '小莲花1号门员工上车点'
-              },
-            ]
-          },
-          {
-            gohomeTitle:'地铁线路指南',
-            gohomeText: [
-              {
-                text: '小莲花2号门-6号线奥体中心地铁站C口（桂花西路方向）C口-中医药大学地铁站B口'
-              },
-            ]
-          }
-        ],
-        logo:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/bpurcar.webp?sign=bac77b41992f44a5464b13872045d2ef&t=1699418680'
-
-      },
       {
         bgUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/gohomeInfobgurl.webp?sign=e6b375037c20ab518b70087cd1bc4b7f&t=1699429253',
         titleBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG19.jpg?sign=3ad4e87f2bc4eb5aa66443beb0e131f5&t=1697258138',
@@ -226,38 +142,20 @@ Page({
 
       },
       {
-        bgUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/gohomeInfobgurl.webp?sign=e6b375037c20ab518b70087cd1bc4b7f&t=1699429253',
-        titleBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG21.jpg?sign=d03a2f69617c4e3622cd2499d4240459&t=1697258162',
-        title: '金盛产业园',
+        titleBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/twogohome.jpg?sign=87ebc5439e6b8dba42cbb0e10f5a3567&t=1700110744',
+        title: '中控科技园、中控信息大厦',
+        bgUrl: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/twogohomecontainer.jpg?sign=f4712c2c709bb288ef04b0ee01ff2a6c&t=1700110813',
         gohomeDetail: [
           {
-            gohomeTitle:'返程时间',
+            gohomeTitle:'',
             gohomeText: [
               {
-                text: '17:30'
+                text: '员工自行返回，所有步行人员，统一从小莲花出场后下台阶后，从观众步行出口至2号门出场，乘坐地铁至目的地'
               },
             ]
           },
-          {
-            gohomeTitle:'返程集合地点',
-            gohomeText: [
-              {
-                text: '小莲花1号门员工上车点'
-              },
-            ]
-          },
-          {
-            gohomeTitle:'地铁线路指南',
-            gohomeText: [
-              {
-                text: '小莲花2号门-6号线奥体中心地铁站C口（桂花西路方向）-4号线中医药大学地铁站（浦沿方向）-浦沿地铁站A口'
-              },
-            ]
-          }
         ],
-        logo:'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/blightbluecar.webp?sign=0bfd014cff1794c7627ac5d4772c64f7&t=1699418722'
-
-      }
+      },
     ]
 
 

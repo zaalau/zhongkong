@@ -45,7 +45,7 @@ Page({
    
     wx.previewImage({
       current: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/likeeyebig.webp?sign=6881a7f57484e4afca06ec696916bda0&t=1700118582', // 当前显示图片的http链接
-      urls: ['https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/likeeyebig.webp?sign=6881a7f57484e4afca06ec696916bda0&t=1700118582','https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/yunzhoubig.webp?sign=64036c26cb22820d4a9d37e33489268e&t=1700118593'] // 需要预览的图片http链接列表
+      urls: ['https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/likeeyebig.webp?sign=f13eb309ff018641cc41ef1b9e2ca70f&t=1700133219','https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/yunzhoubig.webp?sign=64036c26cb22820d4a9d37e33489268e&t=1700118593'] // 需要预览的图片http链接列表
     })
   },
   preview2(e) {

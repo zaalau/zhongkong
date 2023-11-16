@@ -17,7 +17,7 @@
   </view>
 
   <view class="flowerContainer" style="background-image: url('{{flowerBg}}'); min-height: {{mapContainerHeight - topBgHeight}}px;" wx:if="{{flower}}">
-    <view class="flowermap" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/likeeyebig.webp?sign=6881a7f57484e4afca06ec696916bda0&t=1700118582" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/likeeye.webp?sign=99e9a6666e6068bb90c5b051938199e1&t=1700118618');"></view>
+    <view class="flowermap" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/likeeyebig.webp?sign=f13eb309ff018641cc41ef1b9e2ca70f&t=1700133219" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/likeeye.webp?sign=e4193f939c6f08882f15e6e33ec03f8a&t=1700133187');"></view>
     <view class="flowermap" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/yunzhoubig.webp?sign=64036c26cb22820d4a9d37e33489268e&t=1700118593" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/yunzhoupreview.webp?sign=8c5c430125e7545f3d91932fc44cf34f&t=1700118608');"></view>
     <view class="bigbig" bindtap='bigpreview' style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG437.jpg?sign=2444f1bfeccee1d22ea43fc5128cc607&t=1698834714');"></view>
   </view>
@@ -26,7 +26,7 @@
     <image class="handPic" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/handpic.webp?sign=11a489d6ab28a540e9de262b680db4a0&t=1699431802"></image>
     <image class="handTip" src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/handtip.webp?sign=556c8e9921c52fa257ec6c8385cc68e8&t=1699431986" mode="" />
     <view class="seatAllContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/seatAllContainerbg.webp?sign=5057ae5d9c534b65a50fd814ba8a18f4&t=1699431680');">
-      <view class="seatAllPic" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/flowerseatend.webp?sign=f40970cb92072e048ad0a65e4f2faca3&t=1700033767');">
+      <view class="seatAllPic" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/seatticketend.webp?sign=2ea6659ec8d25d5d6d55d2b633cf7b95&t=1700133112');">
 
         <view class="district1-0" bindtap='preview2' data-pic-src="{{xx[0]}}"></view>
         <view class="district1-1" bindtap='preview2' data-pic-src="{{xx[0]}}"></view>

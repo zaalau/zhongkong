@@ -274,9 +274,7 @@
 	align-items: center;
 	justify-content: center;
 } */
-.gohomeTextContainer {
-	display: flex;
-}
+
 .title2 {
 	margin: 0 auto 10rpx auto;
 	/* background-size: 100% 100%; */
@@ -303,7 +301,17 @@
 	font-family: "粗";
 	margin: 0 20rpx 25rpx 0;
 }
-.gohomeText1 {
+.gohomeText00 {
+	font-size: 23rpx;
+  font-family: "粗";
+  margin: 0 20rpx 5rpx 0 !important;
+}
+.gohomeText01 {
+	font-size: 23rpx;
+  font-family: "粗";
+  margin: 0 20rpx 25rpx -10rpx !important;
+}
+.gohomeText10 {
 	font-size: 24rpx;
 	font-family: "粗";
   margin: 25rpx 0 0;

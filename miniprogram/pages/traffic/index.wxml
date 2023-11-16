@@ -83,7 +83,7 @@
 				<view class="gohomeDetailContainer" wx:for="{{gohomeItem.gohomeDetail}}" wx:for-item="gohomeDetailItem" wx:key="gohomeDetailIndex">
 					<view class="gohomeTitle">{{gohomeDetailItem.gohomeTitle}}</view>
 					<view class="gohomeTextContainer" >
-						<view class="gohomeText gohomeText{{gohomeIndex}}" wx:for="{{gohomeDetailItem.gohomeText}}" wx:for-item="goHomeTextItem" wx:key="goHomeTextIndex">{{goHomeTextItem.text}}</view>
+						<view class="gohomeText gohomeText{{gohomeIndex}}{{goHomeTextIndex}}" wx:for="{{gohomeDetailItem.gohomeText}}" wx:for-item="goHomeTextItem" wx:for-index='goHomeTextIndex' wx:key="goHomeTextIndex">{{goHomeTextItem.text}}</view>
 					</view>
 				</view>
 				<!-- <view class="gohomeDetailContainer">

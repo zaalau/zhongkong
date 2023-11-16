@@ -117,7 +117,7 @@ Page({
             gohomeTitle:'返程时间',
             gohomeText: [
               {
-                text: '17:30'
+                text: '17:30－18:00'
               },
             ]
           },
@@ -133,7 +133,10 @@ Page({
             gohomeTitle:'地铁线路指南',
             gohomeText: [
               {
-                text: '小莲花2号门-6号线奥体中心地铁站C口（桂花西路方向）'
+                text: '小莲花2号门-6号线奥体中心地铁站C口'
+              },
+              {
+                text: '（桂花西路方向）'
               },
             ]
           }

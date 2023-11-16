@@ -17,7 +17,7 @@ Page({
       bgsrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtybgsrc.webp?sign=67cb4cd559c8bc84c3e6e8d600209650&t=1699424232',
       firstTitleText: '动态大事记',
       secTitleBg: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtysectitbg.webp?sign=5af7e0f45a5f4eb31d5751200a0b56f0&t=1699430845',
-      secText: '中控历程：从跟跑到并跑领跑',
+      secText: '中控历程：从跟跑到并跑、领跑',
       content: [{
           
 
@@ -171,7 +171,7 @@ Page({
         {
           separatePic: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ourthirtyseparatepic.webp?sign=6e097fb68974b6d47c1226b7d1f6ffb9&t=1699431229',
           midText: [{
-              text: '加速“二次创业”，推出“烈火计划”，打造更加规范化、现代化、国际化的新中控型'
+              text: '加速“二次创业”，推出“烈火计划”，打造更加规范化、现代化、国际化的新中控'
             },
             
           ],
@@ -218,7 +218,7 @@ Page({
             {
               dot: '●',
               dotColor: '#e507fe',
-              text: '2022年，中控技术重磅推出OMC系统，并提出“135客户价值创新模式”，全面引领流程工业企业向智能化迈进'
+              text: '2022年，重磅推出OMC系统，并提出“135客户价值创新模式”，全面引领流程工业企业向智能化迈进'
             },
             {
               dot: '●',
@@ -233,12 +233,12 @@ Page({
             {
               dot: '●',
               dotColor: '#e507fe',
-              text: '2023年，中控技术海外首家5S店落地沙特'
+              text: '2023年，海外首家5S店落地沙特'
             },
             {
               dot: '●',
               dotColor: '#e507fe',
-              text: '2023年，中控技术推出 “1+2+N”智能工厂新架构，助力流程工业企业实现生产过程自动化（PA）和企业运营自动化（BA）'
+              text: '2023年，推出 “1+2+N”智能工厂新架构，助力流程工业企业实现生产过程自动化（PA）和企业运营自动化（BA）'
             },
           ]
 

@@ -87,16 +87,7 @@ Page({
 
       success: function () {}
     })
-    const backgroundAudioManager = wx.getBackgroundAudioManager()
-
-    backgroundAudioManager.title = "逐光而行"
-
-    // 设置了 src 之后会自动播放
-    backgroundAudioManager.src = "https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/zhuiguang.aac?sign=276ce229971d308d35eae1988b3f3cff&t=1699857490"
-    backgroundAudioManager.onEnded(function () {
-      // 2、必须重新设置src才能循环之后会自动播放
-      backgroundAudioManager.src = "https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/zhuiguang.aac?sign=276ce229971d308d35eae1988b3f3cff&t=1699857490"
-    })
+    
 
   },
 

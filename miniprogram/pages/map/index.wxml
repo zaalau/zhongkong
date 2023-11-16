@@ -16,9 +16,10 @@
     </view>
   </view>
 
-  <view class="flowerContainer" style="background-image: url('{{flowerBg}}'); height: {{mapContainerHeight - topBgHeight}}px;" wx:if="{{flower}}">
-    <view class="flowermap" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ditubig.webp?sign=6c5e1fd8e403d3b2b2a1f2991c61e9c9&t=1699879502" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ditupreview.webp?sign=2bd8786c2937f01ab94a27406a7c2de5&t=1699879450');"></view>
-    <view class="bigbig" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/ditubig.webp?sign=6c5e1fd8e403d3b2b2a1f2991c61e9c9&t=1699879502" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG437.jpg?sign=2444f1bfeccee1d22ea43fc5128cc607&t=1698834714');"></view>
+  <view class="flowerContainer" style="background-image: url('{{flowerBg}}'); min-height: {{mapContainerHeight - topBgHeight}}px;" wx:if="{{flower}}">
+    <view class="flowermap" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/likeeyebig.webp?sign=6881a7f57484e4afca06ec696916bda0&t=1700118582" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/likeeye.webp?sign=99e9a6666e6068bb90c5b051938199e1&t=1700118618');"></view>
+    <view class="flowermap" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/yunzhoubig.webp?sign=64036c26cb22820d4a9d37e33489268e&t=1700118593" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/yunzhoupreview.webp?sign=8c5c430125e7545f3d91932fc44cf34f&t=1700118608');"></view>
+    <view class="bigbig" bindtap='bigpreview' style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG437.jpg?sign=2444f1bfeccee1d22ea43fc5128cc607&t=1698834714');"></view>
   </view>
 
   <view class="seatContainer" style="background-image: url('{{mapBg}}'); min-height: {{mapContainerHeight - topBgHeight}}px;" wx:if="{{!flower}}">

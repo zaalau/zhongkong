@@ -86,7 +86,7 @@
 	right: 0;
 }
 .flowerContainer {
-	padding: 80rpx 0rpx;
+	padding: 40rpx 0rpx 80rpx;
 	box-sizing: border-box;
 	background-size: 100% 100%;
 	
@@ -94,9 +94,10 @@
 .flowermap {
   background-size: 100% 100%;
   width: 750rpx;
-  height: 495rpx;
+  height: 464rpx;
   margin: 0 auto;
 }
+
 .bigbig {
   background-size: 100% 100%;
   width: 168rpx;

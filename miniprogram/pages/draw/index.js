@@ -97,9 +97,12 @@ Page({
               user
             },
             success: res => {
-              console.log(res);
+              this.setData({
+                user:res.result.user
+              })
 
               const MSG = res.result.MSG
+
               // //开始抽奖，动效播放、抽奖机状态改为抽奖中、减少抽奖次数
               wx.cloud.callFunction({
                 // 云函数名称
@@ -107,11 +110,11 @@ Page({
                 data: {
                   user: res.result.user
                 },
+
                 success: res => {
                   var videoplay = wx.createVideoContext('video')
                   this.setData({
                     videoplay,
-                    user:res.result.user
                   })
                   videoplay.play()
                 },

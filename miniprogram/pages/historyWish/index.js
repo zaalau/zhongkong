@@ -6,15 +6,6 @@ Page({
    */
   data: {
     historyWishContainerHeight: '',
-    historyWishData: ['http://tmp/y0nEGRc52k9x039c97b86a2ffe4c281206178132f406.png', 'http://tmp/y0nEGRc52k9x039c97b86a2ffe4c281206178132f406.png'],
-    user: [{
-      openid: 'xxx',
-      workNumber: 'xxx', //初始化没有这一字段或为空，绑定后添加进去，无法修改
-      draw: 1, //初始化为0，首次上传心愿且绑定工号后为1
-      prize: '', //抽奖后生成
-
-
-    }]
   },
   preview(e) {
 
@@ -43,6 +34,10 @@ Page({
         })
       }
     })
+    wx.showLoading({
+      title: '加载中',
+    })
+    
     wx.cloud.callFunction({
       // 云函数名称
       name: 'history_wish',
@@ -52,6 +47,7 @@ Page({
         this.setData({
           historyWish: res.result.historyWish
         })
+        wx.hideLoading()
       },
       fail: console.error
     })

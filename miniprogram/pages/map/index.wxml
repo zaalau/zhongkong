@@ -20,6 +20,7 @@
     <view class="flowermap" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/likeeyebig.webp?sign=f13eb309ff018641cc41ef1b9e2ca70f&t=1700133219" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/likeeye.webp?sign=e4193f939c6f08882f15e6e33ec03f8a&t=1700133187');"></view>
     <view class="flowermap" bindtap='preview' data-pic-src="https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/yunzhoubig.webp?sign=64036c26cb22820d4a9d37e33489268e&t=1700118593" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/yunzhoupreview.webp?sign=8c5c430125e7545f3d91932fc44cf34f&t=1700118608');"></view>
     <view class="bigbig" bindtap='bigpreview' style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/WechatIMG437.jpg?sign=2444f1bfeccee1d22ea43fc5128cc607&t=1698834714');"></view>
+    <view class="texttips">＊若因管控原因造成动线调整请以现场指引为主</view>
   </view>
 
   <view class="seatContainer" style="background-image: url('{{mapBg}}'); min-height: {{mapContainerHeight - topBgHeight}}px;" wx:if="{{!flower}}">

@@ -52,7 +52,7 @@ Page({
             },
             success: res => {
               this.setData({
-                user:res.result.user
+                user: res.result.user
               })
 
               const MSG = res.result.MSG
@@ -135,6 +135,10 @@ Page({
 
   //点击表单绑定按钮函数
   sendWorkNum() {
+    wx.vibrateShort()
+    wx.showLoading({
+      title: '绑定中',
+    })
     const {
       workNumber,
       canibind
@@ -158,7 +162,8 @@ Page({
             const success = res.result.data.success
             const user = res.result.data.user
             if (success) {
-              wx.vibrateShort()
+              wx.hideLoading()
+              wx.vibrateLong()
               this.setData({
                 user,
                 ifShowInput: false
@@ -173,20 +178,22 @@ Page({
                 this.setData({
                   canibind: true
                 })
-                setTimeout(()=>{
+                setTimeout(() => {
                   this.sendWorkNum()
-                },500)
-                
+                }, 500)
+
+              } else {
+                wx.hideLoading()
+                wx.vibrateLong()
+                wx.showToast({
+                  icon: "error",
+                  title: MSG,
+                  duration: 1000
+                })
+                this.setData({
+                  canibind: true
+                })
               }
-              wx.vibrateLong()
-              wx.showToast({
-                icon: "error",
-                title: MSG,
-                duration: 1000
-              })
-              this.setData({
-                canibind: true
-              })
             }
 
           },

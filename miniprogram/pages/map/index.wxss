@@ -104,7 +104,11 @@
   height: 58rpx;
   margin: 0 auto;
 }
-
+.texttips {
+  font-size: 23rpx;
+  margin: 40rpx auto 0rpx;
+  text-align: center;
+}
 .seatContainer {
 	padding: 20rpx 8rpx 0;
 	box-sizing: border-box;

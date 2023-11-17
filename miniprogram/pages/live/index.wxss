@@ -9,9 +9,9 @@
 .liveCard {
   width: 750rpx;
   height: 740rpx;
-  margin: 565rpx auto 0;
+  margin: 75% auto 10%;
   box-sizing: border-box;
-
+  z-index: 1;
 }
 .balloon {
   background-size: 100% 100%;

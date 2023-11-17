@@ -212,7 +212,8 @@
 }
 .pic {
 	width: 180rpx;
-	height: 180rpx;
+  height: 180rpx;
+  box-sizing: border-box;
 }
 .interview {
 	font-family: "细";

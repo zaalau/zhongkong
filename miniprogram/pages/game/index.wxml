@@ -1,5 +1,5 @@
 <!--pages/game/index.wxml-->
-<view class="gameContainer" style="height: {{gameContainerHeight}}px; background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG225-_1_.webp?sign=0cdc62f116564dd34c57f3238ec939fe&t=1698912604'); ">
+<view class="gameContainer" style="height: {{gameContainerHeight}}px; background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/gamedaohang.webp?sign=4b4e69f0056ec9259765f265cdc2b5c2&t=1700198469'); ">
 	<view class="wall" bindtap='toPageWish'></view>
 	
 	<view class="draw" bindtap='toPageksong'></view>

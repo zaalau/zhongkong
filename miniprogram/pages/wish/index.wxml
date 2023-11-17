@@ -1,6 +1,6 @@
 <!--pages/wish/index.wxml-->
 <view class="wishContainer" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/wishcontainerbg.webp?sign=2f57726d08361715b6c2e10b26163686&t=1699432686');min-height: {{wishContainerHeight}}px;">
-  <view class="wishTop" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/WechatIMG381-_1_-_1_.webp?sign=4216f468ad459f9b6090a8f0ff35d8f6&t=1698914828');"></view>
+  <view class="wishTop" style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/myheartwishtop.webp?sign=b8341229dd03aa655e4bdc81fce54358&t=1700198818');"></view>
   <view class="toDraw" bindtap='toDraw' style="background-image: url('https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/gotodrawbtn.webp?sign=499f57a36e4bbdbf89a3616e600ef2b1&t=1700136364');"></view>
   <view class="addPic" bindtap='addPic' style="background-image: url({{picSrc}});"></view>
   <textarea class="addText" value="{{content}}" placeholder="请输入祝福语..." maxlength="{{wordLimit}}" bindinput="addText" type="text">

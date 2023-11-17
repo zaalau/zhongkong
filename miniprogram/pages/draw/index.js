@@ -11,53 +11,7 @@ Page({
     workNumber: '',
   },
 
-  drawPrize() {
-    // 计算总奖品数量
-    const user = this.data.user
-    if (user.workNumber === '0000066666') {
-      user.gift = '100元京东卡'
-      user.gifttext = '100元京东卡'
-      this.setData({
-        user
-      })
-    } else {
-      let totalQuantity = 0;
-      let prizes = this.data.prizes
-      prizes.forEach(prize => {
-        totalQuantity += prize.quantity;
-      });
 
-      // 生成一个随机数，范围在0到总奖品数量之间
-      const randomIndex = Math.floor(Math.random() * totalQuantity);
-
-      // 根据随机数确定抽中的奖品
-      let currentQuantity = 0;
-
-      for (const prize of prizes) {
-        currentQuantity += prize.quantity;
-        if (randomIndex < currentQuantity) {
-          // 抽中了！
-          // const user = this.data.user
-          user.gift = prize.gift
-          user.gifttext = prize.gifttext
-          this.setData({
-            user
-          })
-
-          // 减少奖品数量
-          prize.quantity -= 1;
-          break;
-        }
-      }
-      this.setData({
-        prizes
-      })
-      console.log(prizes)
-    }
-
-
-
-  },
 
   //点击开始抽奖按钮函数
   draw() {
@@ -181,7 +135,6 @@ Page({
 
   //点击表单绑定按钮函数
   sendWorkNum() {
-
     const {
       workNumber,
       canibind
@@ -220,7 +173,10 @@ Page({
                 this.setData({
                   canibind: true
                 })
-                this.sendWorkNum()
+                setTimeout(()=>{
+                  this.sendWorkNum()
+                },500)
+                
               }
               wx.vibrateLong()
               wx.showToast({

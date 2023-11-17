@@ -79,7 +79,7 @@ Page({
         timeText:[
         
           {
-            text:'11:30（循序发车，坐满即走）'
+            text:'12:50（循序发车，坐满即走）'
           }
         ],
         carPosition: '发车地点',

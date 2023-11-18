@@ -66,7 +66,7 @@ Page({
         ],
         carPosition: '发车地点',
         carText: '详见地图',
-        picSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/zkkjymap.webp?sign=27185c025fa3b3a1d70af037a48bb079&t=1700143954',
+        picSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/zkkjymapend.webp?sign=2aa7f2450ab78b4fc63fe62a1eb0354f&t=1700205259',
         contentLogo: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/sredcar.webp?sign=b10eec230ad87592dac866ea9affd0fc&t=1699417430'
       },
       {
@@ -102,7 +102,7 @@ Page({
         ],
         carPosition: '发车地点',
         carText: '详见地图',
-        picSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/fycyymap.webp?sign=7981f7ec81b2a5acfe65fe835542cc39&t=1700144005',
+        picSrc: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/fycyymapend.webp?sign=188d297f1b9ac6ba625ca9f6e66b08ca&t=1700203846',
         contentLogo: 'https://7a68-zhongkong-0gr2bnjw8020e857-1321404713.tcb.qcloud.la/%E5%B7%B2%E5%8E%8B%E7%BC%A9/sbluecar.webp?sign=6560d2d87678b35e04068fb2d607b56c&t=1699417789'
       },
       

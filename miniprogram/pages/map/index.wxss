@@ -126,7 +126,7 @@
 }
 .handTip {
 	height: 43rpx;
-	width: 140rpx;
+	width: 262rpx;
 	position: absolute;
 	left: 145rpx;
   top: 45rpx;

@@ -5,5 +5,4 @@
 	<view class="draw" bindtap='toPageksong'></view>
 	<view class="draw2" bindtap='toPageksong'></view>
 	
-
 </view>

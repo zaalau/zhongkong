@@ -95,7 +95,7 @@
   background-size: 100% 100%;
   width: 750rpx;
   height: 464rpx;
-  margin: 0 auto;
+  margin: 0 auto 18rpx;
 }
 
 .bigbig {

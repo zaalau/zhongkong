@@ -27,7 +27,7 @@
   <view class="workNumberContainer" wx:if="{{ifShowInput}}">
     <view class="workNumberInputContainer">
       <view class="closeInput" bindtap='closeInput'></view>
-      <input class="workNumberInput" placeholder="请输入工号..." type="number" value="{{workNumber}}" bindinput='handleWorkNum' maxlength='10' />
+      <input class="workNumberInput" placeholder="请输入工号..." type="text" value="{{workNumber}}" bindinput='handleWorkNum' maxlength='10' />
       <view class="workNumberBtn" bindtap='sendWorkNum'></view>
     </view>
   </view>
